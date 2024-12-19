@@ -1,0 +1,150 @@
+HERMESDB/
+├── data/                  # Almacena los datos en diferentes etapas de procesamiento
+│   ├── raw/              # Datos crudos tal como fueron importados
+│   ├── preprocessed/     # Datos parcialmente procesados para limpieza
+│   └── cleaned/          # Datos completamente limpios y listos para análisis
+├── notebooks/             # Jupyter Notebooks para informes y análisis
+│   ├── analysis.ipynb    # Notebook para el análisis exploratorio y modelos predictivos
+│   ├── visualization.ipynb # Notebook para crear visualizaciones y gráficos
+│   └── report.ipynb      # Informe final consolidado con análisis y gráficos
+├── src/                   # Código fuente modular
+│   ├── __init__.py       # Indica que este directorio es un paquete Python
+│   ├── data_ingestion.py # Funciones para cargar y validar datos crudos
+│   ├── preprocessing.py  # Funciones para limpiar y transformar datos
+│   ├── visualization.py  # Funciones para generar gráficos y exportarlos
+│   ├── analysis.py       # Funciones de análisis y modelos predictivos
+│   ├── database.py       # Funciones para interactuar con bases de datos
+│   └── utils.py          # Funciones auxiliares reutilizables (p. ej., manejo de fechas)
+├── tests/                 # Pruebas unitarias para verificar la funcionalidad del código
+│   ├── test_preprocessing.py # Pruebas para las funciones de limpieza de datos
+│   ├── test_analysis.py      # Pruebas para las funciones de análisis y modelos
+│   └── test_database.py      # Pruebas para la interacción con bases de datos
+├── output/                # Resultados generados y datos exportados
+│   ├── figures/          # Gráficos generados por los análisis
+│   ├── reports/          # Informes generados en formatos como PDF o HTML
+│   └── database/         # Base de datos consolidada lista para uso
+├── env/                   # Entorno virtual de Python para aislar dependencias
+├── requirements.txt       # Lista de dependencias necesarias para el proyecto
+├── README.md              # Documentación básica del proyecto, cómo instalar y usar
+└── .gitignore             # Lista de archivos y carpetas que no se deben incluir en Git
+
+
+Documentación de Estructura de Carpetas para el Proyecto HERMESDB
+La estructura de carpetas de HERMESDB está diseñada para organizar y gestionar de manera eficiente el flujo de trabajo de un proyecto de análisis de datos y optimización. Cada carpeta tiene un propósito específico y debe contener únicamente los archivos correspondientes a su función. A continuación se describe el uso de cada carpeta y algunos errores comunes a evitar al almacenar archivos en ellas.
+
+1. data/ - Almacenamiento de Datos en Diferentes Etapas de Procesamiento
+Esta carpeta contiene los datos en las distintas etapas del procesamiento. Es importante asegurarse de que los datos en cada subcarpeta estén correctamente organizados y etiquetados según su estado.
+
+Subcarpetas:
+raw/: Contiene los datos crudos tal como fueron importados. Aquí se almacenan los archivos de entrada sin ningún tipo de procesamiento.
+Errores a evitar:
+No almacenar archivos procesados en esta carpeta.
+No modificar los datos crudos en esta fase, ya que deben mantenerse como referencia.
+preprocessed/: Datos parcialmente procesados, que han pasado por pasos iniciales de limpieza, como la eliminación de valores nulos o la conversión de tipos de datos.
+Errores a evitar:
+No almacenar archivos que ya estén completamente limpios.
+No guardar versiones intermedias que no sean relevantes para el siguiente paso en el pipeline.
+cleaned/: Datos completamente limpios, listos para ser utilizados en el análisis.
+Errores a evitar:
+No almacenar datos que no hayan sido completamente limpiados o transformados.
+No almacenar datos finales en esta carpeta si no han pasado por todas las validaciones necesarias.
+2. notebooks/ - Jupyter Notebooks para Análisis e Informes
+Esta carpeta contiene los notebooks de Jupyter que facilitan la exploración de datos, la creación de visualizaciones y la elaboración de informes.
+
+Subcarpetas:
+analysis.ipynb: Notebook para el análisis exploratorio de datos, pruebas iniciales y modelos predictivos.
+
+visualization.ipynb: Notebook dedicado a la creación de visualizaciones y gráficos interactivos.
+
+report.ipynb: Informe consolidado con los resultados finales de los análisis y gráficos generados.
+
+Errores a evitar:
+
+No almacenar archivos de datos en esta carpeta.
+No guardar notebooks que no sean relevantes para la documentación del proyecto o el análisis final.
+3. src/ - Código Fuente Modular
+Contiene el código fuente del proyecto, organizado en módulos. Cada archivo tiene una función específica y debe estar completamente desacoplado de otros módulos cuando sea posible.
+
+Subcarpetas:
+__init__.py: Archivo que indica que este directorio es un paquete Python.
+
+data_ingestion.py: Funciones para cargar y validar los datos crudos.
+
+preprocessing.py: Funciones para limpiar y transformar los datos.
+
+visualization.py: Funciones para generar gráficos y exportarlos.
+
+analysis.py: Funciones para análisis estadístico, modelos predictivos y optimización.
+
+database.py: Funciones para interactuar con bases de datos (por ejemplo, Oracle o PostgreSQL).
+
+utils.py: Funciones auxiliares reutilizables como el manejo de fechas, archivos y otros procesos comunes.
+
+Errores a evitar:
+
+No almacenar datos en esta carpeta.
+No duplicar funciones en diferentes archivos. Cada archivo debe tener funciones especializadas.
+No mezclar el código de análisis con el de visualización, para mantener la modularidad.
+4. tests/ - Pruebas Unitarias
+Esta carpeta se dedica a las pruebas unitarias, que son fundamentales para verificar la integridad y funcionalidad del código.
+
+Subcarpetas:
+test_preprocessing.py: Pruebas para las funciones de limpieza y transformación de datos.
+
+test_analysis.py: Pruebas para las funciones de análisis de datos y los modelos predictivos.
+
+test_database.py: Pruebas para las funciones que interactúan con bases de datos.
+
+Errores a evitar:
+
+No almacenar datos de entrada o resultados de las pruebas en esta carpeta.
+No usar pruebas innecesarias. Asegúrate de que cada prueba sea relevante para la funcionalidad del código.
+5. output/ - Resultados Generados y Datos Exportados
+Aquí se almacenan los resultados generados, como gráficos, informes y bases de datos exportadas.
+
+Subcarpetas:
+figures/: Gráficos generados durante los análisis.
+
+reports/: Informes exportados en formatos como PDF o HTML.
+
+database/: Bases de datos consolidadas, listas para su uso en producción o análisis.
+
+Errores a evitar:
+
+No almacenar código fuente ni notebooks en esta carpeta.
+No guardar versiones previas de los informes o bases de datos; solo las versiones finales y consolidadas.
+6. env/ - Entorno Virtual de Python
+Contiene el entorno virtual de Python que aisla las dependencias del proyecto para evitar conflictos con otras aplicaciones o proyectos.
+
+Errores a evitar:
+
+No agregar archivos de configuración globales o sistemas fuera del entorno virtual.
+No compartir esta carpeta con otros usuarios si contiene configuraciones locales.
+7. requirements.txt - Lista de Dependencias del Proyecto
+Archivo que lista las dependencias necesarias para ejecutar el proyecto (por ejemplo, pandas, numpy, scikit-learn, etc.).
+
+Errores a evitar:
+
+No incluir dependencias innecesarias o versiones incorrectas de las librerías.
+No dejar el archivo sin actualizar si se cambian las dependencias del proyecto.
+8. README.md - Documentación Básica
+Archivo que contiene la documentación básica sobre el proyecto, su propósito, cómo instalarlo y cómo utilizarlo.
+
+Errores a evitar:
+
+No dejar el archivo sin contenido o con instrucciones confusas.
+No omitir detalles esenciales sobre cómo ejecutar el proyecto o sus dependencias.
+9. .gitignore - Archivos y Carpetas Ignoradas por Git
+Este archivo debe incluir los archivos y carpetas que no deben ser versionados, como archivos temporales, entornos virtuales y archivos de configuración locales.
+
+Errores a evitar:
+
+No olvidar agregar carpetas como env/ o archivos como *.pyc que no deben ser versionados.
+No agregar archivos necesarios para el funcionamiento del proyecto en este archivo.
+Resumen de Buenas Prácticas:
+
+Mantén las carpetas organizadas según su propósito.
+No almacenes archivos que no corresponden en una carpeta específica.
+Asegúrate de que los archivos se actualicen según el estado en que se encuentren (por ejemplo, datos crudos vs. datos procesados).
+Actualiza los archivos de documentación, como el README.md y requirements.txt, para que siempre reflejen el estado actual del proyecto.
+Estas directrices ayudarán a mantener el proyecto organizado y escalable a medida que crezca.
