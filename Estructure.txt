@@ -148,3 +148,57 @@ No almacenes archivos que no corresponden en una carpeta específica.
 Asegúrate de que los archivos se actualicen según el estado en que se encuentren (por ejemplo, datos crudos vs. datos procesados).
 Actualiza los archivos de documentación, como el README.md y requirements.txt, para que siempre reflejen el estado actual del proyecto.
 Estas directrices ayudarán a mantener el proyecto organizado y escalable a medida que crezca.
+
+
+Una estructura bien organizada para almacenar los datos históricos de Forex en tu carpeta raw debería garantizar un fácil acceso y claridad al buscar archivos específicos según sus características (par de divisas, temporalidad, tipo de dato). Aquí tienes una propuesta optimizada basada en tu ejemplo de estructura y necesidades específicas:
+
+HERMESDB/
+├── data/
+│   ├── raw/
+│   │   ├── forex/                       
+│   │   │   ├── EURUSD/                  
+│   │   │   │   ├── 1H/                  
+│   │   │   │   │   ├── BID/             
+│   │   │   │   │   │   └── YYYY-MM.csv  
+│   │   │   │   │   ├── ASK/             
+│   │   │   │   │   │   └── YYYY-MM.csv  
+│   │   │   │   ├── ...
+│   │   ├── metals/                      # Nueva categoría para metales
+│   │   │   ├── GOLD/                    # Metal específico
+│   │   │   │   ├── 1H/                  
+│   │   │   │   │   ├── BID/             
+│   │   │   │   │   │   └── YYYY-MM.csv  
+│   │   │   │   │   ├── ASK/             
+│   │   │   │   │   │   └── YYYY-MM.csv  
+│   │   │   │   ├── 1D/                  
+│   │   │   │   │   ├── BID/             
+│   │   │   │   │   ├── ASK/             
+│   │   │   ├── SILVER/                  
+│   │   │   │   ├── ...
+│   │   ├── crypto/                      # Nueva categoría para criptomonedas
+│   │   │   ├── BTCUSD/                  # Par de criptomoneda-específico
+│   │   │   │   ├── 1H/                  
+│   │   │   │   │   ├── BID/             
+│   │   │   │   │   │   └── YYYY-MM.csv  
+│   │   │   │   │   ├── ASK/             
+│   │   │   │   │   │   └── YYYY-MM.csv  
+│   │   │   │   ├── 1D/                  
+│   │   │   │   │   ├── BID/             
+│   │   │   │   │   ├── ASK/             
+│   │   │   ├── ETHUSD/                  
+│   │   │   │   ├── ...
+│   ├── preprocessed/
+│   └── cleaned/
+Facilita la identificación y separación de datos de otros mercados o instrumentos.
+Subcarpetas para pares de divisas:
+
+Cada par (por ejemplo, EURUSD, GBPUSD) tiene su propia carpeta, lo que evita mezclar datos de diferentes activos.
+Temporalidades separadas:
+
+Cada temporalidad tiene su propia subcarpeta (1H, 4H, 1D, 1M), lo que simplifica el manejo y procesamiento de datos para análisis específicos.
+Diferenciación entre BID y ASK:
+
+BID y ASK están organizados en carpetas separadas dentro de cada temporalidad para evitar confusiones.
+Archivos nombrados por fecha (YYYY-MM):
+
+Nombrar los archivos por año y mes permite filtrar datos rápidamente y seguir un orden cronológico.
