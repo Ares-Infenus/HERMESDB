@@ -152,6 +152,51 @@ Estas directrices ayudarán a mantener el proyecto organizado y escalable a medi
 
 Una estructura bien organizada para almacenar los datos históricos de Forex en tu carpeta raw debería garantizar un fácil acceso y claridad al buscar archivos específicos según sus características (par de divisas, temporalidad, tipo de dato). Aquí tienes una propuesta optimizada basada en tu ejemplo de estructura y necesidades específicas:
 
+Estructura propuesta para raw
+plaintext
+Copy code
+HERMESDB/
+├── data/
+│   ├── raw/
+│   │   ├── forex/                       # Datos históricos de Forex
+│   │   │   ├── EURUSD/                  # Par de divisas específico
+│   │   │   │   ├── 1H/                  # Temporalidad específica
+│   │   │   │   │   ├── BID/             # Tipo de dato: BID
+│   │   │   │   │   │   └── YYYY-MM.csv  # Archivos por mes
+│   │   │   │   │   ├── ASK/             # Tipo de dato: ASK
+│   │   │   │   │   │   └── YYYY-MM.csv  # Archivos por mes
+│   │   │   │   ├── 4H/
+│   │   │   │   │   ├── BID/
+│   │   │   │   │   ├── ASK/
+│   │   │   │   ├── 1D/
+│   │   │   │   │   ├── BID/
+│   │   │   │   │   ├── ASK/
+│   │   │   │   ├── 1M/
+│   │   │   │   │   ├── BID/
+│   │   │   │   │   ├── ASK/
+│   │   │   ├── GBPUSD/
+│   │   │   │   ├── ...
+│   │   └── ...
+│   ├── preprocessed/
+│   └── cleaned/
+Principios detrás de la estructura
+Carpeta principal para Forex:
+
+Facilita la identificación y separación de datos de otros mercados o instrumentos.
+Subcarpetas para pares de divisas:
+
+Cada par (por ejemplo, EURUSD, GBPUSD) tiene su propia carpeta, lo que evita mezclar datos de diferentes activos.
+Temporalidades separadas:
+
+Cada temporalidad tiene su propia subcarpeta (1H, 4H, 1D, 1M), lo que simplifica el manejo y procesamiento de datos para análisis específicos.
+Diferenciación entre BID y ASK:
+
+BID y ASK están organizados en carpetas separadas dentro de cada temporalidad para evitar confusiones.
+Archivos nombrados por fecha (YYYY-MM):
+
+Nombrar los archivos por año y mes permite filtrar datos rápidamente y seguir un orden cronológico.
+
+
 HERMESDB/
 ├── data/
 │   ├── raw/
@@ -189,16 +234,3 @@ HERMESDB/
 │   │   │   │   ├── ...
 │   ├── preprocessed/
 │   └── cleaned/
-Facilita la identificación y separación de datos de otros mercados o instrumentos.
-Subcarpetas para pares de divisas:
-
-Cada par (por ejemplo, EURUSD, GBPUSD) tiene su propia carpeta, lo que evita mezclar datos de diferentes activos.
-Temporalidades separadas:
-
-Cada temporalidad tiene su propia subcarpeta (1H, 4H, 1D, 1M), lo que simplifica el manejo y procesamiento de datos para análisis específicos.
-Diferenciación entre BID y ASK:
-
-BID y ASK están organizados en carpetas separadas dentro de cada temporalidad para evitar confusiones.
-Archivos nombrados por fecha (YYYY-MM):
-
-Nombrar los archivos por año y mes permite filtrar datos rápidamente y seguir un orden cronológico.
