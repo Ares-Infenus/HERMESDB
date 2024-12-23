@@ -21,3 +21,5 @@ Traceback (most recent call last):
 concurrent.futures.process.BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
 
 2024-12-22 14:06:02,905 - ERROR - Failed to load data: A process in the process pool was terminated abruptly while the future was running or pending.
+2024-12-22 14:13:23,908 - ERROR - Error en la ejecución principal: La carpeta base 'c:\Users\spinz\Documents\Portafolio Oficial\HERMESDB\test\data\raw' no existe.
+2024-12-22 14:14:02,479 - ERROR - Error en la ejecución principal: '1D'
