@@ -1,0 +1,49 @@
+{
+    "execution_time": "00:00:04",
+    "cpu_usage": "85.1%",
+    "memory_usage": "85.1%",
+    "duplicates": [
+        {
+            "group": [
+                "df1",
+                "df2"
+            ],
+            "similarity": 1.0
+        },
+        {
+            "group": [
+                "df1",
+                "df3"
+            ],
+            "similarity": 1.0
+        },
+        {
+            "group": [
+                "df2",
+                "df1"
+            ],
+            "similarity": 1.0
+        },
+        {
+            "group": [
+                "df2",
+                "df3"
+            ],
+            "similarity": 1.0
+        },
+        {
+            "group": [
+                "df3",
+                "df1"
+            ],
+            "similarity": 1.0
+        },
+        {
+            "group": [
+                "df3",
+                "df2"
+            ],
+            "similarity": 1.0
+        }
+    ]
+}
