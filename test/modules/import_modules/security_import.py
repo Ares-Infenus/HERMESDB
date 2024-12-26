@@ -288,14 +288,14 @@ class DuplicateChecker:
         asyncio.run(self.check_duplicates())
 
 # Ejemplo de uso
-if __name__ == '__main__':
-    # Crear un diccionario con DataFrames de ejemplo
-    data_dict = {
-        'df1': pd.DataFrame({'Close': np.random.rand(1000)}),
-        'df2': pd.DataFrame({'Close': np.random.rand(1000)}),
-        'df3': pd.DataFrame({'Close': np.random.rand(1000)})
-    }
+#if __name__ == '__main__':
+#    # Crear un diccionario con DataFrames de ejemplo
+#    data_dict = {
+#        'df1': pd.DataFrame({'Close': np.random.rand(1000)}),
+#        'df2': pd.DataFrame({'Close': np.random.rand(1000)}),
+#        'df3': pd.DataFrame({'Close': np.random.rand(1000)})
+#    }
 
-    # Instanciar la clase y ejecutar la detección de duplicados
-    checker = DuplicateChecker(data_dict)
-    checker.run()
+#    # Instanciar la clase y ejecutar la detección de duplicados
+#    checker = DuplicateChecker(data_dict)
+#    checker.run()
