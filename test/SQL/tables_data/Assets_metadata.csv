@@ -1,0 +1,36 @@
+METADATA_ID;SECTOR;INSTRUMENT_TYPE;COUNTRY;DESCRIPTION
+0;CROSSES;FOREX;INTERNATIONAL;Currency crosses, excluding the USD.
+1;MAJORS;FOREX;INTERNATIONAL;Major currency pairs that always include the USD.
+2;METALS;FOREX;INTERNATIONAL;Precious or industrial metals traded in the forex or commodity markets.
+3;AGRICULTURE;COMMODITIES;INTERNATIONAL;Agricultural products such as wheat, corn, coffee, among others.
+4;ENERGY;COMMODITIES;INTERNATIONAL;Energy resources like oil, natural gas, among others.
+5;METALS;COMMODITIES;INTERNATIONAL;The commodity metals sector includes both precious and non-precious metals used in a wide range of industries, from electronics and automotive manufacturing to construction and jewelry. The fluctuation in the supply and demand of these metals directly influences their prices, making this sector a key area in the global economy.
+6;AMERICA;INDICES;AMERICA;Stock market indices from America.
+7;ASIA;INDICES;ASIA;Stock market indices from Asia.
+8;EUROPE;INDICES;EUROPE;Stock market indices from Europe.
+9;AFRICA;INDICES;AFRICA;Stock market indices from Africa.
+10;BONDS;BONDS;INTERNATIONAL;Government and corporate bonds.
+11;AUSTRIA;STOCKS;AUSTRIA;Stocks from the Austrian stock market.
+12;BELGIUM;STOCKS;BELGIUM;Stocks from the Belgian stock market.
+13;DENMARK;STOCKS;DENMARK;Stocks from the Danish stock market.
+14;FINLAND;STOCKS;FINLAND;Stocks from the Finnish stock market.
+15;FRANCE;STOCKS;FRANCE;Stocks from the French stock market.
+16;GERMANY;STOCKS;GERMANY;Stocks from the German stock market.
+17;HONG KONG;STOCKS;HONG KONG;Stocks from the Hong Kong stock market.
+18;IRELAND;STOCKS;IRELAND;Stocks from the Irish stock market.
+19;ITALY;STOCKS;ITALY;Stocks from the Italian stock market.
+20;JAPAN;STOCKS;JAPAN;Stocks from the Japanese stock market.
+21;MEXICO;STOCKS;MEXICO;Stocks from the Mexican stock market.
+22;NETHERLANDS;STOCKS;NETHERLANDS;Stocks from the Dutch stock market.
+23;NORWAY;STOCKS;NORWAY;Stocks from the Norwegian stock market.
+24;PORTUGAL;STOCKS;PORTUGAL;Stocks from the Portuguese stock market.
+25;SPAIN;STOCKS;SPAIN;Stocks from the Spanish stock market.
+26;SWEDEN;STOCKS;SWEDEN;Stocks from the Swedish stock market.
+27;SWITZERLAND;STOCKS;SWITZERLAND;Stocks from the Swiss stock market.
+28;UK;STOCKS;UK;Stocks from the UK stock market.
+29;US;STOCKS;US;Stocks from the US stock market.
+30;GERMANY;ETF;GERMANY;Exchange-traded funds (ETFs) from the German market.
+31;FRANCE;ETF;FRANCE;Exchange-traded funds (ETFs) from the French market.
+32;HONG KONG;ETF;HONG KONG;Exchange-traded funds (ETFs) from the Hong Kong market.
+33;US;ETF;US;Exchange-traded funds (ETFs) from the US market.
+34;CRYPTO;CRYPTO;INTERNATIONAL;Cryptocurrency market.
