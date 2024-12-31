@@ -158,6 +158,24 @@ BEGIN
 END;
 /
 
+CREATE TABLE operational_costs (
+    cost_id INTEGER PRIMARY KEY,
+    assets_id INTEGER NOT NULL,
+    margin FLOAT NOT NULL CHECK (margin >= 0),
+    contract_size FLOAT NOT NULL CHECK (contract_size > 0),
+    contract_currency VARCHAR2(10) NOT NULL,
+    spread FLOAT NOT NULL CHECK (spread >= 0),
+    swap_long FLOAT NOT NULL,
+    swap_short FLOAT NOT NULL,
+    commission_per_order FLOAT NOT NULL CHECK (commission_per_order >= 0),
+    date_recorded TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, -- Agregado para trackear cambios
+    CONSTRAINT fk_assets_costs FOREIGN KEY (assets_id) REFERENCES assets(assets_id) ON DELETE CASCADE
+);
+
+-- Índices para mejorar el rendimiento
+CREATE INDEX idx_operational_costs_assets ON operational_costs (assets_id);
+
+
 CREATE TABLE indicator_parameters (
     param_id INTEGER PRIMARY KEY,
     indicator_id INTEGER NOT NULL,
