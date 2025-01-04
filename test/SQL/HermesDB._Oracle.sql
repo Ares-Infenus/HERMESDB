@@ -101,7 +101,6 @@ CREATE TABLE market_data (
     data_id INTEGER PRIMARY KEY,
     assets_id INTEGER NOT NULL,
     timeframe_id INTEGER NOT NULL,
-    source_id INTEGER NOT NULL,
     price_type VARCHAR2(3) CHECK (price_type IN ('BID', 'ASK', 'MID')) NOT NULL,
     date_recorded TIMESTAMP NOT NULL,
     open FLOAT CHECK (open > 0) NOT NULL,
@@ -113,7 +112,6 @@ CREATE TABLE market_data (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     CONSTRAINT fk_assets_new FOREIGN KEY (assets_id) REFERENCES assets(assets_id) ON DELETE CASCADE,
     CONSTRAINT fk_timeframe FOREIGN KEY (timeframe_id) REFERENCES timeframe(timeframe_id) ON DELETE CASCADE,
-    CONSTRAINT fk_source FOREIGN KEY (source_id) REFERENCES data_sources(source_id) ON DELETE CASCADE
 )
 PARTITION BY RANGE (date_recorded) (
     PARTITION p0 VALUES LESS THAN (TO_DATE('2000-01-01', 'YYYY-MM-DD')),
