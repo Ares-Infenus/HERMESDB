@@ -1,111 +1,138 @@
 import pandas as pd
+import numpy as np
 import os
 from datetime import datetime
 from multiprocessing import Pool, cpu_count
+from tqdm import tqdm
+import pyarrow as pa
+import pyarrow.csv as csv
+from typing import Dict, List, Optional
 
 class CSVProcessor:
-    def __init__(self, input_folder, output_file, assets_df):
+    def __init__(self, input_folder: str, output_file: str, assets_df: pd.DataFrame):
         self.input_folder = input_folder
         self.output_file = output_file
-        self.chunksize = 100000  # Procesar 100,000 filas a la vez
+        self.chunksize = 500000
         self.current_timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-        self.assets_df = assets_df  # DataFrame con los IDs de los activos
-
-    def initialize_output_file(self):
-        """Crear archivo de salida vacío con encabezados."""
-        with open(self.output_file, "w") as f:
-            header = [
-                "DATA_ID", "DATE_RECORDED", "OPEN", "HIGH", "LOW", "CLOSE",
-                "TICK_VOLUME", "SPREAD", "VOLUME", "TIMEFRAME_ID", "ASSETS_ID",
-                "CREATED_AT", "UPDATED_AT", "PRICE_TYPE"
-            ]
-            f.write(",".join(header) + "\n")
-
-    def get_asset_id(self, asset_name):
-        """Obtener el ASSETS_ID del DataFrame basado en el nombre del activo."""
-        asset_row = self.assets_df[self.assets_df['ASSETS_NAME'] == asset_name]
-        if not asset_row.empty:
-            return asset_row.iloc[0]['ASSETS_ID']
-        else:
-            return None  # Si no se encuentra el activo, retorna None
- 
-    def process_file(self, file):
-        """Procesar un solo archivo CSV."""
-        file_path = os.path.join(self.input_folder, file)
-        print(f"Procesando archivo: {file_path}")
-
-        # Mapeo para reemplazar TIMEFRAME_ID
-        timeframe_mapping = {
+        
+        # Precomputar el mapeo de activos para búsqueda más rápida
+        self.assets_mapping = dict(zip(
+            assets_df['ASSETS_NAME'],
+            assets_df['ASSETS_ID']
+        ))
+        
+        # Mapeo de timeframes precompilado
+        self.timeframe_mapping = {
             "1H": 4,
             "4H": 5,
             "1D": 1,
             "1W": 3,
             "1M": 2
         }
+        
+        # Esquema para PyArrow
+        self.schema = pa.schema([
+            ('time', pa.string()),
+            ('open', pa.float64()),
+            ('high', pa.float64()),
+            ('low', pa.float64()),
+            ('close', pa.float64()),
+            ('tick_volume', pa.int64()),
+            ('spread', pa.float64()),
+            ('real_volume', pa.float64()),
+            ('timeframe', pa.string()),
+            ('Activo', pa.string())
+        ])
 
-        # Procesar el archivo en chunks
-        output_chunks = []
-        for chunk in pd.read_csv(file_path, chunksize=self.chunksize):
-            # Renombrar columnas al formato deseado
-            chunk.columns = [
-                "DATE_RECORDED", "OPEN", "HIGH", "LOW", "CLOSE",
-                "TICK_VOLUME", "SPREAD", "VOLUME", "TIMEFRAME_ID", "ASSETS_NAME"
-            ]
+    def initialize_output_file(self):
+        """Crear archivo de salida con encabezados usando PyArrow."""
+        headers = [
+            "DATA_ID", "DATE_RECORDED", "OPEN", "HIGH", "LOW", "CLOSE",
+            "TICK_VOLUME", "SPREAD", "VOLUME", "TIMEFRAME_ID", "ASSETS_ID",
+            "CREATED_AT", "UPDATED_AT", "PRICE_TYPE"
+        ]
+        empty_data = {header: [] for header in headers}
+        df = pd.DataFrame(empty_data)
+        df.to_csv(self.output_file, index=False)
 
-            # Convertir DATE_RECORDED al formato timestamp compatible con Oracle
-            chunk["DATE_RECORDED"] = pd.to_datetime(chunk["DATE_RECORDED"], errors="coerce").dt.strftime("%Y-%m-%d %H:%M:%S")
-
-            # Reemplazar el nombre del activo con su ASSETS_ID
-            chunk["ASSETS_NAME"] = chunk["ASSETS_NAME"].apply(self.get_asset_id)
-
-            # Validar si hay activos no encontrados
-            if chunk["ASSETS_NAME"].isnull().any():
-                missing_assets = chunk[chunk["ASSETS_NAME"].isnull()]
-                print(f"Advertencia: Activos no encontrados:\n{missing_assets}")
-                # Opcional: Puedes manejar errores aquí, como detener el proceso si es crítico
-
-            # Renombrar columna ASSETS_NAME a ASSETS_ID
-            chunk.rename(columns={"ASSETS_NAME": "ASSETS_ID"}, inplace=True)
-
-            # Reemplazar valores en la columna TIMEFRAME_ID
-            chunk["TIMEFRAME_ID"] = chunk["TIMEFRAME_ID"].map(timeframe_mapping)
-
-            # Agregar nuevas columnas
-            chunk["CREATED_AT"] = self.current_timestamp
-            chunk["UPDATED_AT"] = self.current_timestamp
-            chunk["PRICE_TYPE"] = "BID"
-            chunk.insert(0, "DATA_ID", range(chunk.index[0] + 1, chunk.index[0] + 1 + len(chunk)))
-
-            # Guardar en un buffer temporal
-            output_chunks.append(chunk)
-
-        # Concatenar todos los chunks procesados y guardar en el archivo final
-        pd.concat(output_chunks).to_csv(self.output_file, mode="a", index=False, header=False)
-        print(f"Archivo procesado: {file_path}")
-
+    def process_file(self, file_info: tuple) -> str:
+        """Procesar un solo archivo CSV usando PyArrow para lectura más rápida."""
+        file, start_id = file_info
+        file_path = os.path.join(self.input_folder, file)
+        
+        try:
+            # Leer archivo con PyArrow
+            table = csv.read_csv(
+                file_path,
+                read_options=csv.ReadOptions(use_threads=True),
+                parse_options=csv.ParseOptions(delimiter=','),
+                convert_options=csv.ConvertOptions(
+                    column_types=self.schema,
+                    include_columns=self.schema.names
+                )
+            )
+            
+            # Convertir a DataFrame solo para las operaciones necesarias
+            df = table.to_pandas()
+            
+            # Aplicar transformaciones vectorizadas
+            df['DATE_RECORDED'] = pd.to_datetime(df['time']).dt.strftime("%Y-%m-%d %H:%M:%S")
+            df['ASSETS_ID'] = df['Activo'].map(self.assets_mapping).fillna(-1)
+            df['TIMEFRAME_ID'] = df['timeframe'].map(self.timeframe_mapping).fillna(-1)
+            
+            # Agregar columnas adicionales de manera vectorizada
+            n_rows = len(df)
+            df['DATA_ID'] = np.arange(start_id, start_id + n_rows)
+            df['CREATED_AT'] = self.current_timestamp
+            df['UPDATED_AT'] = self.current_timestamp
+            df['PRICE_TYPE'] = 'BID'
+            
+            # Eliminar columna ASSETS_NAME
+            df.drop('Activo', axis=1, inplace=True)
+            
+            # Guardar resultados concatenados al archivo existente
+            df.to_csv(self.output_file, mode='a', index=False, header=False)
+            
+            return f"{file} procesado correctamente. Filas: {n_rows}"
+            
+        except Exception as e:
+            error_message = f"Error procesando {file}: {e}"
+            with open('error_log.txt', 'a') as log_file:
+                log_file.write(error_message + "\n")
+            return error_message
 
     def process_files(self):
-        """Procesar todos los archivos CSV en paralelo."""
-        # Crear archivo de salida vacío
+        """Procesar archivos en paralelo con mejor manejo de IDs."""
         self.initialize_output_file()
-
-        # Obtener lista de archivos CSV en la carpeta
-        files = [file for file in os.listdir(self.input_folder) if file.endswith(".csv")]
-
-        # Usar multiprocesamiento para procesar los archivos
-        with Pool(processes=max(cpu_count() - 1, 1)) as pool:  # Usa todos los núcleos menos 1
-            pool.map(self.process_file, files)
-
+        
+        # Obtener lista de archivos y calcular IDs iniciales
+        files = [f for f in os.listdir(self.input_folder) if f.endswith('.csv')]
+        cumulative_rows = 0
+        file_info = []
+        
+        for file in files:
+            # Estimar número de filas basado en conteo real
+            n_rows = sum(1 for _ in open(os.path.join(self.input_folder, file))) - 1  # Sin encabezado
+            file_info.append((file, cumulative_rows))
+            cumulative_rows += n_rows
+        
+        # Procesar archivos en paralelo
+        with Pool(processes=max(cpu_count() - 1, 1)) as pool:
+            results = list(tqdm(
+                pool.imap(self.process_file, file_info),
+                total=len(files),
+                desc="Procesando archivos"
+            ))
+        
+        # Mostrar resultados
+        for result in results:
+            print(result)
+        
         print(f"Archivos combinados en: {self.output_file}")
-
-
-# Uso de la clase
-if __name__ == "__main__":
-    # Cargar el DataFrame de activos
-    assets_df = pd.read_csv("C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\ASSETS.csv")
-
-    input_folder = "C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\data_market"
-    output_file = "C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\MARKET_DATA_BID.csv"
-
+        
+if __name__ == '__main__':
+    assets_df = pd.read_csv("C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\data\\tables_data\\ASSETS.csv")
+    input_folder = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\data_market\\test'
+    output_file = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\MARKET_DATA_BID.csv'
     processor = CSVProcessor(input_folder, output_file, assets_df)
     processor.process_files()
