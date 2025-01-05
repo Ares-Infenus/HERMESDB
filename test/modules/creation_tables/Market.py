@@ -52,8 +52,8 @@ class MarketData:
         fecha_actual = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         
         # Añadir la fecha de creación y actualización del DataFrame
-        market_data['CREATION_AT'] = fecha_actual
-        market_data['UPDATE_AT'] = fecha_actual
+        market_data['CREATED_AT'] = fecha_actual
+        market_data['UPDATED_AT'] = fecha_actual
         
         # Agregar un identificador único para cada mercado (basado en el índice del DataFrame)
         market_data['ID_MARKET'] = market_data.index
