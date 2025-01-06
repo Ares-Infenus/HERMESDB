@@ -98,6 +98,8 @@ CREATE TABLE technical_indicators (
 );
 
 CREATE TABLE market_data (
+    spread FLOAT CHECK (spread >= 0) NOT NULL,
+    tick_volume FLOAT CHECK (tick_volume >= 0) NOT NULL
     data_id INTEGER PRIMARY KEY,
     assets_id INTEGER NOT NULL,
     timeframe_id INTEGER NOT NULL,
@@ -111,7 +113,7 @@ CREATE TABLE market_data (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     CONSTRAINT fk_assets_new FOREIGN KEY (assets_id) REFERENCES assets(assets_id) ON DELETE CASCADE,
-    CONSTRAINT fk_timeframe FOREIGN KEY (timeframe_id) REFERENCES timeframe(timeframe_id) ON DELETE CASCADE,
+    CONSTRAINT fk_timeframe FOREIGN KEY (timeframe_id) REFERENCES timeframe(timeframe_id) ON DELETE CASCADE
 )
 PARTITION BY RANGE (date_recorded) (
     PARTITION p0 VALUES LESS THAN (TO_DATE('2000-01-01', 'YYYY-MM-DD')),
@@ -154,6 +156,15 @@ BEGIN
 
     IF :NEW.low > :NEW.open OR :NEW.low > :NEW.close THEN
         RAISE_APPLICATION_ERROR(-20002, 'El valor de "low" debe ser menor o igual a "open" y "close"');
+    END IF;
+    -- Validar que "spread" sea mayor o igual a 0
+    IF :NEW.spread < 0 THEN
+        RAISE_APPLICATION_ERROR(-20003, 'El valor de "spread" debe ser mayor o igual a 0');
+    END IF;
+
+    -- Validar que "tick_volume" sea mayor o igual a 0
+    IF :NEW.tick_volume < 0 THEN
+        RAISE_APPLICATION_ERROR(-20004, 'El valor de "tick_volume" debe ser mayor o igual a 0');
     END IF;
 END;
 /
