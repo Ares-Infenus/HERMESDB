@@ -143,10 +143,10 @@ class CSVProcessor:
 
         print(f"Archivos divididos y exportados en: {self.output_folder}")
 
-if __name__ == '__main__':
-    assets_df = pd.read_csv("C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\ASSETS.csv")
-    input_folder = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\data_market'
-    output_file = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\MARKET_DATA_BID.csv'
-    output_folder = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\processed_chunks'
-    processor = CSVProcessor(input_folder, output_file, output_folder, assets_df)
-    processor.process_files()
+#if __name__ == '__main__':
+#    assets_df = pd.read_csv("C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\ASSETS.csv")
+#    input_folder = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\data_market'
+#    output_file = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\MARKET_DATA_BID.csv'
+#    output_folder = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\processed_chunks'
+#    processor = CSVProcessor(input_folder, output_file, output_folder, assets_df)
+#    processor.process_files()
