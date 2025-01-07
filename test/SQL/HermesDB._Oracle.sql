@@ -71,8 +71,8 @@ CREATE TABLE assets (
     is_active CHAR(1) CHECK (is_active IN ('Y', 'N')) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    CONSTRAINT fk_market FOREIGN KEY (market_id) REFERENCES HERMESDB.market(market_id) ON DELETE CASCADE,
-    CONSTRAINT fk_metadata FOREIGN KEY (metadata_id) REFERENCES HERMESDB.asset_metadata(metadata_id) ON DELETE CASCADE
+    CONSTRAINT fk_market FOREIGN KEY (market_id) REFERENCES market(market_id) ON DELETE CASCADE,
+    CONSTRAINT fk_metadata FOREIGN KEY (metadata_id) REFERENCES asset_metadata(metadata_id) ON DELETE CASCADE
 );
 
 CREATE TABLE timeframe (
@@ -88,23 +88,15 @@ CREATE TABLE data_sources (
     description CLOB
 );
 
-CREATE TABLE technical_indicators (
-    indicator_id INTEGER PRIMARY KEY,
-    indicator_name VARCHAR2(50) NOT NULL,
-    description CLOB,
-    calculation_method CLOB,
-    category VARCHAR2(50),
-    is_composite CHAR(1) DEFAULT 'N' CHECK (is_composite IN ('Y', 'N'))
-);
-
 CREATE TABLE market_data (
-    spread FLOAT CHECK (spread >= 0) NOT NULL,
-    tick_volume FLOAT CHECK (tick_volume >= 0) NOT NULL
     data_id INTEGER PRIMARY KEY,
     assets_id INTEGER NOT NULL,
     timeframe_id INTEGER NOT NULL,
+    source_id INTEGER NOT NULL,  -- Columna añadida para relacionar con data_sources
     price_type VARCHAR2(3) CHECK (price_type IN ('BID', 'ASK', 'MID')) NOT NULL,
     date_recorded TIMESTAMP NOT NULL,
+    spread FLOAT CHECK (spread >= 0) NOT NULL,
+    tick_volume FLOAT CHECK (tick_volume >= 0) NOT NULL,
     open FLOAT CHECK (open > 0) NOT NULL,
     high FLOAT NOT NULL,
     low FLOAT NOT NULL,
@@ -113,7 +105,8 @@ CREATE TABLE market_data (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
     CONSTRAINT fk_assets_new FOREIGN KEY (assets_id) REFERENCES assets(assets_id) ON DELETE CASCADE,
-    CONSTRAINT fk_timeframe FOREIGN KEY (timeframe_id) REFERENCES timeframe(timeframe_id) ON DELETE CASCADE
+    CONSTRAINT fk_timeframe FOREIGN KEY (timeframe_id) REFERENCES timeframe(timeframe_id) ON DELETE CASCADE,
+    CONSTRAINT fk_data_source FOREIGN KEY (source_id) REFERENCES data_sources(source_id) ON DELETE CASCADE  -- Relación con data_sources
 )
 PARTITION BY RANGE (date_recorded) (
     PARTITION p0 VALUES LESS THAN (TO_DATE('2000-01-01', 'YYYY-MM-DD')),
@@ -142,8 +135,9 @@ PARTITION BY RANGE (date_recorded) (
     PARTITION p23 VALUES LESS THAN (TO_DATE('2023-01-01', 'YYYY-MM-DD')),
     PARTITION p24 VALUES LESS THAN (TO_DATE('2024-01-01', 'YYYY-MM-DD')),
     PARTITION p25 VALUES LESS THAN (TO_DATE('2025-01-01', 'YYYY-MM-DD')),
-    PARTITION p26 VALUES LESS THAN (TO_DATE('2026-01-01', 'YYYY-MM-DD'))
-
+    PARTITION p26 VALUES LESS THAN (TO_DATE('2026-01-01', 'YYYY-MM-DD')),
+    PARTITION p27 VALUES LESS THAN (TO_DATE('2027-01-01', 'YYYY-MM-DD')),
+    PARTITION p28 VALUES LESS THAN (TO_DATE('2028-01-01', 'YYYY-MM-DD'))
 );
 
 CREATE OR REPLACE TRIGGER trg_check_values
@@ -185,62 +179,6 @@ CREATE TABLE operational_costs (
 
 -- Índices para mejorar el rendimiento
 CREATE INDEX idx_operational_costs_assets ON operational_costs (assets_id);
-
-
-CREATE TABLE indicator_parameters (
-    param_id INTEGER PRIMARY KEY,
-    indicator_id INTEGER NOT NULL,
-    param_name VARCHAR2(100) NOT NULL,
-    param_value VARCHAR2(100) NOT NULL,
-    UNIQUE (indicator_id, param_name, param_value),
-    CONSTRAINT fk_indicator_param FOREIGN KEY (indicator_id) REFERENCES technical_indicators(indicator_id) ON DELETE CASCADE
-);
-
-CREATE TABLE calculated_indicators (
-    calc_id INTEGER PRIMARY KEY,
-    assets_id INTEGER NOT NULL,
-    timeframe_id INTEGER NOT NULL,
-    indicator_id INTEGER NOT NULL,
-    param_id INTEGER NOT NULL,
-    value FLOAT NOT NULL,
-    calculated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
-    date_recorded TIMESTAMP NOT NULL,
-    CONSTRAINT fk_assets FOREIGN KEY (assets_id) REFERENCES assets(assets_id) ON DELETE CASCADE,
-    CONSTRAINT fk_timeframe FOREIGN KEY (timeframe_id) REFERENCES timeframe(timeframe_id) ON DELETE CASCADE,
-    CONSTRAINT fk_indicator FOREIGN KEY (indicator_id) REFERENCES technical_indicators(indicator_id) ON DELETE CASCADE,
-    CONSTRAINT fk_param FOREIGN KEY (param_id) REFERENCES indicator_parameters(param_id) ON DELETE CASCADE
-)
-PARTITION BY RANGE (date_recorded) (
-     PARTITION i_0 VALUES LESS THAN (TO_DATE('2000-01-01', 'YYYY-MM-DD')),
-    PARTITION i_1 VALUES LESS THAN (TO_DATE('2001-01-01', 'YYYY-MM-DD')),
-    PARTITION i_2 VALUES LESS THAN (TO_DATE('2002-01-01', 'YYYY-MM-DD')),
-    PARTITION i_3 VALUES LESS THAN (TO_DATE('2003-01-01', 'YYYY-MM-DD')),
-    PARTITION i_4 VALUES LESS THAN (TO_DATE('2004-01-01', 'YYYY-MM-DD')),
-    PARTITION i_5 VALUES LESS THAN (TO_DATE('2005-01-01', 'YYYY-MM-DD')),
-    PARTITION i_6 VALUES LESS THAN (TO_DATE('2006-01-01', 'YYYY-MM-DD')),
-    PARTITION i_7 VALUES LESS THAN (TO_DATE('2007-01-01', 'YYYY-MM-DD')),
-    PARTITION i_8 VALUES LESS THAN (TO_DATE('2008-01-01', 'YYYY-MM-DD')),
-    PARTITION i_9 VALUES LESS THAN (TO_DATE('2009-01-01', 'YYYY-MM-DD')),
-    PARTITION i_10 VALUES LESS THAN (TO_DATE('2010-01-01', 'YYYY-MM-DD')),
-    PARTITION i_11 VALUES LESS THAN (TO_DATE('2011-01-01', 'YYYY-MM-DD')),
-    PARTITION i_12 VALUES LESS THAN (TO_DATE('2012-01-01', 'YYYY-MM-DD')),
-    PARTITION i_13 VALUES LESS THAN (TO_DATE('2013-01-01', 'YYYY-MM-DD')),
-    PARTITION i_14 VALUES LESS THAN (TO_DATE('2014-01-01', 'YYYY-MM-DD')),
-    PARTITION i_15 VALUES LESS THAN (TO_DATE('2015-01-01', 'YYYY-MM-DD')),
-    PARTITION i_16 VALUES LESS THAN (TO_DATE('2016-01-01', 'YYYY-MM-DD')),
-    PARTITION i_17 VALUES LESS THAN (TO_DATE('2017-01-01', 'YYYY-MM-DD')),
-    PARTITION i_18 VALUES LESS THAN (TO_DATE('2018-01-01', 'YYYY-MM-DD')),
-    PARTITION i_19 VALUES LESS THAN (TO_DATE('2019-01-01', 'YYYY-MM-DD')),
-    PARTITION i_20 VALUES LESS THAN (TO_DATE('2020-01-01', 'YYYY-MM-DD')),
-    PARTITION i_21 VALUES LESS THAN (TO_DATE('2021-01-01', 'YYYY-MM-DD')),
-    PARTITION i_22 VALUES LESS THAN (TO_DATE('2022-01-01', 'YYYY-MM-DD')),
-    PARTITION i_23 VALUES LESS THAN (TO_DATE('2023-01-01', 'YYYY-MM-DD')),
-    PARTITION i_24 VALUES LESS THAN (TO_DATE('2024-01-01', 'YYYY-MM-DD')),
-    PARTITION i_25 VALUES LESS THAN (TO_DATE('2025-01-01', 'YYYY-MM-DD'))
-);
-
-
-CREATE INDEX idx_calc_indicators_assets ON calculated_indicators (assets_id, timeframe_id, indicator_id, param_id, date_recorded);
 CREATE INDEX idx_market_data_assets_date ON market_data (assets_id, date_recorded);
 CREATE INDEX idx_market_data_timeframe_date ON market_data (timeframe_id, date_recorded);
 CREATE INDEX idx_market_data_assets_timeframe_date ON market_data (assets_id, timeframe_id, date_recorded);
@@ -274,7 +212,6 @@ INCLUDING NEW VALUES;
 
 -- Compresión de columnas en tablas históricas
 ALTER TABLE market_data COMPRESS FOR OLTP;
-ALTER TABLE calculated_indicators COMPRESS FOR OLTP;
 
 -- Auditoría de cambios
 CREATE OR REPLACE TRIGGER trg_market_data_update
