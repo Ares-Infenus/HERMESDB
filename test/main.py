@@ -122,6 +122,14 @@ def create_market_data():
     output_folder = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\processed_chunks'
     processor = CSVProcessor(input_folder, output_file, output_folder, assets_df)
     processor.process_files()
+
+# =============================================================================
+# 7. Operative Cost Table Creation.
+# =============================================================================
+def create_operative_cost():
+    
+    pass
+
 # =============================================================================
 # Main Execution
 # =============================================================================
