@@ -1,5 +1,5 @@
 ACTIVE,NAME,SPREAD,MARGIN,MIN_SIZE,CONTRACT_SIZE,TICK_VALUE,SWAP_LONG,SWAP_SHORT,SWAP_ROLLOVER,COMMISSION_PER_ORDER,SECTOR
 XAGUSD,Silver/USD (Spot),0.02 points,4.00%,0.01,5000 XAG,5 USD,-22.50 USD,14.50 USD,3 day/s,0.0025% order value,commodities
-XAUUSD,Gold/USD (Spot),0.79 points,2.00%,0.01,100 XAU,1 USD,-41.00 USD,23.60 USD,3 day/s,0.0025% order value,commodities
-XNGUSD**,US Natural Gas/USD (Spot),0.044 points,8.00%,0.10,10000 XNG,10 USD,64.00 USD,-81.00 USD,3 day/s,0.0025% order value,commodities
-XTIUSD**,US Crude/USD (Spot),0.12 points,8.00%,0.01,1000 XTI,10 USD,8.00 USD,-14.70 USD,3 day/s,0.0025% order value,commodities
+XAUUSD,Gold/USD (Spot),0.17 points,2.00%,0.01,100 XAU,1 USD,-41.00 USD,23.60 USD,3 day/s,0.0025% order value,commodities
+XNGUSD**,US Natural Gas/USD (Spot),0.010 points,8.00%,0.10,10000 XNG,10 USD,64.00 USD,-81.00 USD,3 day/s,0.0025% order value,commodities
+XTIUSD**,US Crude/USD (Spot),0.04 points,8.00%,0.01,1000 XTI,10 USD,8.00 USD,-14.70 USD,3 day/s,0.0025% order value,commodities
