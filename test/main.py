@@ -25,6 +25,9 @@ from modules.Creation_tables.Data_source import DATA_SOURCE
 from modules.Extraction_info.Extracion_data_Assets import MetaTraderDataExtractor
 from modules.Creation_tables.Market_Data import CSVProcessor
 
+#Cost_operative
+from modules.Extraction_info.extraction_operative_cost import FinancialOperationalCostExtractor
+
 # =============================================================================
 # Global Configuration
 # =============================================================================
@@ -107,14 +110,14 @@ def create_data_source_table():
 # =============================================================================
 def create_market_data():
     #step 1: extract info 
-    #extractor = MetaTraderDataExtractor(
-    #    login=3000074280,
-    #    password='#%@Q$20vk5o',
-    #    server='demoUK-mt5.darwinex.com',
-    #    assets_csv_path='C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\ASSETS.csv',
-    #    output_folder='C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\data_market'
-    #)
-    #extractor.download_all_data(max_workers=5)
+    extractor = MetaTraderDataExtractor(
+        login=3000074280,
+        password='#%@Q$20vk5o',
+        server='demoUK-mt5.darwinex.com',
+        assets_csv_path='C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\ASSETS.csv',
+        output_folder='C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\data_market'
+    )
+    extractor.download_all_data(max_workers=5)
     #step_2: Acopland la tabla Market_data
     assets_df = pd.read_csv("C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\ASSETS.csv")
     input_folder = 'C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\data_market'
@@ -127,8 +130,28 @@ def create_market_data():
 # 7. Operative Cost Table Creation.
 # =============================================================================
 def create_operative_cost():
+    """Creates and exports the operative cost table from Darwinex."""
+    import os
     
-    pass
+    # Define paths
+    output_dir = os.path.join(BASE_DIR, "data_table", "data_cost_operative")
+    driver_path = os.path.join("test", "modules", "Extraction_info", "chrome_driver", "chromedriver.exe")
+    
+    # Create output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Define output file path
+    output_file = os.path.join(output_dir, "operative_costs.csv")
+    
+    # Extract data
+    try:
+        extractor = FinancialOperationalCostExtractor(driver_path)
+        extractor.extract_all_data(output_file)
+        print(f"Operative costs exported to: {output_file}")
+    except Exception as e:
+        print(f"Error extracting operative costs: {str(e)}")
+    
+    
 
 # =============================================================================
 # Main Execution
@@ -146,15 +169,11 @@ def main():
     create_assets_table()
     create_timeframe_table()
     create_data_source_table()
-    create_market_data()
+    #create_market_data()
+    create_operative_cost()
     print("\nAll tables have been created successfully!")
 
 if __name__ == "__main__":
     main()
 
 
-#Creacion de la tabla Market_data
-#extractor = MetaTraderDataExtractor(login=3000074280, password='#%@Q$20vk5o', server='demoUK-mt5.darwinex.com', assets_csv_path='C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\ASSETS.csv', output_folder='C:\\Users\\spinz\\Documents\\Portafolio Oficial\\HERMESDB\\data\\tables_data\\data_table\\data_market')
-#extractor.download_all_data()
-
-#Unificacion de los dato y creaciond definitiva del la tabla Market

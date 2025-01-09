@@ -1,0 +1,731 @@
+ACTIVE,NAME,PLATAFORM,MARGIN,MIN_SIZE,CONTRACT_SIZE,TICK_VALUE,SWAP_LONG,SWAP_SHORT,ELIMINATED,COMISSION_PER_ORDER,AVAILABLE_TO_SELL_SHORT,SECTOR
+AAL,American Airlines Group Inc,MT4/MT5,20.00%,1.00,1 AAL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AAPL,Apple Inc,MT4/MT5,20.00%,1.00,1 AAPL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ACHC,Acadia Healthcare Co Inc,MT5,20.00%,1.00,1 ACHC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ADBE,Adobe Systems Incorporated,MT4/MT5,20.00%,1.00,1 ADBE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ADI,"Analog Devices, Inc.",MT4/MT5,20.00%,1.00,1 ADI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ADP,Automatic Data Processing,MT4/MT5,20.00%,1.00,1 ADP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ADSK,"Autodesk, Inc.",MT4/MT5,20.00%,1.00,1 ADSK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AEP,American Electric Power Company Inc,MT4/MT5,20.00%,1.00,1 AEP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AKAM,Akamai Technologies Inc,MT5,20.00%,1.00,1 AKAM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ALGN,"Align Technology, Inc.",MT5,20.00%,1.00,1 ALGN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ALNY,Alnylam Pharmaceuticals Inc,MT5,20.00%,1.00,1 ALNY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMAT,"Applied Materials, Inc.",MT4/MT5,20.00%,1.00,1 AMAT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMD,Advanced Micro Devices Inc,MT4/MT5,20.00%,1.00,1 AMD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMED,Amedisys Inc,MT5,20.00%,1.00,1 AMED,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMGN,"Amgen, Inc.",MT4/MT5,20.00%,1.00,1 AMGN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMKR,Amkor Technology Inc,MT5,20.00%,1.00,1 AMKR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMZN,"Amazon.com, Inc.",MT4/MT5,20.00%,1.00,1 AMZN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ANSS,ANSYS Inc,MT5,20.00%,1.00,1 ANSS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+APA,APA Corp,MT5,20.00%,1.00,1 APA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+APLS,Apellis Pharmaceuticals Inc,MT5,20.00%,1.00,1 APLS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ARCC,Ares Capital Corp,MT5,20.00%,1.00,1 ARCC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ARWR,Arrowhead Pharmaceuticals Inc,MT5,20.00%,1.00,1 ARWR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AVGO,Broadcom Inc,MT4/MT5,20.00%,1.00,1 AVGO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AXON,Axon Enterprise Inc,MT5,20.00%,1.00,1 AXON,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AZPN,Aspen Technology Inc,MT5,20.00%,1.00,1 AZPN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AZTA,Azenta Inc,MT5,20.00%,1.00,1 AZTA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BIIB,Biogen Inc,MT4/MT5,20.00%,1.00,1 BIIB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BKNG,Booking Holdings Inc,MT4/MT5,20.00%,1.00,1 BKNG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BKR,Baker Hughes Co,MT5,20.00%,1.00,1 BKR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BL,Blackline Inc,MT5,20.00%,1.00,1 BL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BMRN,BioMarin Pharmaceutical Inc,MT5,20.00%,1.00,1 BMRN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BPMC,Blueprint Medicines Corp,MT5,20.00%,1.00,1 BPMC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BRKR,Bruker Corp,MT5,20.00%,1.00,1 BRKR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CACC,Credit Acceptance Corp,MT5,20.00%,1.00,1 CACC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CAR,Avis Budget Group Inc,MT5,20.00%,1.00,1 CAR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CASY,Casey's General Stores Inc,MT5,20.00%,1.00,1 CASY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CDNS,Cadence Design Systems Inc,MT5,20.00%,1.00,1 CDNS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CDW,CDW Corp/DE,MT5,20.00%,1.00,1 CDW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CG,Carlyle Group Inc/The,MT5,20.00%,1.00,1 CG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CGNX,Cognex Corp,MT5,20.00%,1.00,1 CGNX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CHDN,Churchill Downs Inc,MT5,20.00%,1.00,1 CHDN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CHRW,CH Robinson Worldwide Inc,MT5,20.00%,1.00,1 CHRW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CHTR,Charter Communications Inc,MT4/MT5,20.00%,1.00,1 CHTR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CHX,ChampionX Corp,MT5,20.00%,1.00,1 CHX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CINF,Cincinnati Financial Corp,MT5,20.00%,1.00,1 CINF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CMCSA,Comcast Corporation,MT4/MT5,20.00%,1.00,1 CMCSA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CME,CME Group Inc,MT4/MT5,20.00%,1.00,1 CME,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COIN,Coinbase Global Inc,MT4/MT5,20.00%,1.00,1 COIN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COLM,Columbia Sportswear Co,MT5,20.00%,1.00,1 COLM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COO,Cooper Cos Inc/The,MT5,20.00%,1.00,1 COO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COST,Costco Wholesale Corporation,MT4/MT5,20.00%,1.00,1 COST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CPRT,Copart Inc,MT5,20.00%,1.00,1 CPRT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CROX,Crocs Inc,MT5,20.00%,1.00,1 CROX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CRWD,Crowdstrike Holdings Inc,MT5,20.00%,1.00,1 CRWD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CSCO,Cisco Systems Inc,MT4/MT5,20.00%,1.00,1 CSCO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CSGP,CoStar Group Inc,MT5,20.00%,1.00,1 CSGP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CSX,CSX Corporation,MT4/MT5,20.00%,1.00,1 CSX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CTAS,Cintas Corp,MT5,20.00%,1.00,1 CTAS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CTSH,Cognizant Technology Solutions Corp,MT4/MT5,20.00%,1.00,1 CTSH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DBX,Dropbox Inc,MT5,20.00%,1.00,1 DBX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DDOG,Datadog Inc,MT5,20.00%,1.00,1 DDOG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DLTR,"Dollar Tree, Inc.",MT4/MT5,20.00%,1.00,1 DLTR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DNLI,Denali Therapeutics Inc,MT5,20.00%,1.00,1 DNLI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DOCU,DocuSign Inc,MT5,20.00%,1.00,1 DOCU,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DOX,Amdocs Ltd,MT5,20.00%,1.00,1 DOX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DPZ,Domino's Pizza Inc,MT5,20.00%,1.00,1 DPZ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DXCM,Dexcom Inc,MT5,20.00%,1.00,1 DXCM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EA,Electronic Arts Inc.,MT4/MT5,20.00%,1.00,1 EA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EBAY,eBay Inc,MT4/MT5,20.00%,1.00,1 EBAY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EEFT,Euronet Worldwide Inc,MT5,20.00%,1.00,1 EEFT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ENPH,Enphase Energy Inc,MT5,20.00%,1.00,1 ENPH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ENTG,Entegris Inc,MT5,20.00%,1.00,1 ENTG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ETSY,Etsy Inc,MT5,20.00%,1.00,1 ETSY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EVRG,Evergy Inc,MT5,20.00%,1.00,1 EVRG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EWBC,East West Bancorp Inc,MT5,100.00%,1.00,1 EWBC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EXC,Exelon Corporation,MT4/MT5,20.00%,1.00,1 EXC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EXEL,Exelixis Inc,MT5,20.00%,1.00,1 EXEL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EXPE,Expedia Group Inc,MT4/MT5,20.00%,1.00,1 EXPE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EXPI,eXp World Holdings Inc,MT5,20.00%,1.00,1 EXPI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FANG,Diamondback Energy Inc,MT5,20.00%,1.00,1 FANG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FAST,Fastenal Company,MT4/MT5,20.00%,1.00,1 FAST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FFIV,F5 Inc,MT5,20.00%,1.00,1 FFIV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FITB,Fifth Third Bancorp,MT4/MT5,50.00%,1.00,1 FITB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FIVE,Five Below Inc,MT5,20.00%,1.00,1 FIVE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FIVN,Five9 Inc,MT5,20.00%,1.00,1 FIVN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FLEX,Flex Ltd,MT5,20.00%,1.00,1 FLEX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FOX,Twenty-First Century Fox Inc Class B,MT4/MT5,20.00%,1.00,1 FOX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FOXA,Twenty-First Century Fox Inc Class A,MT4/MT5,20.00%,1.00,1 FOXA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FOXF,Fox Factory Holding Corp,MT5,20.00%,1.00,1 FOXF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FRPT,Freshpet Inc,MT5,20.00%,1.00,1 FRPT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FSLR,First Solar Inc,MT5,20.00%,1.00,1 FSLR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FTNT,Fortinet Inc,MT5,20.00%,1.00,1 FTNT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GEN,Gen Digital Inc,MT5,20.00%,1.00,1 GEN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GH,Guardant Health Inc,MT5,20.00%,1.00,1 GH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GILD,"Gilead Sciences, Inc.",MT4/MT5,20.00%,1.00,1 GILD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GNTX,Gentex Corp,MT5,20.00%,1.00,1 GNTX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GOOG,Alphabet Inc Class C,MT4/MT5,20.00%,1.00,1 GOOG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GOOGL,Alphabet Inc Class A,MT4/MT5,20.00%,1.00,1 GOOGL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GT,Goodyear Tire & Rubber Co/The,MT5,20.00%,1.00,1 GT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HALO,Halozyme Therapeutics Inc,MT5,20.00%,1.00,1 HALO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HAS,Hasbro Inc,MT5,20.00%,1.00,1 HAS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HBAN,Huntington Bancshares Inc/OH,MT5,20.00%,1.00,1 HBAN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HELE,Helen of Troy Ltd,MT5,20.00%,1.00,1 HELE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HOLX,Hologic Inc,MT5,20.00%,1.00,1 HOLX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HQY,HealthEquity Inc,MT5,20.00%,1.00,1 HQY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HSIC,Henry Schein Inc,MT5,20.00%,1.00,1 HSIC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IBKR,Interactive Brokers Group Inc,MT5,20.00%,1.00,1 IBKR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IDXX,IDEXX Laboratories Inc,MT5,20.00%,1.00,1 IDXX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ILMN,"Illumina, Inc.",MT4/MT5,20.00%,1.00,1 ILMN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+INCY,Incyte Corp,MT5,20.00%,1.00,1 INCY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+INTC,Intel Corp,MT4/MT5,20.00%,1.00,1 INTC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+INTU,Intuit Inc.,MT4/MT5,20.00%,1.00,1 INTU,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IONS,Ionis Pharmaceuticals Inc,MT5,20.00%,1.00,1 IONS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IPGP,IPG Photonics Corp,MT5,20.00%,1.00,1 IPGP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IRDM,Iridium Communications Inc,MT5,20.00%,1.00,1 IRDM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ISRG,"Intuitive Surgical, Inc.",MT4/MT5,20.00%,1.00,1 ISRG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JBHT,JB Hunt Transport Services Inc,MT5,20.00%,1.00,1 JBHT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JBLU,JetBlue Airways Corp,MT5,20.00%,1.00,1 JBLU,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JKHY,Jack Henry & Associates Inc,MT5,20.00%,1.00,1 JKHY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KDP,Keurig Dr Pepper Inc,MT4/MT5,20.00%,1.00,1 KDP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KHC,Kraft Heinz Co,MT4/MT5,20.00%,1.00,1 KHC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KLAC,KLA-Tencor Corp,MT4/MT5,20.00%,1.00,1 KLAC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LAZR,Luminar Technologies Inc,MT5,20.00%,1.00,1 LAZR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LITE,Lumentum Holdings Inc,MT5,20.00%,1.00,1 LITE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LKQ,LKQ Corp,MT5,20.00%,1.00,1 LKQ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LNT,Alliant Energy Corp,MT5,20.00%,1.00,1 LNT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LNW,Light & Wonder Inc,MT4/MT5,20.00%,1.00,1 LNW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LPLA,LPL Financial Holdings Inc,MT5,20.00%,1.00,1 LPLA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LRCX,Lam Research Corporation,MT4/MT5,20.00%,1.00,1 LRCX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LSCC,Lattice Semiconductor Corp,MT5,20.00%,1.00,1 LSCC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LSTR,Landstar System Inc,MT5,20.00%,1.00,1 LSTR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LYFT,Lyft Inc,MT5,20.00%,1.00,1 LYFT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MANH,Manhattan Associates Inc,MT5,20.00%,1.00,1 MANH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MAR,Marriott International Inc,MT4/MT5,20.00%,1.00,1 MAR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MASI,Masimo Corp,MT5,20.00%,1.00,1 MASI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MAT,Mattel Inc,MT5,20.00%,1.00,1 MAT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MCHP,Microchip Technology Inc.,MT4/MT5,20.00%,1.00,1 MCHP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MDB,MongoDB Inc,MT5,20.00%,1.00,1 MDB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MDLZ,MONDELEZ INTERNATIONAL INC Common Stock,MT4/MT5,20.00%,1.00,1 MDLZ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MEDP,Medpace Holdings Inc,MT5,20.00%,1.00,1 MEDP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+META,"Meta Platforms, Inc. Common Stock",MT4/MT5,20.00%,1.00,1 META,0.01 USD,-0.02%,0.01%,1 day/s,---,Yes,stocks
+MIDD,Middleby Corp/The,MT5,20.00%,1.00,1 MIDD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MKSI,MKS Instruments Inc,MT5,20.00%,1.00,1 MKSI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MKTX,MarketAxess Holdings Inc,MT5,20.00%,1.00,1 MKTX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MNST,Monster Beverage Corp,MT5,20.00%,1.00,1 MNST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MPWR,Monolithic Power Systems Inc,MT5,20.00%,1.00,1 MPWR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MRNA,Moderna Inc,MT5,20.00%,1.00,1 MRNA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MRVL,Marvell Technology Inc,MT5,20.00%,1.00,1 MRVL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MSFT,Microsoft Corp,MT4/MT5,20.00%,1.00,1 MSFT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MSTR,MicroStrategy Inc,MT5,20.00%,1.00,1 MSTR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MU,"Micron Technology, Inc.",MT4/MT5,20.00%,1.00,1 MU,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NBIX,Neurocrine Biosciences Inc,MT5,20.00%,1.00,1 NBIX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NDAQ,Nasdaq Inc,MT5,20.00%,1.00,1 NDAQ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NDSN,Nordson Corp,MT5,20.00%,1.00,1 NDSN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NFLX,"Netflix, Inc.",MT4/MT5,20.00%,1.00,1 NFLX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NTAP,NetApp Inc.,MT4/MT5,20.00%,1.00,1 NTAP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NTLA,Intellia Therapeutics Inc,MT5,20.00%,1.00,1 NTLA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NTNX,Nutanix Inc,MT5,20.00%,1.00,1 NTNX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NTRS,Northern Trust Corp,MT5,20.00%,1.00,1 NTRS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NVDA,NVIDIA Corporation,MT4/MT5,20.00%,1.00,1 NVDA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NWL,Newell Brands Inc,MT5,20.00%,1.00,1 NWL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NWSA,News Corp,MT5,20.00%,1.00,1 NWSA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NXST,Nexstar Media Group Inc,MT5,20.00%,1.00,1 NXST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ODFL,Old Dominion Freight Line Inc,MT5,20.00%,1.00,1 ODFL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OKTA,Okta Inc,MT5,20.00%,1.00,1 OKTA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OLED,Universal Display Corp,MT5,20.00%,1.00,1 OLED,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OLLI,Ollie's Bargain Outlet Holding,MT5,20.00%,1.00,1 OLLI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OMCL,Omnicell Inc,MT5,20.00%,1.00,1 OMCL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ON,ON Semiconductor Corp,MT5,20.00%,1.00,1 ON,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ORLY,O'Reilly Automotive Inc,MT4/MT5,20.00%,1.00,1 ORLY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OZK,Bank OZK,MT5,20.00%,1.00,1 OZK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PANW,Palo Alto Networks Inc,MT4/MT5,20.00%,1.00,1 PANW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PARA,Paramount Global,MT5,20.00%,1.00,1 PARA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PAYX,Paychex Inc,MT5,20.00%,1.00,1 PAYX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PCAR,PACCAR Inc,MT5,20.00%,1.00,1 PCAR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PCTY,Paylocity Holding Corp,MT5,20.00%,1.00,1 PCTY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PEGA,Pegasystems Inc,MT5,20.00%,1.00,1 PEGA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PENN,Penn Entertainment Inc,MT5,20.00%,1.00,1 PENN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PEP,"PepsiCo, Inc.",MT4/MT5,20.00%,1.00,1 PEP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PFG,Principal Financial Group Inc,MT5,20.00%,1.00,1 PFG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PGNY,Progyny Inc,MT5,20.00%,1.00,1 PGNY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PNFP,Pinnacle Financial Partners In,MT5,50.00%,1.00,1 PNFP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PODD,Insulet Corp,MT5,20.00%,1.00,1 PODD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+POOL,Pool Corp,MT5,20.00%,1.00,1 POOL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PTC,PTC Inc,MT5,20.00%,1.00,1 PTC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PTON,Peloton Interactive Inc,MT5,20.00%,1.00,1 PTON,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PYPL,Paypal Holdings Inc,MT4/MT5,20.00%,1.00,1 PYPL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+QCOM,"QUALCOMM, Inc.",MT4/MT5,20.00%,1.00,1 QCOM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+QRVO,Qorvo Inc,MT5,20.00%,1.00,1 QRVO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RARE,Ultragenyx Pharmaceutical Inc,MT5,20.00%,1.00,1 RARE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+REGN,Regeneron Pharmaceuticals Inc,MT4/MT5,20.00%,1.00,1 REGN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RGEN,Repligen Corp,MT5,20.00%,1.00,1 RGEN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RGLD,Royal Gold Inc,MT5,20.00%,1.00,1 RGLD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ROKU,Roku Inc,MT5,20.00%,1.00,1 ROKU,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ROP,Roper Technologies Inc,MT5,20.00%,1.00,1 ROP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ROST,"Ross Stores, Inc.",MT4/MT5,20.00%,1.00,1 ROST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RRR,Red Rock Resorts Inc,MT5,20.00%,1.00,1 RRR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RUN,Sunrun Inc,MT5,20.00%,1.00,1 RUN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SAIA,Saia Inc,MT5,20.00%,1.00,1 SAIA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SAIC,Science Applications Internati,MT5,20.00%,1.00,1 SAIC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SBUX,Starbucks Corporation,MT4/MT5,20.00%,1.00,1 SBUX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SLAB,Silicon Laboratories Inc,MT5,20.00%,1.00,1 SLAB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SLM,SLM Corp,MT5,20.00%,1.00,1 SLM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SNPS,Synopsys Inc,MT5,20.00%,1.00,1 SNPS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SRPT,Sarepta Therapeutics Inc,MT5,20.00%,1.00,1 SRPT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SSNC,SS&C Technologies Holdings Inc,MT5,20.00%,1.00,1 SSNC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+STLD,Steel Dynamics Inc,MT5,20.00%,1.00,1 STLD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SWKS,Skyworks Solutions Inc,MT4/MT5,20.00%,1.00,1 SWKS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SYNA,Synaptics Inc,MT5,20.00%,1.00,1 SYNA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TECH,Bio-Techne Corp,MT5,20.00%,1.00,1 TECH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TER,Teradyne Inc,MT5,20.00%,1.00,1 TER,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TMUS,T-Mobile Us Inc,MT4/MT5,20.00%,1.00,1 TMUS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TNDM,Tandem Diabetes Care Inc,MT5,20.00%,1.00,1 TNDM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TRIP,TripAdvisor Inc,MT5,20.00%,1.00,1 TRIP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TRMB,Trimble Inc,MT5,20.00%,1.00,1 TRMB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TROW,T Rowe Price Group Inc,MT5,20.00%,1.00,1 TROW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TSCO,Tractor Supply Co,MT5,20.00%,1.00,1 TSCO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TSLA,Tesla Inc,MT4/MT5,20.00%,1.00,1 TSLA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TTD,Trade Desk Inc/The,MT5,20.00%,1.00,1 TTD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TTEK,Tetra Tech Inc,MT5,20.00%,1.00,1 TTEK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TTWO,"TAKE-TWO INTERACTIVE SOFTWARE, INC Common Stock",MT4/MT5,20.00%,1.00,1 TTWO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TXG,10X Genomics Inc,MT5,20.00%,1.00,1 TXG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TXN,Texas Instruments Incorporated,MT4/MT5,20.00%,1.00,1 TXN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TXRH,Texas Roadhouse Inc,MT5,20.00%,1.00,1 TXRH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UAL,United Continental Holdings Inc,MT4/MT5,20.00%,1.00,1 UAL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ULTA,Ulta Beauty Inc,MT4/MT5,20.00%,1.00,1 ULTA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UTHR,United Therapeutics Corp,MT5,20.00%,1.00,1 UTHR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VIR,Vir Biotechnology Inc,MT5,20.00%,1.00,1 VIR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VIRT,Virtu Financial Inc,MT5,20.00%,1.00,1 VIRT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VRNS,Varonis Systems Inc,MT5,20.00%,1.00,1 VRNS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VRSK,Verisk Analytics Inc,MT5,20.00%,1.00,1 VRSK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VRSN,VeriSign Inc,MT5,20.00%,1.00,1 VRSN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VRTX,Vertex Pharmaceuticals Incorporated,MT4/MT5,20.00%,1.00,1 VRTX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VTRS,Viatris Inc,MT5,20.00%,1.00,1 VTRS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WBA,Walgreens Boots Alliance Inc,MT4/MT5,20.00%,1.00,1 WBA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WDAY,Workday Inc,MT4/MT5,20.00%,1.00,1 WDAY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WDC,Western Digital Corp,MT4/MT5,20.00%,1.00,1 WDC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WWD,Woodward Inc,MT5,20.00%,1.00,1 WWD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WYNN,Wynn Resorts Ltd,MT5,20.00%,1.00,1 WYNN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+XEL,Xcel Energy Inc,MT5,20.00%,1.00,1 XEL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+XRAY,DENTSPLY SIRONA Inc,MT5,20.00%,1.00,1 XRAY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZBRA,Zebra Technologies Corp,MT5,20.00%,1.00,1 ZBRA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZD,Ziff Davis Inc,MT5,20.00%,1.00,1 ZD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZG,Zillow Group Inc,MT5,20.00%,1.00,1 ZG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZI,ZoomInfo Technologies Inc,MT5,20.00%,1.00,1 ZI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZION,Zions Bancorp NA,MT5,100.00%,1.00,1 ZION,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZM,Zoom Communications Inc,MT5,20.00%,1.00,1 ZM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZS,Zscaler Inc,MT5,20.00%,1.00,1 ZS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+A,Agilent Technologies Inc,MT5,20.00%,1.00,1 A,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AA,Alcoa Corp,MT5,20.00%,1.00,1 AA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AAP,Advance Auto Parts Inc,MT5,20.00%,1.00,1 AAP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ABBV,AbbVie Inc,MT4/MT5,20.00%,1.00,1 ABBV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ABT,Abbott Laboratories,MT4/MT5,20.00%,1.00,1 ABT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ACM,AECOM,MT5,20.00%,1.00,1 ACM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ACN,Accenture Plc,MT4/MT5,20.00%,1.00,1 ACN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ADM,Archer Daniels Midland Co,MT4/MT5,20.00%,1.00,1 ADM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AES,AES Corp/The,MT5,20.00%,1.00,1 AES,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AFG,American Financial Group Inc/O,MT5,20.00%,1.00,1 AFG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AFL,Aflac Inc,MT5,20.00%,1.00,1 AFL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AGCO,AGCO Corp,MT5,20.00%,1.00,1 AGCO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AIG,American International Group Inc,MT4/MT5,20.00%,1.00,1 AIG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AIZ,Assurant Inc,MT5,20.00%,1.00,1 AIZ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AJG,Arthur J Gallagher & Co,MT5,20.00%,1.00,1 AJG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AL,Air Lease Corp,MT5,20.00%,1.00,1 AL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ALB,Albemarle Corp,MT5,20.00%,1.00,1 ALB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ALK,Alaska Air Group Inc,MT5,20.00%,1.00,1 ALK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ALL,Allstate Corp,MT4/MT5,20.00%,1.00,1 ALL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ALLY,Ally Financial Inc,MT5,20.00%,1.00,1 ALLY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AME,AMETEK Inc,MT5,20.00%,1.00,1 AME,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMG,Affiliated Managers Group Inc,MT5,20.00%,1.00,1 AMG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMP,Ameriprise Financial Inc,MT5,20.00%,1.00,1 AMP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AMT,American Tower Corp,MT4/MT5,20.00%,1.00,1 AMT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AN,AutoNation Inc,MT5,20.00%,1.00,1 AN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ANET,Arista Networks Inc,MT5,20.00%,1.00,1 ANET,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AON,Aon PLC,MT5,20.00%,1.00,1 AON,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AOS,A O Smith Corp,MT5,20.00%,1.00,1 AOS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+APD,"Air Products & Chemicals, Inc.",MT4/MT5,20.00%,1.00,1 APD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+APH,Amphenol Corp,MT5,20.00%,1.00,1 APH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ARES,Ares Management Corp,MT5,20.00%,1.00,1 ARES,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ARMK,Aramark,MT5,20.00%,1.00,1 ARMK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ARW,Arrow Electronics Inc,MT5,20.00%,1.00,1 ARW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ASH,Ashland Inc,MT5,20.00%,1.00,1 ASH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AVTR,Avantor Inc,MT5,20.00%,1.00,1 AVTR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AVY,Avery Dennison Corp,MT5,20.00%,1.00,1 AVY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AWI,Armstrong World Industries Inc,MT5,20.00%,1.00,1 AWI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AWK,American Water Works Co Inc,MT5,20.00%,1.00,1 AWK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AXP,American Express Co,MT4/MT5,20.00%,1.00,1 AXP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AXTA,Axalta Coating Systems Ltd,MT5,20.00%,1.00,1 AXTA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AYI,Acuity Brands Inc,MT5,20.00%,1.00,1 AYI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+AZO,"AutoZone, Inc.",MT5,20.00%,1.00,1 AZO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BA,Boeing Co,MT4/MT5,20.00%,1.00,1 BA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BAC,Bank of America Corp,MT4/MT5,20.00%,1.00,1 BAC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BAH,Booz Allen Hamilton Holding Co,MT5,20.00%,1.00,1 BAH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BALL,Ball Corp,MT4/MT5,20.00%,1.00,1 BALL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BAX,Baxter International Inc,MT4/MT5,20.00%,1.00,1 BAX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BBY,Best Buy Co Inc,MT4/MT5,20.00%,1.00,1 BBY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BC,Brunswick Corp/DE,MT5,20.00%,1.00,1 BC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BDX,Becton Dickinson and Co,MT4/MT5,20.00%,1.00,1 BDX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BEN,Franklin Resources Inc,MT5,20.00%,1.00,1 BEN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BERY,Berry Global Group Inc,MT5,20.00%,1.00,1 BERY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BFAM,Bright Horizons Family Solutio,MT5,20.00%,1.00,1 BFAM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BILL,Bill Holdings Inc,MT5,20.00%,1.00,1 BILL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BIO,Bio-Rad Laboratories Inc,MT5,20.00%,1.00,1 BIO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BJ,BJ's Wholesale Club Holdings I,MT5,20.00%,1.00,1 BJ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BK,Bank of New York Mellon Corp,MT4/MT5,20.00%,1.00,1 BK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BLD,TopBuild Corp,MT5,20.00%,1.00,1 BLD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BLDR,Builders FirstSource Inc,MT5,20.00%,1.00,1 BLDR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BMY,Bristol-Myers Squibb Co,MT4/MT5,20.00%,1.00,1 BMY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BR,Broadridge Financial Solutions,MT5,20.00%,1.00,1 BR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BRKb,Berkshire Hathaway Inc,MT4/MT5,20.00%,1.00,1 BRKb,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BRO,Brown & Brown Inc,MT5,20.00%,1.00,1 BRO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BSX,Boston Scientific Corporation,MT4/MT5,20.00%,1.00,1 BSX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BURL,Burlington Stores Inc,MT5,20.00%,1.00,1 BURL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BWA,BorgWarner Inc,MT5,20.00%,1.00,1 BWA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BX,Blackstone Group Inc/The,MT5,20.00%,1.00,1 BX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+BYD,Boyd Gaming Corp,MT5,20.00%,1.00,1 BYD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+C,Citigroup Inc,MT4/MT5,20.00%,1.00,1 C,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CABO,Cable One Inc,MT5,20.00%,1.00,1 CABO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CACI,CACI International Inc,MT5,20.00%,1.00,1 CACI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CAG,Conagra Brands Inc,MT5,20.00%,1.00,1 CAG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CAH,Cardinal Health Inc,MT4/MT5,20.00%,1.00,1 CAH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CARR,Carrier Global Corp,MT5,20.00%,1.00,1 CARR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CAT,Caterpillar Inc,MT4/MT5,20.00%,1.00,1 CAT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CB,Chubb Ltd,MT4/MT5,20.00%,1.00,1 CB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CBRE,CBRE Group Inc,MT5,20.00%,1.00,1 CBRE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CC,Chemours Co/The,MT5,20.00%,1.00,1 CC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CCI,Crown Castle Inc,MT4/MT5,20.00%,1.00,1 CCI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CCK,Crown Holdings Inc,MT5,20.00%,1.00,1 CCK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CCL,Carnival Corp,MT4/MT5,20.00%,1.00,1 CCL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CE,Celanese Corp,MT5,20.00%,1.00,1 CE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CF,CF Industries Holdings Inc,MT5,20.00%,1.00,1 CF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CFG,Citizens Financial Group Inc,MT5,100.00%,1.00,1 CFG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CFR,Cullen/Frost Bankers Inc,MT5,20.00%,1.00,1 CFR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CHD,Church & Dwight Co Inc,MT5,20.00%,1.00,1 CHD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CHE,Chemed Corp,MT5,20.00%,1.00,1 CHE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CHGG,Chegg Inc,MT5,20.00%,1.00,1 CHGG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CHWY,Chewy Inc,MT5,20.00%,1.00,1 CHWY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CI,The Cigna Group,MT4/MT5,20.00%,1.00,1 CI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CIEN,Ciena Corp,MT5,20.00%,1.00,1 CIEN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CL,Colgate-Palmolive Company,MT4/MT5,20.00%,1.00,1 CL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CLF,Cleveland-Cliffs Inc,MT5,20.00%,1.00,1 CLF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CLX,Clorox Co,MT4/MT5,20.00%,1.00,1 CLX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CMA,Comerica Incorporated,MT4/MT5,100.00%,1.00,1 CMA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CMG,Chipotle Mexican Grill Inc,MT5,20.00%,1.00,1 CMG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CMI,Cummins Inc.,MT4/MT5,20.00%,1.00,1 CMI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CMS,CMS Energy Corp,MT5,20.00%,1.00,1 CMS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CNC,Centene Corp,MT4/MT5,20.00%,1.00,1 CNC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CNP,CenterPoint Energy Inc,MT5,20.00%,1.00,1 CNP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COF,Capital One Financial Corp.,MT4/MT5,20.00%,1.00,1 COF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COHR,Coherent Corp,MT5,20.00%,1.00,1 COHR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COP,ConocoPhillips,MT4/MT5,20.00%,1.00,1 COP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COR,AmerisourceBergen Corp,MT5,20.00%,1.00,1 COR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+COTY,Coty Inc,MT5,20.00%,1.00,1 COTY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CPAY,Corpay Inc,MT5,20.00%,1.00,1 CPAY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CRL,Charles River Laboratories Int,MT5,20.00%,1.00,1 CRL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CRM,Salesforce Inc,MT4/MT5,20.00%,1.00,1 CRM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CSL,Carlisle Cos Inc,MT5,20.00%,1.00,1 CSL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CTVA,Corteva Inc,MT5,20.00%,1.00,1 CTVA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CVNA,Carvana Co,MT5,20.00%,1.00,1 CVNA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CVS,CVS Health Corp,MT4/MT5,20.00%,1.00,1 CVS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+CVX,Chevron Corp,MT4/MT5,20.00%,1.00,1 CVX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+D,Dominion Energy Inc,MT4/MT5,20.00%,1.00,1 D,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DAL,"Delta Air Lines, Inc.",MT4/MT5,20.00%,1.00,1 DAL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DAR,Darling Ingredients Inc,MT5,20.00%,1.00,1 DAR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DAY,Dayforce Inc,MT5,20.00%,1.00,1 DAY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DD,DuPont de Nemours Inc.,MT4/MT5,20.00%,1.00,1 DD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DE,Deere & Company,MT4/MT5,20.00%,1.00,1 DE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DECK,Deckers Outdoor Corp,MT5,20.00%,1.00,1 DECK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DELL,Dell Technologies Inc,MT5,20.00%,1.00,1 DELL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DFS,Discover Financial Services,MT4/MT5,20.00%,1.00,1 DFS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DG,Dollar General Corp.,MT4/MT5,20.00%,1.00,1 DG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DGX,Quest Diagnostics Inc,MT5,20.00%,1.00,1 DGX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DHI,D. R. Horton Inc,MT4/MT5,20.00%,1.00,1 DHI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DHR,Danaher Corporation,MT4/MT5,20.00%,1.00,1 DHR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DIS,Walt Disney Co,MT4/MT5,20.00%,1.00,1 DIS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DKS,Dick's Sporting Goods Inc,MT5,20.00%,1.00,1 DKS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DLB,Dolby Laboratories Inc,MT5,20.00%,1.00,1 DLB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DOV,Dover Corp,MT5,20.00%,1.00,1 DOV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DOW,Dow Inc.,MT4/MT5,20.00%,1.00,1 DOW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DRI,Darden Restaurants Inc,MT5,20.00%,1.00,1 DRI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DT,Dynatrace Inc,MT5,20.00%,1.00,1 DT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DTE,DTE Energy Co,MT5,20.00%,1.00,1 DTE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DUK,Duke Energy Corp,MT4/MT5,20.00%,1.00,1 DUK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DVA,DaVita Inc,MT5,20.00%,1.00,1 DVA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DVN,Devon Energy Corp,MT5,20.00%,1.00,1 DVN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+DXC,DXC Technology Co,MT5,20.00%,1.00,1 DXC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ECL,Ecolab Inc,MT5,20.00%,1.00,1 ECL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EFX,Equifax Inc,MT5,20.00%,1.00,1 EFX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EHC,Encompass Health Corp,MT5,20.00%,1.00,1 EHC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EIX,Edison International,MT5,20.00%,1.00,1 EIX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EL,Estee Lauder Companies Inc,MT4/MT5,20.00%,1.00,1 EL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ELAN,Elanco Animal Health Inc,MT5,20.00%,1.00,1 ELAN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ELV,Elevance Health Inc,MT4/MT5,20.00%,1.00,1 ELV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EME,EMCOR Group Inc,MT5,20.00%,1.00,1 EME,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EMN,Eastman Chemical Co,MT5,20.00%,1.00,1 EMN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EMR,Emerson Electric Co.,MT4/MT5,20.00%,1.00,1 EMR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ENOV,Enovis Corp,MT5,20.00%,1.00,1 ENOV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EOG,EOG Resources Inc,MT4/MT5,20.00%,1.00,1 EOG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EPAM,EPAM Systems Inc,MT5,20.00%,1.00,1 EPAM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EQH,Equitable Holdings Inc,MT5,20.00%,1.00,1 EQH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EQT,EQT Corp,MT5,20.00%,1.00,1 EQT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ES,Eversource Energy,MT5,20.00%,1.00,1 ES,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ESI,Element Solutions Inc,MT5,20.00%,1.00,1 ESI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ESNT,Essent Group Ltd,MT5,20.00%,1.00,1 ESNT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ESTC,Elastic NV,MT5,20.00%,1.00,1 ESTC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ETN,Eaton Corporation PLC,MT4/MT5,20.00%,1.00,1 ETN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ETR,Entergy Corp,MT5,20.00%,1.00,1 ETR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EVR,Evercore Inc,MT5,20.00%,1.00,1 EVR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EW,Edwards Lifesciences Corp,MT4/MT5,20.00%,1.00,1 EW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EXP,Eagle Materials Inc,MT5,20.00%,1.00,1 EXP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+EXPD,Expeditors International of Washington Inc,MT5,20.00%,1.00,1 EXPD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+F,Ford Motor Co,MT5,20.00%,1.00,1 F,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FAF,First American Financial Corp,MT5,20.00%,1.00,1 FAF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FBIN,Fortune Brands Innovations Inc,MT5,20.00%,1.00,1 FBIN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FCX,Freeport-McMoRan Inc,MT5,20.00%,1.00,1 FCX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FDS,FactSet Research Systems Inc,MT5,20.00%,1.00,1 FDS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FDX,FedEx Corporation,MT4/MT5,20.00%,1.00,1 FDX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FE,FirstEnergy Corp,MT5,20.00%,1.00,1 FE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FHN,First Horizon Corp,MT5,50.00%,1.00,1 FHN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FI,Fiserv Inc,MT4/MT5,20.00%,1.00,1 FI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FICO,Fair Isaac Corp,MT5,20.00%,1.00,1 FICO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FIS,Fidelity National Information Services Inc,MT4/MT5,20.00%,1.00,1 FIS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FLS,Flowserve Corp,MT5,20.00%,1.00,1 FLS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FMC,FMC Corp,MT5,20.00%,1.00,1 FMC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FND,Floor & Decor Holdings Inc,MT5,20.00%,1.00,1 FND,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FNF,Fidelity National Financial In,MT5,20.00%,1.00,1 FNF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+FTV,Fortive Corp,MT4/MT5,20.00%,1.00,1 FTV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+G,Genpact Ltd,MT5,20.00%,1.00,1 G,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GAP,Gap Inc/The,MT5,20.00%,1.00,1 GAP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GD,General Dynamics Corporation,MT4/MT5,20.00%,1.00,1 GD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GDDY,GoDaddy Inc,MT5,20.00%,1.00,1 GDDY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GE,General Electric Co,MT4/MT5,20.00%,1.00,1 GE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GGG,Graco Inc,MT5,20.00%,1.00,1 GGG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GIS,"General Mills, Inc.",MT4/MT5,20.00%,1.00,1 GIS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GL,Globe Life Inc,MT5,20.00%,1.00,1 GL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GLW,Corning Incorporated,MT4/MT5,20.00%,1.00,1 GLW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GM,General Motors Company,MT4/MT5,20.00%,1.00,1 GM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GMED,Globus Medical Inc,MT5,20.00%,1.00,1 GMED,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GNRC,Generac Holdings Inc,MT5,20.00%,1.00,1 GNRC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GPC,Genuine Parts Co,MT5,20.00%,1.00,1 GPC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GPK,Graphic Packaging Holding Co,MT5,20.00%,1.00,1 GPK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GPN,Global Payments Inc,MT5,20.00%,1.00,1 GPN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GS,Goldman Sachs Group Inc,MT4/MT5,20.00%,1.00,1 GS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GTLS,Chart Industries Inc,MT5,20.00%,1.00,1 GTLS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GWRE,Guidewire Software Inc,MT5,20.00%,1.00,1 GWRE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+GWW,W W Grainger Inc,MT4/MT5,20.00%,1.00,1 GWW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+H,Hyatt Hotels Corp,MT5,20.00%,1.00,1 H,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HAL,Halliburton Company,MT4/MT5,20.00%,1.00,1 HAL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HBI,Hanesbrands Inc,MT5,20.00%,1.00,1 HBI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HCA,HCA Healthcare Inc,MT4/MT5,20.00%,1.00,1 HCA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HD,Home Depot Inc,MT4/MT5,20.00%,1.00,1 HD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HEI,HEICO Corp,MT5,20.00%,1.00,1 HEI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HES,Hess Corp.,MT4/MT5,20.00%,1.00,1 HES,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HIG,Hartford Financial Services Gr,MT5,20.00%,1.00,1 HIG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HII,Huntington Ingalls Industries,MT5,20.00%,1.00,1 HII,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HLT,Hilton Hotels Corporation Common Stock,MT4/MT5,20.00%,1.00,1 HLT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HOG,Harley-Davidson Inc,MT5,20.00%,1.00,1 HOG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HON,Honeywell International Inc.,MT4/MT5,20.00%,1.00,1 HON,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HPE,Hewlett Packard Enterprise Co,MT4/MT5,20.00%,1.00,1 HPE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HPQ,HP Inc,MT4/MT5,20.00%,1.00,1 HPQ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HUBB,Hubbell Inc,MT5,20.00%,1.00,1 HUBB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HUBS,HubSpot Inc,MT5,20.00%,1.00,1 HUBS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HUM,Humana Inc,MT4/MT5,20.00%,1.00,1 HUM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HUN,Huntsman Corp,MT5,20.00%,1.00,1 HUN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HWM,Howmet Aerospace Inc,MT5,20.00%,1.00,1 HWM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+HXL,Hexcel Corp,MT5,20.00%,1.00,1 HXL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IBM,International Business Machines Corp,MT4/MT5,20.00%,1.00,1 IBM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ICE,Intercontinental Exchange Inc,MT4/MT5,20.00%,1.00,1 ICE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IEX,IDEX Corp,MT5,20.00%,1.00,1 IEX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IFF,International Flavors & Fragra,MT5,20.00%,1.00,1 IFF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IGT,International Game Technology,MT5,20.00%,1.00,1 IGT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+INGR,Ingredion Inc,MT5,20.00%,1.00,1 INGR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+INSP,Inspire Medical Systems Inc,MT5,20.00%,1.00,1 INSP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IP,International Paper Co,MT5,20.00%,1.00,1 IP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IPG,Interpublic Group of Cos Inc/T,MT5,20.00%,1.00,1 IPG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IQV,Iqvia Holdings Inc,MT5,20.00%,1.00,1 IQV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IR,Ingersoll Rand Inc,MT5,20.00%,1.00,1 IR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IT,Gartner Inc,MT5,20.00%,1.00,1 IT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ITT,ITT Inc,MT5,20.00%,1.00,1 ITT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ITW,Illinois Tool Works Inc.,MT4/MT5,20.00%,1.00,1 ITW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+IVZ,Invesco Ltd,MT5,20.00%,1.00,1 IVZ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+J,Jacobs Solutions Inc,MT5,20.00%,1.00,1 J,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JBL,Jabil Inc,MT5,20.00%,1.00,1 JBL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JCI,Johnson Controls International PLC,MT4/MT5,20.00%,1.00,1 JCI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JEF,Jefferies Financial Group Inc,MT5,20.00%,1.00,1 JEF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JLL,Jones Lang LaSalle Inc,MT5,20.00%,1.00,1 JLL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JNJ,Johnson & Johnson,MT4/MT5,20.00%,1.00,1 JNJ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JNPR,Juniper Networks Inc,MT5,20.00%,1.00,1 JNPR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JPM,JPMorgan Chase & Co,MT4/MT5,20.00%,1.00,1 JPM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+JWN,Nordstrom Inc,MT5,20.00%,1.00,1 JWN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+K,Kellogg Co,MT5,20.00%,1.00,1 K,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KBR,KBR Inc,MT5,20.00%,1.00,1 KBR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KEY,KeyCorp,MT4/MT5,100.00%,1.00,1 KEY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KEYS,Keysight Technologies Inc,MT5,20.00%,1.00,1 KEYS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KKR,KKR & Co Inc,MT5,20.00%,1.00,1 KKR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KMB,Kimberly Clark Corp,MT4/MT5,20.00%,1.00,1 KMB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KMI,Kinder Morgan Inc,MT4/MT5,20.00%,1.00,1 KMI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KMX,CarMax Inc,MT5,20.00%,1.00,1 KMX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KNX,Knight-Swift Transportation Ho,MT5,20.00%,1.00,1 KNX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KO,Coca-Cola Co,MT4/MT5,20.00%,1.00,1 KO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KR,Kroger Co,MT4/MT5,20.00%,1.00,1 KR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+KSS,Kohl's Corp,MT5,20.00%,1.00,1 KSS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+L,Loews Corp,MT5,20.00%,1.00,1 L,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LAD,Lithia Motors Inc,MT5,20.00%,1.00,1 LAD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LDOS,Leidos Holdings Inc,MT5,20.00%,1.00,1 LDOS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LEA,Lear Corp,MT5,20.00%,1.00,1 LEA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LEG,Leggett & Platt Inc,MT5,20.00%,1.00,1 LEG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LEN,Lennar Corporation,MT4/MT5,20.00%,1.00,1 LEN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LEVI,Levi Strauss & Co,MT5,20.00%,1.00,1 LEVI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LH,Labcorp Holdings Inc,MT5,20.00%,1.00,1 LH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LHX,L3Harris Technologies Inc,MT5,20.00%,1.00,1 LHX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LII,Lennox International Inc,MT5,20.00%,1.00,1 LII,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LLY,Eli Lilly And Co,MT4/MT5,20.00%,1.00,1 LLY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LMT,Lockheed Martin Corporation,MT4/MT5,20.00%,1.00,1 LMT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LNC,Lincoln National Corp,MT5,20.00%,1.00,1 LNC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LOW,"Lowe's Companies, Inc.",MT4/MT5,20.00%,1.00,1 LOW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LPX,Louisiana-Pacific Corp,MT5,20.00%,1.00,1 LPX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LUMN,Lumen Technologies Inc,MT5,20.00%,1.00,1 LUMN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LUV,Southwest Airlines Co,MT4/MT5,20.00%,1.00,1 LUV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LVS,Las Vegas Sands Corp.,MT4/MT5,20.00%,1.00,1 LVS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LW,Lamb Weston Holdings Inc,MT5,20.00%,1.00,1 LW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LYB,LyondellBasell Industries NV,MT4/MT5,20.00%,1.00,1 LYB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+LYV,Live Nation Entertainment Inc,MT5,20.00%,1.00,1 LYV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+M,Macy's Inc,MT5,20.00%,1.00,1 M,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MA,Mastercard Inc,MT4/MT5,20.00%,1.00,1 MA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MAN,ManpowerGroup Inc,MT5,20.00%,1.00,1 MAN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MAS,Masco Corp,MT5,20.00%,1.00,1 MAS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MCD,McDonald's Corp,MT4/MT5,20.00%,1.00,1 MCD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MCK,McKesson Corporation,MT4/MT5,20.00%,1.00,1 MCK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MCO,Moody's Corp,MT5,20.00%,1.00,1 MCO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MDT,Medtronic Plc,MT4/MT5,20.00%,1.00,1 MDT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MET,Metlife Inc,MT4/MT5,20.00%,1.00,1 MET,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MGM,MGM Resorts International,MT5,20.00%,1.00,1 MGM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MHK,Mohawk Industries Inc,MT5,20.00%,1.00,1 MHK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MKL,Markel Group Inc,MT5,20.00%,1.00,1 MKL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MLM,Martin Marietta Materials Inc,MT5,20.00%,1.00,1 MLM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MMC,"Marsh & McLennan Companies, Inc.",MT4/MT5,20.00%,1.00,1 MMC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MMM,3M Co,MT4/MT5,20.00%,1.00,1 MMM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MO,Altria Group Inc,MT4/MT5,20.00%,1.00,1 MO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MODG,Topgolf Callaway Brands Corp,MT5,20.00%,1.00,1 MODG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MOH,Molina Healthcare Inc,MT5,20.00%,1.00,1 MOH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MOS,Mosaic Co/The,MT5,20.00%,1.00,1 MOS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MPC,Marathon Petroleum Corp,MT4/MT5,20.00%,1.00,1 MPC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MRK,Merck & Co Inc,MT4/MT5,20.00%,1.00,1 MRK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MS,Morgan Stanley,MT4/MT5,20.00%,1.00,1 MS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MSCI,MSCI Inc,MT5,20.00%,1.00,1 MSCI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MSI,Motorola Solutions Inc,MT5,20.00%,1.00,1 MSI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MSM,MSC Industrial Direct Co Inc,MT5,20.00%,1.00,1 MSM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MTB,M&T Bank Corporation,MT5,20.00%,1.00,1 MTB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MTD,Mettler-Toledo International I,MT5,20.00%,1.00,1 MTD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MTN,Vail Resorts Inc,MT5,20.00%,1.00,1 MTN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+MTZ,MasTec Inc,MT5,20.00%,1.00,1 MTZ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NCLH,Norwegian Cruise Line Holdings,MT5,20.00%,1.00,1 NCLH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NEE,NextEra Energy Inc,MT4/MT5,20.00%,1.00,1 NEE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NEM,Newmont Mining Corp,MT4/MT5,20.00%,1.00,1 NEM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NET,Cloudflare Inc,MT5,20.00%,1.00,1 NET,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NI,NiSource Inc,MT5,20.00%,1.00,1 NI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NKE,NIKE Inc,MT4/MT5,20.00%,1.00,1 NKE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NOC,Northrop Grumman Corporation,MT4/MT5,20.00%,1.00,1 NOC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NOV,NOV Inc,MT5,20.00%,1.00,1 NOV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NOW,ServiceNow Inc,MT5,20.00%,1.00,1 NOW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NRG,NRG Energy Inc,MT5,20.00%,1.00,1 NRG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NSC,Norfolk Southern Corp.,MT4/MT5,20.00%,1.00,1 NSC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NUE,Nucor Corp,MT5,20.00%,1.00,1 NUE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NVST,Envista Holdings Corp,MT5,20.00%,1.00,1 NVST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+NYT,New York Times Co/The,MT5,20.00%,1.00,1 NYT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OC,Owens Corning,MT5,20.00%,1.00,1 OC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OGE,OGE Energy Corp,MT5,20.00%,1.00,1 OGE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OKE,"ONEOK, Inc.",MT4/MT5,20.00%,1.00,1 OKE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OLN,Olin Corp,MT5,20.00%,1.00,1 OLN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OMC,Omnicom Group Inc.,MT4/MT5,20.00%,1.00,1 OMC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OMF,OneMain Holdings Inc,MT5,20.00%,1.00,1 OMF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ORCL,Oracle Corporation,MT4/MT5,20.00%,1.00,1 ORCL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ORI,Old Republic International Cor,MT5,20.00%,1.00,1 ORI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OSK,Oshkosh Corp,MT5,20.00%,1.00,1 OSK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+OTIS,Otis Worldwide Corp,MT5,20.00%,1.00,1 OTIS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,No,stocks
+OXY,Occidental Petroleum Corporation,MT4/MT5,20.00%,1.00,1 OXY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PAYC,Paycom Software Inc,MT5,20.00%,1.00,1 PAYC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PEG,Public Service Enterprise Grou,MT5,20.00%,1.00,1 PEG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PEN,Penumbra Inc,MT5,20.00%,1.00,1 PEN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PFE,Pfizer Inc,MT4/MT5,20.00%,1.00,1 PFE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PFGC,Performance Food Group Co,MT5,20.00%,1.00,1 PFGC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PG,Procter & Gamble Co,MT4/MT5,20.00%,1.00,1 PG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PGR,Progressive Corp,MT4/MT5,20.00%,1.00,1 PGR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PH,Parker-Hannifin Corp,MT4/MT5,20.00%,1.00,1 PH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PHM,PulteGroup Inc,MT5,20.00%,1.00,1 PHM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PII,Polaris Inc,MT5,20.00%,1.00,1 PII,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PINS,Pinterest Inc,MT5,20.00%,1.00,1 PINS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PKG,Packaging Corp of America,MT5,20.00%,1.00,1 PKG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PLD,Prologis Inc,MT4/MT5,20.00%,1.00,1 PLD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PLNT,Planet Fitness Inc,MT5,20.00%,1.00,1 PLNT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PM,Philip Morris International Inc.,MT4/MT5,20.00%,1.00,1 PM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PNC,PNC Financial Services Group Inc,MT4/MT5,20.00%,1.00,1 PNC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PNW,Pinnacle West Capital Corp,MT5,20.00%,1.00,1 PNW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+POST,Post Holdings Inc,MT5,20.00%,1.00,1 POST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PPG,"PPG Industries, Inc.",MT4/MT5,20.00%,1.00,1 PPG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PPL,PPL Corp,MT5,20.00%,1.00,1 PPL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PRU,Prudential Financial Inc,MT4/MT5,20.00%,1.00,1 PRU,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PSA,Public Storage,MT4/MT5,20.00%,1.00,1 PSA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PSTG,Pure Storage Inc,MT5,20.00%,1.00,1 PSTG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PVH,PVH Corp,MT5,20.00%,1.00,1 PVH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+PWR,Quanta Services Inc,MT5,20.00%,1.00,1 PWR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+QTWO,Q2 Holdings Inc,MT5,20.00%,1.00,1 QTWO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RCL,Royal Caribbean Group,MT4/MT5,20.00%,1.00,1 RCL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RF,Regions Financial Corp,MT4/MT5,20.00%,1.00,1 RF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RGA,Reinsurance Group of America I,MT5,20.00%,1.00,1 RGA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RH,RH,MT5,20.00%,1.00,1 RH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RHI,Robert Half Inc,MT5,20.00%,1.00,1 RHI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RJF,Raymond James Financial Inc,MT5,20.00%,1.00,1 RJF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RL,Ralph Lauren Corp,MT5,20.00%,1.00,1 RL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RMD,ResMed Inc,MT5,20.00%,1.00,1 RMD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RNG,RingCentral Inc,MT5,20.00%,1.00,1 RNG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ROK,Rockwell Automation,MT4/MT5,20.00%,1.00,1 ROK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ROL,Rollins Inc,MT5,20.00%,1.00,1 ROL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RPM,RPM International Inc,MT5,20.00%,1.00,1 RPM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RRX,Regal Rexnord Corp,MT5,20.00%,1.00,1 RRX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RS,Reliance Inc,MT5,20.00%,1.00,1 RS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RSG,Republic Services Inc,MT5,20.00%,1.00,1 RSG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RTX,RTX Corp,MT5,20.00%,1.00,1 RTX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+RVTY,Revvity Inc,MT5,20.00%,1.00,1 RVTY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SAM,Boston Beer Co Inc/The,MT5,20.00%,1.00,1 SAM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SCHW,Charles Schwab Corporation Common Stock,MT4/MT5,20.00%,1.00,1 SCHW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SCI,Service Corp International/US,MT5,20.00%,1.00,1 SCI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SEE,Sealed Air Corp,MT5,20.00%,1.00,1 SEE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SF,Stifel Financial Corp,MT5,20.00%,1.00,1 SF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SHW,Sherwin-Williams Co,MT4/MT5,20.00%,1.00,1 SHW,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SITE,SiteOne Landscape Supply Inc,MT5,20.00%,1.00,1 SITE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SJM,J M Smucker Co/The,MT5,20.00%,1.00,1 SJM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SKX,Skechers USA Inc,MT5,20.00%,1.00,1 SKX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SLB,Schlumberger Limited.,MT4/MT5,20.00%,1.00,1 SLB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SMAR,Smartsheet Inc,MT5,20.00%,1.00,1 SMAR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SMG,Scotts Miracle-Gro Co/The,MT5,20.00%,1.00,1 SMG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SNA,Snap-on Inc,MT5,20.00%,1.00,1 SNA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SNAP,Snap Inc,MT5,20.00%,1.00,1 SNAP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SNV,Synovus Financial Corp,MT5,20.00%,1.00,1 SNV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SNX,TD SYNNEX Corp,MT5,20.00%,1.00,1 SNX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SO,Southern Co,MT4/MT5,20.00%,1.00,1 SO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SPG,Simon Property Group Inc,MT4/MT5,20.00%,1.00,1 SPG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SPGI,S&P Global Inc,MT4/MT5,20.00%,1.00,1 SPGI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SPR,Spirit AeroSystems Holdings In,MT5,20.00%,1.00,1 SPR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SQ,"Block, Inc",MT5,20.00%,1.00,1 SQ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SRE,Sempra,MT4/MT5,20.00%,1.00,1 SRE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ST,Sensata Technologies Holding P,MT5,20.00%,1.00,1 ST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+STE,STERIS PLC,MT5,20.00%,1.00,1 STE,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+STT,State Street Corp,MT4/MT5,20.00%,1.00,1 STT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+STZ,"Constellation Brands, Inc. Class A",MT4/MT5,20.00%,1.00,1 STZ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SWK,"Stanley Black & Decker, Inc.",MT4/MT5,20.00%,1.00,1 SWK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SYF,Synchrony Financial,MT4/MT5,20.00%,1.00,1 SYF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SYK,Stryker Corporation,MT4/MT5,20.00%,1.00,1 SYK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+SYY,SYSCO Corporation,MT4/MT5,20.00%,1.00,1 SYY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+T,AT&T Inc.,MT4/MT5,20.00%,1.00,1 T,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TAP,Molson Coors Beverage Co,MT5,20.00%,1.00,1 TAP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TDG,TransDigm Group Inc,MT5,20.00%,1.00,1 TDG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TDOC,Teladoc Health Inc,MT5,20.00%,1.00,1 TDOC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TDY,Teledyne Technologies Inc,MT5,20.00%,1.00,1 TDY,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TFC,Truist Financial Corp,MT5,100.00%,1.00,1 TFC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TFX,Teleflex Inc,MT5,20.00%,1.00,1 TFX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TGT,Target Corporation,MT4/MT5,20.00%,1.00,1 TGT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+THC,Tenet Healthcare Corp,MT5,20.00%,1.00,1 THC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+THO,Thor Industries Inc,MT5,20.00%,1.00,1 THO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TJX,TJX Companies Inc,MT4/MT5,20.00%,1.00,1 TJX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TKR,Timken Co/The,MT5,20.00%,1.00,1 TKR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TMO,Thermo Fisher Scientific Inc.,MT4/MT5,20.00%,1.00,1 TMO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TNL,Travel + Leisure Co,MT5,20.00%,1.00,1 TNL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TOL,Toll Brothers Inc,MT5,20.00%,1.00,1 TOL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TPL,Texas Pacific Land Corp,MT5,20.00%,1.00,1 TPL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TPR,Tapestry Inc,MT5,20.00%,1.00,1 TPR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TPX,Tempur Sealy International Inc,MT5,20.00%,1.00,1 TPX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TREX,Trex Co Inc,MT5,20.00%,1.00,1 TREX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TRGP,Targa Resources Corp,MT5,20.00%,1.00,1 TRGP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TRU,TransUnion,MT5,20.00%,1.00,1 TRU,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TRV,Travelers Cos Inc,MT4/MT5,20.00%,1.00,1 TRV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TSN,"Tyson Foods, Inc.",MT4/MT5,20.00%,1.00,1 TSN,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TTC,Toro Co/The,MT5,20.00%,1.00,1 TTC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TWLO,Twilio Inc,MT5,20.00%,1.00,1 TWLO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TXT,Textron Inc,MT5,20.00%,1.00,1 TXT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+TYL,Tyler Technologies Inc,MT5,20.00%,1.00,1 TYL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UAA,Under Armour Inc,MT5,20.00%,1.00,1 UAA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UBER,Uber Technologies Inc,MT5,20.00%,1.00,1 UBER,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UGI,UGI Corp,MT5,20.00%,1.00,1 UGI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UHS,Universal Health Services Inc,MT5,20.00%,1.00,1 UHS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UNH,UnitedHealth Group Inc,MT4/MT5,20.00%,1.00,1 UNH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UNM,Unum Group,MT5,20.00%,1.00,1 UNM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UNP,Union Pacific Corporation,MT4/MT5,20.00%,1.00,1 UNP,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+UPS,"United Parcel Service, Inc.",MT4/MT5,20.00%,1.00,1 UPS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+URI,United Rentals Inc,MT5,20.00%,1.00,1 URI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+USB,U.S. Bancorp,MT4/MT5,50.00%,1.00,1 USB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+USFD,US Foods Holding Corp,MT5,20.00%,1.00,1 USFD,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+V,Visa Inc,MT4/MT5,20.00%,1.00,1 V,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VAC,Marriott Vacations Worldwide C,MT5,20.00%,1.00,1 VAC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VEEV,Veeva Systems Inc,MT5,20.00%,1.00,1 VEEV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VFC,VF Corp,MT4/MT5,20.00%,1.00,1 VFC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VLO,Valero Energy Corporation,MT4/MT5,20.00%,1.00,1 VLO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VMC,Vulcan Materials Co,MT5,20.00%,1.00,1 VMC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VOYA,Voya Financial Inc,MT5,20.00%,1.00,1 VOYA,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VST,Vistra Corp,MT5,20.00%,1.00,1 VST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VVV,Valvoline Inc,MT5,20.00%,1.00,1 VVV,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VYX,NCR Voyix Corp,MT5,20.00%,1.00,1 VYX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+VZ,Verizon Communications Inc,MT4/MT5,20.00%,1.00,1 VZ,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+W,Wayfair Inc,MT5,20.00%,1.00,1 W,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WAB,Westinghouse Air Brake Technol,MT5,20.00%,1.00,1 WAB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WAL,Western Alliance Bancorp,MT5,100.00%,1.00,1 WAL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WAT,Waters Corp,MT5,20.00%,1.00,1 WAT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WCC,WESCO International Inc,MT5,20.00%,1.00,1 WCC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WEC,WEC Energy Group Inc,MT5,20.00%,1.00,1 WEC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WEX,WEX Inc,MT5,20.00%,1.00,1 WEX,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WFC,Wells Fargo & Co,MT4/MT5,20.00%,1.00,1 WFC,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WH,Wyndham Hotels & Resorts Inc,MT5,20.00%,1.00,1 WH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WHR,Whirlpool Corp,MT5,20.00%,1.00,1 WHR,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WK,Workiva Inc,MT5,20.00%,1.00,1 WK,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WM,"Waste Management, Inc.",MT4/MT5,20.00%,1.00,1 WM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WMB,Williams Companies Inc,MT4/MT5,20.00%,1.00,1 WMB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WMS,Advanced Drainage Systems Inc,MT5,20.00%,1.00,1 WMS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WMT,Walmart Inc,MT4/MT5,20.00%,1.00,1 WMT,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WOLF,Wolfspeed Inc,MT5,20.00%,1.00,1 WOLF,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WRB,W R Berkley Corp,MT5,20.00%,1.00,1 WRB,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WSM,Williams-Sonoma Inc,MT5,20.00%,1.00,1 WSM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WSO,Watsco Inc,MT5,20.00%,1.00,1 WSO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WST,West Pharmaceutical Services I,MT5,20.00%,1.00,1 WST,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WTRG,Essential Utilities Inc,MT5,20.00%,1.00,1 WTRG,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+WU,Western Union Co/The,MT5,20.00%,1.00,1 WU,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+X,United States Steel Corp,MT5,20.00%,1.00,1 X,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+XOM,Exxon Mobil Corp,MT4/MT5,20.00%,1.00,1 XOM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+XPO,XPO Inc,MT5,20.00%,1.00,1 XPO,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+XYL,Xylem Inc/NY,MT5,20.00%,1.00,1 XYL,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+YETI,YETI Holdings Inc,MT5,20.00%,1.00,1 YETI,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+YUM,Yum! Brands Inc,MT5,20.00%,1.00,1 YUM,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZBH,Zimmer Biomet Holdings Inc,MT5,20.00%,1.00,1 ZBH,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZTS,Zoetis Inc,MT4/MT5,20.00%,1.00,1 ZTS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
+ZWS,Zurn Elkay Water Solutions Corp,MT5,20.00%,1.00,1 ZWS,0.01 USD,-0.02%,0.01%,1 day/s,0.02 USD,Yes,stocks
