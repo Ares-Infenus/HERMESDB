@@ -18,7 +18,7 @@ class OperationalCostProcessor:
         self.columns_by_sector = {
             "forex": ["ACTIVE", "SPREAD", "MARGIN", "MIN_SIZE", "CONTRACT_SIZE", "PIP_VALUE", 
                      "SWAP_LONG", "SWAP_SHORT", "ELIMINATED", "COMISSION_PER_ORDER", "SECTOR"],
-            "indices": ["ACTIVE", "SPREAD", "MARGIN", "MIN_SIZE", "CONTRACT_SIZE", "PIP_VALUE", 
+            "indices": ["ACTIVE", "SPREAD", "MARGIN", "MIN_SIZE", "CONTRACT_SIZE", "TICK_VALUE", 
                        "SWAP_LONG", "SWAP_SHORT", "ELIMINATED", "COMISSION_PER_ORDER", "SECTOR"],
             "stocks": ["ACTIVE", "NAME", "PLATAFORM", "MARGIN", "MIN_SIZE", "CONTRACT_SIZE", 
                       "TICK_VALUE", "SWAP_LONG", "SWAP_SHORT", "ELIMINATED", "COMISSION_PER_ORDER", 
@@ -120,16 +120,17 @@ class OperationalCostProcessor:
         
         return df
 
-    def save_to_csv(self, output_prefix: str = "operative_costs") -> None:
+    def save_to_csv(self, output_dir: str, output_prefix: str = "operative_costs") -> None:
         """
         Save each asset type DataFrame to a separate CSV file.
         
         Args:
+            output_dir (str): Directory where the output CSV files will be saved
             output_prefix (str): Prefix for output CSV files
         """
         for asset_type, df in self.dataframes_by_type.items():
             if isinstance(df, pd.DataFrame) and not df.empty:
-                output_file = f"{output_prefix}_{asset_type}.csv"
+                output_file = f"{output_dir}/{output_prefix}_{asset_type}.csv"
                 df.to_csv(output_file, index=False)
                 print(f"Saved: {output_file}")
 
@@ -159,7 +160,8 @@ class OperationalCostProcessor:
 # Example usage
 #if __name__ == "__main__":
 #    processor = OperationalCostProcessor()
-#    file_path = r"C:\Users\spinz\Documents\Portafolio Oficial\HERMESDB\data\tables_data\data_table\data_cost_operative\operative_costs.csv"
+#    file_path = r"path_to_your_input_file.csv"
 #    processor.load_data(file_path)
-#    processor.save_to_csv()
+#    output_directory = r"path_to_your_output_directory"
+#    processor.save_to_csv(output_dir=output_directory)
 #    processor.display_summary()

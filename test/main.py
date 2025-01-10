@@ -133,12 +133,15 @@ def create_operative_cost():
         print(f"Error extracting operative costs: {str(e)}")
     
     # Step 2: Organize extracted data
-    input_path = output_file
-    output_directory = os.path.join(output_dir, "processed")
     processor = OperationalCostProcessor()
-    processor.load_data(input_path)
-    processor.save_to_csv(output_prefix="operative_costs", output_dir=output_directory)
+    file_path = r"C:\Users\spinz\Documents\Portafolio Oficial\HERMESDB\data\tables_data\data_table\data_cost_operative\operative_costs.csv"
+    processor.load_data(file_path)
+    output_directory = r"C:\Users\spinz\Documents\Portafolio Oficial\HERMESDB\data\tables_data\data_table\data_cost_operative_organizada"
+    processor.save_to_csv(output_dir=output_directory)
     processor.display_summary()
+    #STEP 3: Creation Table Cost operative.
+    
+    
 
 # =============================================================================
 # Main Execution

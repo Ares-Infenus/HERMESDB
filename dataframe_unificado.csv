@@ -1,0 +1,401 @@
+MARGIN,MIN_SIZE,CONTRACT_SIZE,PIP_VALUE,SWAP_LONG,SWAP_SHORT,COMISSION_PER_ORDEN,TICK_VALUE,archivo
+4.00%,0.01,5000 XAG,5 USD,-21.50 USD,15.00 USD,,5 USD,operative_costs_commodities.csv
+2.00%,0.01,100 XAU,1 USD,-41.20 USD,23.70 USD,,1 USD,operative_costs_commodities.csv
+8.00%,0.1,10000 XNG,10 USD,204.00 USD,-247.00 USD,,10 USD,operative_costs_commodities.csv
+8.00%,0.01,1000 XTI,10 USD,23.10 USD,-39.00 USD,,10 USD,operative_costs_commodities.csv
+20.00%,1.0,1 AAXJ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 ARKG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 ARKK,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 ARKW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 DGRO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 DIA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 DVY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EEM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EFA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EFAV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EFG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EFV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EMB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 ESGU,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EWJ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EWT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EWY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EWZ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 EZU,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 FDN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 FTEC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 FVD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 GDX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 GDXJ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+30.00%,1.0,1 GLD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 GSLC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 HDV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IBB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 ICLN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IGV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IHI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IJH,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IJR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IJS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 INDA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 ITOT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IUSG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IUSV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IVE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IVW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IWB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IWD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IWF,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IWM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IWN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IWO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IWS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IYR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 IYW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+100.00%,1.0,1 KRE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 MCHI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 MDY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 MTUM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 OEF,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 PFF,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 QQQ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 QUAL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 RSP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SCHB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SCHD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SCHF,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SCHG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SCHV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SCZ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SKYY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SLV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SMH,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SOXX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SPDW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SPLV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SPY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SPYG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 SPYV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 TIP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 TLT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 USMV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VDE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VEA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VGT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VHT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VLUE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VNQ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VOE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VPL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VTI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VWO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VXF,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 VXUS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XBI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLF,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLK,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLU,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+20.00%,1.0,1 XLY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_ETFs.csv
+1.00%,0.01,100000 AUD,10 CAD,0.30 CAD,-4.70 CAD,,,operative_costs_forex.csv
+1.00%,0.01,100000 AUD,10 CHF,4.90 CHF,-7.30 CHF,,,operative_costs_forex.csv
+1.00%,0.01,100000 AUD,1000 JPY,880.00 JPY,-1360.00 JPY,,,operative_costs_forex.csv
+1.00%,0.01,100000 AUD,10 NZD,-2.50 NZD,-2.70 NZD,,,operative_costs_forex.csv
+0.50%,0.01,100000 AUD,10 USD,-1.70 USD,-1.30 USD,,,operative_costs_forex.csv
+1.00%,0.01,100000 CAD,10 CHF,3.20 CHF,-6.50 CHF,,,operative_costs_forex.csv
+1.00%,0.01,100000 CAD,1000 JPY,700.00 JPY,-1190.00 JPY,,,operative_costs_forex.csv
+1.00%,0.01,100000 CHF,1000 JPY,-260.00 JPY,-530.00 JPY,,,operative_costs_forex.csv
+1.00%,0.01,100000 EUR,10 AUD,-9.90 AUD,2.10 AUD,,,operative_costs_forex.csv
+1.00%,0.01,100000 EUR,10 CAD,-4.00 CAD,-2.00 CAD,,,operative_costs_forex.csv
+1.00%,0.01,100000 EUR,10 CHF,4.50 CHF,-8.90 CHF,,,operative_costs_forex.csv
+1.00%,0.01,100000 EUR,10 GBP,-6.00 GBP,2.10 GBP,,,operative_costs_forex.csv
+1.00%,0.01,100000 EUR,1000 JPY,920.00 JPY,-1680.00 JPY,,,operative_costs_forex.csv
+3.00%,0.01,100000 EUR,10 MXN,-667.60 MXN,119.60 MXN,,,operative_costs_forex.csv
+1.00%,0.01,100000 EUR,10 NOK,-90.50 NOK,0.20 NOK,,,operative_costs_forex.csv
+1.00%,0.01,100000 EUR,10 NZD,-11.90 NZD,-0.20 NZD,,,operative_costs_forex.csv
+1.00%,0.01,100000 EUR,10 SEK,-23.80 SEK,-54.60 SEK,,,operative_costs_forex.csv
+0.50%,0.01,100000 EUR,10 USD,-7.10 USD,2.00 USD,,,operative_costs_forex.csv
+1.00%,0.01,100000 GBP,10 AUD,-2.10 AUD,-7.00 AUD,,,operative_costs_forex.csv
+1.00%,0.01,100000 GBP,10 CAD,3.70 CAD,-11.20 CAD,,,operative_costs_forex.csv
+1.00%,0.01,100000 GBP,10 CHF,10.20 CHF,-16.50 CHF,,,operative_costs_forex.csv
+1.00%,0.01,100000 GBP,1000 JPY,2030.00 JPY,-2960.00 JPY,,,operative_costs_forex.csv
+3.00%,0.01,100000 GBP,10 MXN,-533.90 MXN,166.30 MXN,,,operative_costs_forex.csv
+1.00%,0.01,100000 GBP,10 NOK,-80.60 NOK,-102.50 NOK,,,operative_costs_forex.csv
+1.00%,0.01,100000 GBP,10 NZD,-1.60 NZD,-7.30 NZD,,,operative_costs_forex.csv
+1.00%,0.01,100000 GBP,10 SEK,38.30 SEK,-131.40 SEK,,,operative_costs_forex.csv
+0.50%,0.01,100000 GBP,10 USD,-2.40 USD,-4.30 USD,,,operative_costs_forex.csv
+1.00%,0.01,100000 NZD,10 CAD,0.50 CAD,-3.90 CAD,,,operative_costs_forex.csv
+1.00%,0.01,100000 NZD,10 CHF,4.10 CHF,-6.50 CHF,,,operative_costs_forex.csv
+1.00%,0.01,100000 NZD,1000 JPY,610.00 JPY,-1420.00 JPY,,,operative_costs_forex.csv
+1.00%,0.01,100000 NZD,10 USD,-1.70 USD,-1.20 USD,,,operative_costs_forex.csv
+0.50%,0.01,100000 USD,10 CAD,5.10 CAD**,-24.30 CAD**,,,operative_costs_forex.csv
+1.00%,0.01,100000 USD,10 CHF,7.50 CHF,-13.00 CHF,,,operative_costs_forex.csv
+0.50%,0.01,100000 USD,1000 JPY,1420.00 JPY,-2250.00 JPY,,,operative_costs_forex.csv
+3.00%,0.01,100000 USD,10 MXN,-440.10 MXN,163.30 MXN,,,operative_costs_forex.csv
+1.00%,0.01,100000 USD,10 NOK,-43.80 NOK,-43.80 NOK,,,operative_costs_forex.csv
+1.00%,0.01,100000 USD,10 SEK,-27.30 SEK,-144.40 SEK,,,operative_costs_forex.csv
+5.00%,0.01,100000 USD,10 SGD,1.10 SGD,-7.40 SGD,,,operative_costs_forex.csv
+4.00%,0.01,10 x AUS200,1 AUD,-13.39 AUD,6.42 AUD,,1 AUD,operative_costs_indices.csv
+4.00%,0.01,10 x FCHI40,1 EUR,-9.34 EUR,3.10 EUR,,1 EUR,operative_costs_indices.csv
+4.00%,0.01,10 x GDAXI,1 EUR,-26.49 EUR,8.30 EUR,,1 EUR,operative_costs_indices.csv
+4.00%,0.01,10 x NDX,1 USD,-36.71 USD,17.74 USD,,1 USD,operative_costs_indices.csv
+4.00%,0.1,100 x NI225,0.01 JPY,-188.93 JPY,-140.71 JPY,,0.01 JPY,operative_costs_indices.csv
+4.00%,0.01,10 x SP500,1 USD,-9.76 USD,4.84 USD,,1 USD,operative_costs_indices.csv
+4.00%,0.1,10 x SPA35,1 EUR,-15.70 EUR,4.77 EUR,,1 EUR,operative_costs_indices.csv
+4.00%,0.01,10 x STOXX50E,1 EUR,-6.27 EUR,2.08 EUR,,1 EUR,operative_costs_indices.csv
+4.00%,0.01,10 x UK100,1 GBP,-14.34 GBP,7.40 GBP,,1 GBP,operative_costs_indices.csv
+4.00%,0.01,1 x WS30,1 USD,-7.04 USD,3.49 USD,,1 USD,operative_costs_indices.csv
+20.00%,1.0,1 AAL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AAPL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ACHC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ADBE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ADI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ADP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ADSK,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AEP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AKAM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ALGN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ALNY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AMAT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AMD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AMED,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AMGN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AMKR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AMZN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ANSS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 APA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 APLS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ARCC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ARWR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AVGO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AXON,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AZPN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 AZTA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 BIIB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 BKNG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 BKR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 BL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 BMRN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 BPMC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 BRKR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CACC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CAR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CASY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CDNS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CDW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CGNX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CHDN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CHRW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CHTR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CHX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CINF,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CMCSA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CME,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 COIN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 COLM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 COO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 COST,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CPRT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CROX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CRWD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CSCO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CSGP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CSX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CTAS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 CTSH,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 DBX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 DDOG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 DLTR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 DNLI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 DOCU,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 DOX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 DPZ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 DXCM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 EA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 EBAY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 EEFT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ENPH,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ENTG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ETSY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 EVRG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+100.00%,1.0,1 EWBC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 EXC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 EXEL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 EXPE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 EXPI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FANG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FAST,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FFIV,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+50.00%,1.0,1 FITB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FIVE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FIVN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FLEX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FOX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FOXA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FOXF,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FRPT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FSLR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 FTNT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 GEN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 GH,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 GILD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 GNTX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 GOOG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 GOOGL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 GT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 HALO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 HAS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 HBAN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 HELE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 HOLX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 HQY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 HSIC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 IBKR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 IDXX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ILMN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 INCY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 INTC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 INTU,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 IONS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 IPGP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 IRDM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ISRG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 JBHT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 JBLU,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 JKHY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 KDP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 KHC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 KLAC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LAZR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LITE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LKQ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LNT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LNW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LPLA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LRCX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LSCC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LSTR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 LYFT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MANH,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MAR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MASI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MAT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MCHP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MDB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MDLZ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MEDP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 META,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MIDD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MKSI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MKTX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MNST,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MPWR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MRNA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MRVL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MSFT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MSTR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 MU,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NBIX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NDAQ,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NDSN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NFLX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NTAP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NTLA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NTNX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NTRS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NVDA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NWL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NWSA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 NXST,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ODFL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 OKTA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 OLED,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 OLLI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 OMCL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ON,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ORLY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 OZK,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PANW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PARA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PAYX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PCAR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PCTY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PEGA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PENN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PEP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PFG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PGNY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+50.00%,1.0,1 PNFP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PODD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 POOL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PTC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PTON,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 PYPL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 QCOM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 QRVO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 RARE,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 REGN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 RGEN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 RGLD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ROKU,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ROP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ROST,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 RRR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 RUN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SAIA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SAIC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SBUX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SLAB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SLM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SNPS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SRPT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SSNC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 STLD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SWKS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 SYNA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TECH,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TER,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TMUS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TNDM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TRIP,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TRMB,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TROW,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TSCO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TSLA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TTD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TTEK,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TTWO,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TXG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TXN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 TXRH,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 UAL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ULTA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 UTHR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 VIR,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 VIRT,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 VRNS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 VRSK,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 VRSN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 VRTX,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 VTRS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 WBA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 WDAY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 WDC,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 WWD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 WYNN,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 XEL,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 XRAY,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ZBRA,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ZD,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ZG,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ZI,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+100.00%,1.0,1 ZION,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ZM,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
+20.00%,1.0,1 ZS,0.01 USD,-0.02%,0.01%,,0.01 USD,operative_costs_stocks.csv
