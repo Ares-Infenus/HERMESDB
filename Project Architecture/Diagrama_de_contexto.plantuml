@@ -1,0 +1,33 @@
+@startuml
+!theme plain
+
+actor "ADMIN" as admin
+actor "USUARIO" as usuario
+
+database "MetaTrader 5\n(Brokers)" as metatrader #FFF2CC
+cloud "Fuentes Web\n(Costos Operacionales)" as web #F8CECC
+
+rectangle "Proceso ETL\n(fetch_data.py)" as etl #DAE8FC
+
+rectangle "Sistema de Base de Datos Financiera\nAPI FastAPI | ETL | PostgreSQL" as sistema {
+    component "PostgreSQL" as db #DAE8FC
+    component "API FastAPI" as api #DAE8FC
+}
+
+queue "Redis\n(Colas Asíncronas)" as redis #D5E8D4
+database "Backups\n(daily_backup.sh)" as backups #FFF2CC
+component "Grafana\n(Monitoreo)" as grafana #DAE8FC
+
+' Conexiones principales
+metatrader --> etl : Actualizaciones diarias
+web --> etl : Extracción de costos
+etl --> sistema : Carga de datos
+
+usuario --> sistema : Consulta de datos
+admin --> sistema : Gestión y configuración
+
+sistema --> redis : Notificaciones
+sistema --> grafana : Genera métricas
+sistema --> backups : Backups diarios
+
+@enduml

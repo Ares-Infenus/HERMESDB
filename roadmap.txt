@@ -1,0 +1,182 @@
+Roadmap del Proyecto - Enfoque de Ingeniería Civil
+Fase 0: Estudio de Suelo (Análisis de Requerimientos)
+Duración: 1 semana
+
+Objetivo: Entender las "condiciones del terreno" (necesidades técnicas y de negocio).
+
+Entregables:
+
+Documento de especificaciones técnicas (lenguajes, frameworks, infraestructura).
+
+Listado de "cargas estructurales" (volumen de datos: 24,800 registros/día × 800 activos).
+
+Identificación de "riesgos geotécnicos" (posibles fallos en scraping, latencia en consultas).
+
+Fase 1: Planos Arquitectónicos (Diseño del Sistema)
+Duración: 2 semanas
+
+Planos Estructurales (Diagramas UML):
+
+Diagrama de Clases (Columnas, Vigas y Losas ↔ Tablas y Relaciones).
+
+Diagrama de Secuencia (Flujo de Carga de Datos).
+
+Diagrama de Despliegue (Ubicación de "Obra Gruesa" ↔ Servidores/Contenedores).
+
+Herramientas:
+
+dbdiagram.io para esquema de base de datos.
+
+Draw.io para diagramas de flujo.
+
+Entregables:
+
+Esquema de BD aprobado (Ver plano actualizado).
+
+Documento de arquitectura técnica (PDF).
+
+Fase 2: Excavación y Cimentación (Infraestructura Base)
+Duración: 1 semana
+
+Movimiento de Tierras (Entorno de Desarrollo):
+
+Configurar Docker Compose (PostgreSQL + Redis).
+
+Instalar dependencias Python (requirements.txt).
+
+Hormigón Armado (Base de Datos):
+
+sql
+Copy
+-- Ejemplo: Crear tablas con particionamiento
+CREATE TABLE Datos_Historicos_2024 PARTITION OF Datos_Historicos
+FOR VALUES FROM ('2024-01-01') TO ('2025-01-01');
+Entregables:
+
+Scripts SQL de inicialización.
+
+Contenedores Docker funcionales.
+
+Fase 3: Estructura Principal (Desarrollo de Módulos Clave)
+Duración: 3 semanas
+
+3.1 Columnas de Soporte (Backend - API):
+Endpoints Críticos:
+
+python
+Copy
+# FastAPI - Endpoint de precios
+@app.get("/precios/{activo_id}")
+def get_precios(activo_id: int, fecha_inicio: date, fecha_fin: date):
+    return query_postgres(activo_id, fecha_inicio, fecha_fin)
+3.2 Vigas de Conexión (ETL):
+Extracción de Datos:
+
+Metatrader: Usar MT5.initialize() + MT5.copy_rates_from_pos().
+
+Web Scraping: Rotación de IPs con scrapy-rotating-proxies.
+
+Transformación:
+
+python
+Copy
+def limpiar_datos(df: pd.DataFrame) -> pd.DataFrame:
+    df = df[(df['bid_open'] < df['ask_open']) & (df['volumen'] > 0)]
+    return df.dropna()
+3.3 Losas de Piso (Frontend - Interfaz):
+Tabla Dinámica:
+
+javascript
+Copy
+// DataTables.js
+$('#costos').DataTable({
+    ajax: '/api/costos',
+    columns: [
+        { data: 'activo' },
+        { data: 'swap_largo' }
+    ]
+});
+Entregables:
+
+API funcional con autenticación JWT.
+
+Script ETL programado en Cron.
+
+Interfaz web básica.
+
+Fase 4: Instalaciones Eléctricas e Hidráulicas (Funcionalidades Avanzadas)
+Duración: 2 semanas
+
+Cableado Eléctrico (Seguridad):
+
+Integrar OWASP ZAP para escaneo de vulnerabilidades.
+
+Implementar verificación de hashes SHA-256.
+
+Tuberías (Flujo de Datos):
+
+Configurar Kafka para streaming de datos en tiempo real.
+
+Crear dashboard en Grafana para monitoreo.
+
+Entregables:
+
+Reporte de auditoría de seguridad.
+
+Sistema de alertas por Telegram para fallos en ETL.
+
+Fase 5: Acabados (Optimización y Pruebas)
+Duración: 1 semana
+
+Pruebas de Carga (Stress Testing):
+
+bash
+Copy
+locust -f pruebas.py --users 1000 --spawn-rate 50
+Revoque Fino (Mejoras de UI/UX):
+
+Añadir gráficos interactivos con D3.js.
+
+Implementar dark mode.
+
+Entregables:
+
+Reporte de rendimiento (consultas < 100ms con 1M registros).
+
+Documentación de usuario final.
+
+Fase 6: Inspección Final (Despliegue)
+Duración: 3 días
+
+Checklist de Entrega:
+
+Certificado SSL (Let's Encrypt).
+
+Backup automático en AWS S3.
+
+Script de migración con Alembic.
+
+Entrega de Llaves (Handover):
+
+Capacitación al equipo de operaciones.
+
+Wiki técnica en GitHub.
+
+Cronograma General
+Fase	Duración	Avance
+Estudio de Suelo	1 semana	█████
+Planos	2 semanas	█████
+Cimentación	1 semana	████░
+Estructura	3 semanas	██░░░
+Instalaciones	2 semanas	░░░░░
+Acabados	1 semana	░░░░░
+Inspección	3 días	░░░░░
+Presupuesto Estimado
+Mano de Obra (DevOps + Developers): $15,000 USD
+
+Materiales (Servidores, Licencias): $2,500 USD/mes
+
+Imprevistos (Bug Fixing): 20% del total
+
+Este roadmap prioriza la calidad estructural (código limpio) y cumplimiento de plazos (sprints de 1 semana). ¿Necesitas ajustar algún "material de construcción" (tecnologías) o "plazo de entrega"?
+

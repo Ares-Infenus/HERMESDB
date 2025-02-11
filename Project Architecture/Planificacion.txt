@@ -1,0 +1,61 @@
+Roadmap del Proyecto
+1. Cimentación (Completado)
+Definir el propósito y objetivos del sistema.
+Identificar requisitos técnicos y funcionales.
+Investigar tecnologías y herramientas adecuadas.
+Crear los primeros diagramas de arquitectura (visión general del sistema).
+
+2. Estructura Principal (Arquitectura y Diseño)
+🔹 Meta: Diseñar y documentar la arquitectura del sistema, desde lo macro hasta lo micro.
+
+📌 Tareas clave:
+
+Definir arquitectura general (diagramas IMU en Enterprise Architect).
+Modelado de datos: diseño de esquemas en PostgreSQL/TimescaleDB.
+Diagramas de flujo de procesos ETL.
+Seguridad: definición de estrategias de autenticación y encriptación.
+Planificación de la infraestructura (servidores, almacenamiento, despliegue).
+🛠 Herramientas: Enterprise Architect, dbdiagram.io, Draw.io, Lucidchart.
+
+3. Instalaciones (Implementación Inicial)
+🔹 Meta: Construir la base del sistema con una primera versión funcional.
+
+📌 Tareas clave:
+
+Implementar la base de datos y aplicar estrategias de optimización.
+Crear los scripts de extracción de datos (web scraping, MetaTrader 5).
+Implementar autenticación y control de acceso con JWT.
+Desarrollar la API REST con FastAPI.
+Construir la interfaz de consola para exportación de datos.
+🛠 Herramientas: PostgreSQL, TimescaleDB, FastAPI, Python, Selenium, Requests.
+
+4. Acabados (Optimización y Seguridad)
+🔹 Meta: Mejorar el rendimiento, la seguridad y la estabilidad del sistema.
+
+📌 Tareas clave:
+
+Indexación avanzada e índices BRIN para consultas eficientes.
+Implementación de particionamiento y compresión de tablas.
+Auditoría de logs y versionado de datos.
+Implementar fuzzing y pentesting para detección de vulnerabilidades.
+🛠 Herramientas: OWASP ZAP, Bandit, Grafana, Locust.
+
+5. Inspección Final (Pruebas y Validación)
+🔹 Meta: Asegurar la estabilidad del sistema mediante pruebas rigurosas.
+
+📌 Tareas clave:
+
+Pruebas de carga y estrés con múltiples usuarios.
+Comparación de datos internos con Yahoo Finance u otras fuentes.
+Simulación de fallos y evaluación de estrategias de recuperación.
+6. Entrega y Uso (Despliegue y Documentación)
+🔹 Meta: Poner en marcha el sistema con documentación completa.
+
+📌 Tareas clave:
+
+Configuración de backups automatizados y monitoreo.
+Publicación de documentación en GitHub Wiki.
+Implementación de etiquetado de versiones.
+Capacitación sobre el uso del sistema (manuales o videotutoriales).
+¿Cuál es el siguiente paso que quieres abordar?
+Si ya completaste la cimentación, podemos enfocarnos en la arquitectura del sistema y seguir con los diagramas IMU en Enterprise Architect. 

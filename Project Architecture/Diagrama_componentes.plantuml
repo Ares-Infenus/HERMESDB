@@ -1,0 +1,30 @@
+@startuml
+!theme _none_
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+skinparam componentStyle uml2
+skinparam linetype ortho
+
+title Diagrama de Componentes - Sistema Financiero v1.0
+
+package "Fuentes Externas" {
+  [MetaTrader 5] <<Broker>> #FFE4C4 
+  [Web Scraping] <<Data Source>> #F5F5DC
+  [Yahoo Finance API] <<Validation Source>> #FFFACD
+}
+
+package "Capa de Ingestion" {
+  component "ETL_Processor.py" <<Python>> #87CEEB {
+    component "extractor.py" <<Python>> #F0FFF0
+    component "transformer.py" <<Python>> #F0FFF0
+    component "loader.py" <<Python>> #F0FFF0
+    component "config.py" <<Python>> #F0FFF0
+    component "copy_script.sql" <<PostgreSQL>> #F0FFF0
+  }
+  component "Data_quality.py" <<Spring>> #87CEEB {
+    component "extractor.py" <<Python>> #F0FFF0
+  }
+}  
+package "Data" {
+  component "DATABASE.sql.gz" <<PostgreSQL>> #E0FFFF
+}
