@@ -1,0 +1,91 @@
+@startuml
+!theme _none_
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+skinparam componentStyle uml2
+skinparam linetype ortho
+
+title Diagrama de Componentes - Sistema Financiero v1.0
+
+package "Fuentes Externas" {
+  component "Extraction.py" <<Python>> #FFE4C4{
+    component "metaTrader_5_extract.py" <<Python>> #FFE4C4
+    component "web_scraping.py" <<Python>> #FFE4C4
+    component "yahoo_Finance_API.py" <<Python>> #FFE4C4
+    component "config.json" <<Python>> #F0FFF0
+    component "Unified_json.py" <<Python>> #F0FFF0
+  }
+  component "Google_drive.py" <<Python>> #FFE4C4{
+  }
+}
+
+package "Capa de Ingestion" {
+  component "ETL_Processor.py" <<Python>> #87CEEB {
+    component "transformer.py" <<Python>> #F0FFF0
+    component "loader.py" <<Python>> #F0FFF0
+  }
+  component "Data_Quality.py" <<Python>> #87CEEB {
+    component "statistical_testing.py" <<Python>> #F0FFF0
+    component "correlation.py" <<Python>> #F0FFF0
+    component "error_module.py" <<Python>> #F0FFF0
+    component "cointegration_module.py" <<Python>> #F0FFF0
+  }
+}
+
+package "Data" {
+  component "DATABASE.sql.gz" <<PostgreSQL>> #E0FFFF
+}
+package "Historical_manager" {
+  component "Data_sync.py" <<Python>> #E0FFFF{
+    component "last_data_tracker.py" <<Python>> #E0FFFF
+    component "backup_restore.sql" <<SQL Script>> #E0FFFF
+  }
+}
+package "Testing" {
+  component "Testing.py"<<Python>> #87CEEB{
+    component "test_Data_quality" <<Python>> #87CEEB
+    component "test_ETL_Processor" <<Python>> #87CEEB
+  }
+}
+
+package "Capa de Almacenamiento" {
+  database "Financial DB" <<TimescaleDB>> #AFEEEE {
+    component "Assets" <<Table>> #B0E0E6
+    component "Brokers" <<Table>> #ADD8E6
+    component "Historical Data" <<Hypertable>> #87CEFA
+    component "Operative cost" <<Hypertable>> #87CEFA
+    component "Market" <<Table>> #87CEFA
+    component "Sectors" <<Table>> #87CEFA
+  }
+  component "Redis Cache" <<Redis>> #FFC0CB
+  component "Database.sql" <<PostgreSQL>> #AFEEEE
+}
+package "Arquitecture_Database" {
+  component "Created_Database.py" <<Python>> #E0FFFF{
+    component "TimescaleDB" <<SQL Script>> #E0FFFF
+    component "create_tables.sql" <<SQL Script>> #E0FFFF
+    component "updated_data_ETL.sql" <<SQL Script>> #F0FFF0
+  }
+  component "Updated_Database.py" <<Python>> #E0FFFF{
+    component "data_ETL.sql" <<SQL Script>> #E0FFFF
+  }
+}
+
+' Conexiones entre componentes
+"Extraction.py" --> "loader.py"
+"loader.py" --> "transformer.py"
+"transformer.py" --> "Data_Quality.py"
+"transformer.py" --> "test_ETL_Processor"
+"Data_Quality.py" --> "test_Data_quality"
+"Testing.py" --> "Created_Database.py"
+"Financial DB" --> "Redis Cache"
+"DATABASE.sql.gz" --> "Data_sync.py"
+"Data_sync.py" --> "Financial DB"
+"Financial DB" --> "Data_sync.py"
+"last_data_tracker.py" --> "Extraction .py"
+"Created_Database.py" --> "Financial DB"
+"Testing.py" --> "Updated_Database.py"
+"Updated_Database.py" --> "Financial DB"
+"Google_drive.py" --> "DATABASE.sql.gz"
+
+@enduml

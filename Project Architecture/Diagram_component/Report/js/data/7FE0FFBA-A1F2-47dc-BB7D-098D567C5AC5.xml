@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0:1", "", "Diagrama de componentes", "EARoot/EA1.htm", "178.png", "18", "0", "", "Component diagram0","{73B26C9D-E4E4-4454-BA95-A562DFE28B68}");
+tocTab[tocTab.length] = new Array("0:2", "", "Web_scraping_test", "EARoot/EA8.htm", "10.png", "E106", "0", "", "Component0","{D17D99AE-FA03-455e-BFA3-C1E29C3DFE8F}");
+tocTab[tocTab.length] = new Array("0.1", "1", "data", "EARoot/EA1/EA9.htm", "225.png", "", "", "{E596D466-1656-4f74-B391-E64D905496F3}", "Package");
+tocTab[tocTab.length] = new Array("0.2", "1", "Error_management", "EARoot/EA2/EA21.htm", "225.png", "", "", "{2BF7CEF9-EDB9-493c-B2A0-E21C0E705242}", "Package");
+tocTab[tocTab.length] = new Array("0.3", "1", "Extraction", "EARoot/EA3/EA23.htm", "225.png", "", "", "{481C6A6B-9DBC-4bad-95B5-0E4B3DEBB758}", "Package");
+tocTab[tocTab.length] = new Array("0.4", "1", "Test & Validation", "EARoot/EA4/EA27.htm", "225.png", "", "", "{46A7BA05-3856-44dc-B870-DA6F42A23BA0}", "Package");
