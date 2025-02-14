@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("0.1.1.2:1", "", "external", "EARoot/EA1/EA1/EA2/EA36.htm", "10.png", "E161", "0", "", "Component0","{2D8AE633-14DF-49a4-B931-ADD2025EC09F}");
+tocTab[tocTab.length] = new Array("0.1.1.2:2", "", "interim", "EARoot/EA1/EA1/EA2/EA37.htm", "10.png", "E93", "0", "", "Component0","{BF710CD3-7019-4ae1-9644-7232809C02A2}");
+tocTab[tocTab.length] = new Array("0.1.1.2:3", "", "logs", "EARoot/EA1/EA1/EA2/EA38.htm", "10.png", "E167", "0", "", "Component0","{8A33EF39-D383-4912-81F1-F642CDF2492F}");
+tocTab[tocTab.length] = new Array("0.1.1.2:4", "", "processed", "EARoot/EA1/EA1/EA2/EA39.htm", "10.png", "E90", "0", "", "Component0","{8C86D622-5D7D-4d7a-B6CE-9AD536591A10}");
+tocTab[tocTab.length] = new Array("0.1.1.2:5", "", "DataTransform", "EARoot/EA1/EA1/EA2/EA40.htm", "82.png", "E170", "E90", "", "Artifact0","{A25A8101-AAB0-44c7-9A6F-82FD89AFA6A3}");
+tocTab[tocTab.length] = new Array("0.1.1.2:6", "", "DataClear", "EARoot/EA1/EA1/EA2/EA41.htm", "82.png", "E169", "E93", "", "Artifact0","{6FD97B0B-6077-4f5b-B422-01A82B4EE69F}");
+tocTab[tocTab.length] = new Array("0.1.1.2:7", "", "data_MT5", "EARoot/EA1/EA1/EA2/EA42.htm", "82.png", "E164", "E161", "", "Artifact0","{5364334C-5D63-40be-9C72-B1B5A2096536}");
+tocTab[tocTab.length] = new Array("0.1.1.2:8", "", "dataWebscraping", "EARoot/EA1/EA1/EA2/EA43.htm", "82.png", "E166", "E161", "", "Artifact0","{CBB759A7-663A-454c-94D0-1BB6323F907F}");
+tocTab[tocTab.length] = new Array("0.1.1.2:9", "", "«Document» DataClearlog", "EARoot/EA1/EA1/EA2/EA44.htm", "82.png", "E172", "E167", "", "Artifact0","{B707FF39-B1BB-42e9-A473-8F116F9C0B61}");
+tocTab[tocTab.length] = new Array("0.1.1.2:10", "", "«Document» Transformlog", "EARoot/EA1/EA1/EA2/EA45.htm", "82.png", "E173", "E167", "", "Artifact0","{FB5FD8D6-758D-4376-B290-DDEE899FBA6E}");
+tocTab[tocTab.length] = new Array("0.1.1.2:11", "", "ValidationProcesslog", "EARoot/EA1/EA1/EA2/EA46.htm", "82.png", "E168", "E167", "", "Artifact0","{0C94F347-3FBD-487f-A316-D4B393EEB808}");

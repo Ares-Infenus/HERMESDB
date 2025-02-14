@@ -13,10 +13,7 @@ package "Fuentes Externas" {
     component "web_scraping.py" <<Python>> #FFE4C4
     component "yahoo_Finance_API.py" <<Python>> #FFE4C4
     component "config.json" <<Python>> #F0FFF0
-    component "Unified_json.py" <<Python>> #F0FFF0
-  }
-  component "Google_drive.py" <<Python>> #FFE4C4{
-  }
+    component "Google_drive.py" <<Python>> #FFE4C4
 }
 
 package "Capa de Ingestion" {

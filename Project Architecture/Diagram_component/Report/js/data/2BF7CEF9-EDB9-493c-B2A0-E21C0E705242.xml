@@ -1,1 +1,5 @@
-tocTab[tocTab.length] = new Array("0.2:1", "", "MT5_Extract_error", "EARoot/EA2/EA22.htm", "10.png", "E110", "0", "", "Component0","{DA797805-1479-4f14-AA09-DBAC9B155719}");
+tocTab[tocTab.length] = new Array("0.1.2:1", "", "errorManagementExtraction", "EARoot/EA1/EA2/EA48.htm", "10.png", "E127", "0", "", "Component0","{805A6A91-33AA-4120-AA00-29805D65C93B}");
+tocTab[tocTab.length] = new Array("0.1.2:2", "", "GDExtractError", "EARoot/EA1/EA2/EA49.htm", "10.png", "E136", "0", "", "Component0","{BC06449E-952E-4cfd-BC55-1916E50048C8}");
+tocTab[tocTab.length] = new Array("0.1.2:3", "", "MT5_Extract_error", "EARoot/EA1/EA2/EA50.htm", "10.png", "E110", "0", "", "Component0","{DA797805-1479-4f14-AA09-DBAC9B155719}");
+tocTab[tocTab.length] = new Array("0.1.2:4", "", "Web_scraping_error", "EARoot/EA1/EA2/EA51.htm", "10.png", "E117", "0", "", "Component0","{FC4B336F-7B5F-468a-90F7-8896C6AE8172}");
+tocTab[tocTab.length] = new Array("0.1.2:5", "", "YahooExtractError", "EARoot/EA1/EA2/EA52.htm", "10.png", "E135", "0", "", "Component0","{D383A85B-D9D3-4e2f-9036-73FAE033C9C4}");

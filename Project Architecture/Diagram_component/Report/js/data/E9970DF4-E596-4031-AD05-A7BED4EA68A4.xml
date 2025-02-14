@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.1.7:1", "", "DataClear", "EARoot/EA1/EA7/EA73.htm", "10.png", "E142", "0", "", "Component0","{E8AC9426-539A-4746-BEFD-37A03E135399}");
+tocTab[tocTab.length] = new Array("0.1.7:2", "", "ProcessorInterface", "EARoot/EA1/EA7/EA74.htm", "10.png", "E140", "0", "", "Component0","{969A4602-48EC-4eba-9F9D-A4A9FF3C21CD}");
+tocTab[tocTab.length] = new Array("0.1.7:3", "", "Transform", "EARoot/EA1/EA7/EA75.htm", "10.png", "E146", "0", "", "Component0","{6905D159-D0EA-45ac-967E-D86940C1F0FC}");
+tocTab[tocTab.length] = new Array("0.1.7:4", "", "Validation", "EARoot/EA1/EA7/EA76.htm", "10.png", "E139", "0", "", "Component0","{D4F872A6-AB2F-4d33-A78F-B90C35F0EDE0}");
