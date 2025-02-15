@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de reportes generados, en formatos como HTML, PDF, CSV y otros, con el fin de documentar y visualizar los resultados del procesamiento y análisis de datos.

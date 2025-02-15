@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de copias de seguridad de la base de datos, garantizando la integridad y recuperación de la información en caso de fallos o pérdidas de datos.

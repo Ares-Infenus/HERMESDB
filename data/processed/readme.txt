@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de datos procesados y estructurados, listos para su análisis, visualización o modelado, tras haber pasado por etapas de limpieza, normalización y transformación.

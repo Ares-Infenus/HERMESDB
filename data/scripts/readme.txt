@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de scripts ejecutables del proyecto, incluyendo archivos SQL, Python, Bash u otros, utilizados para automatización, procesamiento de datos y gestión del sistema.

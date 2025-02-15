@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de datos obtenidos de fuentes externas, como APIs y web scraping, antes de su procesamiento e integración en el sistema.

@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de todos los datos esenciales para la ejecución y desarrollo de este proyecto.

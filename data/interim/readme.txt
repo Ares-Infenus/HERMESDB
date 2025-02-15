@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de datos temporales generados durante el procesamiento, utilizados para operaciones intermedias y eliminables una vez completada su función.

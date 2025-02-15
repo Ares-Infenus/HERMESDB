@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de archivos de registro y logs generados durante el procesamiento.
