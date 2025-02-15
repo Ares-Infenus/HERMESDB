@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento del código fuente del proyecto, incluyendo todos los módulos, scripts y archivos necesarios para su desarrollo, mantenimiento y ejecución.

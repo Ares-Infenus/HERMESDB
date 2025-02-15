@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento de datos originales sin procesar (raw input), preservando su estado bruto tal como fueron obtenidos, antes de cualquier transformación, limpieza o preprocesamiento.

@@ -1,0 +1,1 @@
+Carpeta destinada al almacenamiento del código relacionado con el proceso ETQL (Extracción, Transformación, Calidad y Carga) del proyecto, abarcando todas las etapas necesarias para la adquisición, depuración y estructuración de los datos.
