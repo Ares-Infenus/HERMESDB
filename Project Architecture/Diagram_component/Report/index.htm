@@ -2,95 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Model</title>
+<title>data</title>
 <link href="css/ea.css" rel="stylesheet" type="text/css" />
 <script>
-const guid_look = new Map([['73B26C9D-E4E4-4454-BA95-A562DFE28B68', 'EA1/EA1.htm'],
-['7FE0FFBA-A1F2-47DC-BB7D-098D567C5AC5', 'EA1/EA3.htm'],
-['A5E0BBBB-CFE6-485C-AC08-F1A45BCCC69F', 'EA1/EA4.htm'],
-['2BF7CEF9-EDB9-493C-B2A0-E21C0E705242', 'EA1/EA5.htm'],
-['802243C1-096E-4C24-AB8D-DD0E446E44BD', 'EA1/EA6.htm'],
-['481C6A6B-9DBC-4BAD-95B5-0E4B3DEBB758', 'EA1/EA7.htm'],
-['E34547DA-CB61-4B16-8C8F-9C18DD68818B', 'EA1/EA8.htm'],
-['819543A2-9E27-4015-BACA-FD6A038C4EF1', 'EA1/EA9.htm'],
-['C510BDD5-D94D-40CC-8E5F-FE7025941160', 'EA1/EA10.htm'],
-['E9970DF4-E596-4031-AD05-A7BED4EA68A4', 'EA1/EA11.htm'],
-['46A7BA05-3856-44DC-B870-DA6F42A23BA0', 'EA1/EA12.htm'],
-['497068A0-3D4C-4D0B-8009-5D39C583D3BC', 'EA1/EA13.htm'],
-['A5E0BBBB-CFE6-485C-AC08-F1A45BCCC69F', 'EA1/EA1/EA14.htm'],
-['E596D466-1656-4F74-B391-E64D905496F3', 'EA1/EA1/EA15.htm'],
-['13C43A1D-9C6E-4F4C-BF2B-1FFAE295D049', 'EA1/EA1/EA16.htm'],
-['E596D466-1656-4F74-B391-E64D905496F3', 'EA1/EA1/EA1/EA17.htm'],
-['F8D928C2-CEF0-4880-BD6B-97DD440800D1', 'EA1/EA1/EA1/EA18.htm'],
-['1D829A10-DB4A-4BCB-9D3B-8349E2796AC8', 'EA1/EA1/EA1/EA19.htm'],
-['DFE29947-239D-4E43-8433-4B0195E24212', 'EA1/EA1/EA1/EA20.htm'],
-['CFE9A917-7730-4719-AB4D-42140F976869', 'EA1/EA1/EA1/EA21.htm'],
-['0AE28D52-7736-4279-AD96-81D971F4DA6C', 'EA1/EA1/EA1/EA22.htm'],
-['EC958AA3-32CC-4AA7-98FE-20823EECC3A1', 'EA1/EA1/EA1/EA23.htm'],
-['EA23C353-28CF-424A-BDF4-4D4DF623C7AB', 'EA1/EA1/EA1/EA24.htm'],
-['0A29CB3E-A9B2-444E-B01D-45CA0B5A2D0E', 'EA1/EA1/EA1/EA25.htm'],
-['73E4F495-F58D-44B9-B869-303B1C46FB5E', 'EA1/EA1/EA1/EA26.htm'],
-['19214094-B48E-4C08-9FAD-38AC29A08DCF', 'EA1/EA1/EA1/EA27.htm'],
-['BDD16D8E-2449-4071-9B3E-6880A983A568', 'EA1/EA1/EA1/EA28.htm'],
-['F09AC5DA-0BED-45C1-94E4-FF54D758C2D4', 'EA1/EA1/EA1/EA29.htm'],
-['4223C14E-B467-401E-9D27-D4D008951081', 'EA1/EA1/EA1/EA30.htm'],
-['4BA8AFA9-87E2-4EFC-A3D6-C002295CB504', 'EA1/EA1/EA1/EA31.htm'],
-['04768CB6-758A-47AF-B11B-980BB13DDAAF', 'EA1/EA1/EA1/EA32.htm'],
-['395DA758-5CA1-48F5-A6F0-834E967488E0', 'EA1/EA1/EA1/EA33.htm'],
-['9D9ED13F-98A0-4E1A-9046-586D791E2FC9', 'EA1/EA1/EA1/EA34.htm'],
-['13C43A1D-9C6E-4F4C-BF2B-1FFAE295D049', 'EA1/EA1/EA2/EA35.htm'],
-['2D8AE633-14DF-49A4-B931-ADD2025EC09F', 'EA1/EA1/EA2/EA36.htm'],
-['BF710CD3-7019-4AE1-9644-7232809C02A2', 'EA1/EA1/EA2/EA37.htm'],
-['8A33EF39-D383-4912-81F1-F642CDF2492F', 'EA1/EA1/EA2/EA38.htm'],
-['8C86D622-5D7D-4D7A-B6CE-9AD536591A10', 'EA1/EA1/EA2/EA39.htm'],
-['A25A8101-AAB0-44C7-9A6F-82FD89AFA6A3', 'EA1/EA1/EA2/EA40.htm'],
-['6FD97B0B-6077-4F5B-B422-01A82B4EE69F', 'EA1/EA1/EA2/EA41.htm'],
-['5364334C-5D63-40BE-9C72-B1B5A2096536', 'EA1/EA1/EA2/EA42.htm'],
-['CBB759A7-663A-454C-94D0-1BB6323F907F', 'EA1/EA1/EA2/EA43.htm'],
-['B707FF39-B1BB-42E9-A473-8F116F9C0B61', 'EA1/EA1/EA2/EA44.htm'],
-['FB5FD8D6-758D-4376-B290-DDEE899FBA6E', 'EA1/EA1/EA2/EA45.htm'],
-['0C94F347-3FBD-487F-A316-D4B393EEB808', 'EA1/EA1/EA2/EA46.htm'],
-['2BF7CEF9-EDB9-493C-B2A0-E21C0E705242', 'EA1/EA2/EA47.htm'],
-['805A6A91-33AA-4120-AA00-29805D65C93B', 'EA1/EA2/EA48.htm'],
-['BC06449E-952E-4CFD-BC55-1916E50048C8', 'EA1/EA2/EA49.htm'],
-['DA797805-1479-4F14-AA09-DBAC9B155719', 'EA1/EA2/EA50.htm'],
-['FC4B336F-7B5F-468A-90F7-8896C6AE8172', 'EA1/EA2/EA51.htm'],
-['D383A85B-D9D3-4E2F-9036-73FAE033C9C4', 'EA1/EA2/EA52.htm'],
-['802243C1-096E-4C24-AB8D-DD0E446E44BD', 'EA1/EA3/EA53.htm'],
-['750552B0-1B6F-4568-8C13-4F2F4AD49531', 'EA1/EA3/EA54.htm'],
-['481C6A6B-9DBC-4BAD-95B5-0E4B3DEBB758', 'EA1/EA4/EA55.htm'],
-['01F1E113-E988-4C2A-8754-82063898D117', 'EA1/EA4/EA56.htm'],
-['B0DD3308-ABC1-4898-8939-74FECCC01D07', 'EA1/EA4/EA57.htm'],
-['39BA97EB-E51B-4A0B-91E8-403EEFD805A7', 'EA1/EA4/EA58.htm'],
-['E535D5FA-4C7A-4557-A3FD-4694B00CD9F9', 'EA1/EA4/EA59.htm'],
-['00AE374D-EA81-48B4-B91B-B1826371FB31', 'EA1/EA4/EA60.htm'],
-['E34547DA-CB61-4B16-8C8F-9C18DD68818B', 'EA1/EA5/EA61.htm'],
-['0ED5462C-0654-4F14-88DB-333BF6336154', 'EA1/EA5/EA62.htm'],
-['466DB58F-5C52-446B-B829-CC4BF2B3CD54', 'EA1/EA5/EA63.htm'],
-['0ED5462C-0654-4F14-88DB-333BF6336154', 'EA1/EA5/EA1/EA64.htm'],
-['67CC6BEA-E2CF-4027-A052-8B3F6F8CFC8A', 'EA1/EA5/EA1/EA65.htm'],
-['89507782-C2C4-40AD-88F0-FECEBBFC40E8', 'EA1/EA5/EA1/EA66.htm'],
-['466DB58F-5C52-446B-B829-CC4BF2B3CD54', 'EA1/EA5/EA2/EA67.htm'],
-['55074E72-CFAC-418D-8A7D-5F49375D8969', 'EA1/EA5/EA2/EA68.htm'],
-['2856C18E-22F1-4607-8C90-E5D545B00687', 'EA1/EA5/EA2/EA69.htm'],
-['C510BDD5-D94D-40CC-8E5F-FE7025941160', 'EA1/EA6/EA70.htm'],
-['916544C1-CEFD-4DC8-9D33-C6645569FD2E', 'EA1/EA6/EA71.htm'],
-['E9970DF4-E596-4031-AD05-A7BED4EA68A4', 'EA1/EA7/EA72.htm'],
-['E8AC9426-539A-4746-BEFD-37A03E135399', 'EA1/EA7/EA73.htm'],
-['969A4602-48EC-4EBA-9F9D-A4A9FF3C21CD', 'EA1/EA7/EA74.htm'],
-['6905D159-D0EA-45AC-967E-D86940C1F0FC', 'EA1/EA7/EA75.htm'],
-['D4F872A6-AB2F-4D33-A78F-B90C35F0EDE0', 'EA1/EA7/EA76.htm'],
-['46A7BA05-3856-44DC-B870-DA6F42A23BA0', 'EA1/EA8/EA77.htm'],
-['7633FE13-9E33-411D-937B-76A5A8770A3C', 'EA1/EA8/EA78.htm'],
-['E98AE232-D086-4318-A404-0EB1454FCD0D', 'EA1/EA8/EA79.htm'],
-['27CD65AA-4BBE-45CE-8688-2E7F53962306', 'EA1/EA8/EA80.htm'],
-['D17D99AE-FA03-455E-BFA3-C1E29C3DFE8F', 'EA1/EA8/EA81.htm'],
-['6C70A0A4-A04B-4D30-944F-D021D470079A', 'EA1/EA8/EA82.htm'],
-['497068A0-3D4C-4D0B-8009-5D39C583D3BC', 'EA1/EA9/EA83.htm'],
-['09A57352-9B6F-4FFE-8DA6-AFD734DD7980', 'EA1/EA9/EA84.htm'],
-['9D85576F-6ABB-4FFE-8756-D93F2E095619', 'EA1/EA9/EA85.htm'],
-['A9F78EA1-AD8B-4E8F-86B3-EF0ED3B1A1E7', 'EA1/EA9/EA86.htm'],
-['15F164F0-FB84-4477-BD62-6E3D73D0275E', 'EA1/EA9/EA87.htm'],
+const guid_look = new Map([['F0966EBD-EE48-4D9F-902A-893E2D7920F7', 'EA1.htm'],
+['CC390E95-3E8F-468B-94B4-1A6B0A0BA9B4', 'EA2.htm'],
+['013E6137-78F9-4B13-9F81-C141CFB25DBC', 'EA3.htm'],
+['358BAB35-F9B4-4227-BD1E-0E538E533B80', 'EA4.htm'],
+['BE3C3DA7-3C09-4E81-A4F0-55C372C1D182', 'EA5.htm'],
 ]);
 
 		function switchProjectProperties()
@@ -186,7 +105,7 @@ const guid_look = new Map([['73B26C9D-E4E4-4454-BA95-A562DFE28B68', 'EA1/EA1.htm
 <div class="section group" >
 
 		<div class="col span_2_of_2 header_frame">
-			<h1> Model </h1>
+			<h1> data </h1>
 			<img class="header_image" src="images/ea-banner.png" align="right" alt="Header Image" />
 		</div>
 		<div class="col span_2_of_2 breadcrumb_frame">
@@ -205,7 +124,8 @@ const guid_look = new Map([['73B26C9D-E4E4-4454-BA95-A562DFE28B68', 'EA1/EA1.htm
 					<td class="indexcell">
 						<div class="projectBrowserTitle">Project: </div>
 						<ul>
-<li><img src="images/31.png" alt="Package"/> <a href="./EARoot/EA1/EA3.htm">Diagrama de componentes</a></li>
+<li><img src="images/10.png" alt="Component"/> <a href="./EARoot/EA2.htm">logs</a></li>
+<li><img src="images/10.png" alt="Component"/> <a href="./EARoot/EA3.htm">scripts</a></li>
 </ul>
 
 					</td>
@@ -214,116 +134,7 @@ const guid_look = new Map([['73B26C9D-E4E4-4454-BA95-A562DFE28B68', 'EA1/EA1.htm
 						<h2>Welcome to your model</h2>
 						<p>To get started navigate through the model via the index on the left</p> 
 						</div>
-						<div class="PageBody">
-	<div class="diagram_image"> 
-<img src="./EARoot/EA1/EA2.png" usemap="#EA2" border="0" />
-
-<MAP NAME="EA2">
-<area shape="rect" coords="9309,2634,9579,2784" href="./EARoot/EA1/EA1/EA2/EA45.htm" target="_self">
-<area shape="rect" coords="9309,2436,9579,2586" href="./EARoot/EA1/EA1/EA2/EA44.htm" target="_self">
-<area shape="rect" coords="9945,1620,10215,1770" href="./EARoot/EA1/EA1/EA2/EA40.htm" target="_self">
-<area shape="rect" coords="9966,2238,10236,2388" href="./EARoot/EA1/EA1/EA2/EA41.htm" target="_self">
-<area shape="rect" coords="9288,2235,9621,2385" href="./EARoot/EA1/EA1/EA2/EA46.htm" target="_self">
-<area shape="rect" coords="9237,2106,9654,2826" href="./EARoot/EA1/EA1/EA2/EA38.htm" target="_self">
-<area shape="rect" coords="9294,1839,9591,1989" href="./EARoot/EA1/EA1/EA2/EA43.htm" target="_self">
-<area shape="rect" coords="9300,1620,9570,1770" href="./EARoot/EA1/EA1/EA2/EA42.htm" target="_self">
-<area shape="rect" coords="9228,1479,9657,2079" href="./EARoot/EA1/EA1/EA2/EA36.htm" target="_self">
-<area shape="rect" coords="7722,2937,8052,3117" href="./EARoot/EA1/EA3/EA54.htm" target="_self">
-<area shape="rect" coords="6918,2592,8166,3369" href="./EARoot/EA1/EA3/EA53.htm" target="_self">
-<area shape="rect" coords="8511,1989,8841,2169" href="./EARoot/EA1/EA5/EA1/EA65.htm" target="_self">
-<area shape="rect" coords="8511,1647,8841,1827" href="./EARoot/EA1/EA5/EA1/EA66.htm" target="_self">
-<area shape="rect" coords="7023,597,7440,780" href="./EARoot/EA1/EA9/EA86.htm" target="_self">
-<area shape="rect" coords="7107,843,7524,1020" href="./EARoot/EA1/EA9/EA85.htm" target="_self">
-<area shape="rect" coords="6951,357,7440,534" href="./EARoot/EA1/EA9/EA84.htm" target="_self">
-<area shape="rect" coords="7683,537,8100,720" href="./EARoot/EA1/EA9/EA87.htm" target="_self">
-<area shape="rect" coords="6873,204,8211,1053" href="./EARoot/EA1/EA9/EA83.htm" target="_self">
-<area shape="rect" coords="7011,2061,7341,2241" href="./EARoot/EA1/EA7/EA75.htm" target="_self">
-<area shape="rect" coords="5463,1719,5793,1899" href="./EARoot/EA1/EA6/EA71.htm" target="_self">
-<area shape="rect" coords="4893,1125,6360,2496" href="./EARoot/EA1/EA6/EA70.htm" target="_self">
-<area shape="rect" coords="6918,1722,7248,1902" href="./EARoot/EA1/EA7/EA73.htm" target="_self">
-<area shape="rect" coords="7725,1716,8055,1896" href="./EARoot/EA1/EA7/EA74.htm" target="_self">
-<area shape="rect" coords="7107,1455,7437,1635" href="./EARoot/EA1/EA7/EA76.htm" target="_self">
-<area shape="rect" coords="6873,1269,8211,2481" href="./EARoot/EA1/EA7/EA72.htm" target="_self">
-<area shape="rect" coords="1197,3756,1527,3936" href="./EARoot/EA1/EA2/EA49.htm" target="_self">
-<area shape="rect" coords="648,3651,978,3831" href="./EARoot/EA1/EA2/EA52.htm" target="_self">
-<area shape="rect" coords="1401,1869,1671,2019" href="./EARoot/EA1/EA1/EA1/EA26.htm" target="_self">
-<area shape="rect" coords="675,183,1005,363" href="./EARoot/EA1/EA8/EA79.htm" target="_self">
-<area shape="rect" coords="708,1938,978,2088" href="./EARoot/EA1/EA1/EA1/EA31.htm" target="_self">
-<area shape="rect" coords="1389,2202,1659,2352" href="./EARoot/EA1/EA1/EA1/EA30.htm" target="_self">
-<area shape="rect" coords="3777,1227,4107,1407" href="./EARoot/EA1/EA4/EA57.htm" target="_self">
-<area shape="rect" coords="1299,3351,1677,3531" href="./EARoot/EA1/EA2/EA48.htm" target="_self">
-<area shape="rect" coords="2238,2100,2568,2280" href="./EARoot/EA1/EA5/EA2/EA68.htm" target="_self">
-<area shape="rect" coords="1155,807,1485,987" href="./EARoot/EA1/EA8/EA82.htm" target="_self">
-<area shape="rect" coords="690,1548,996,1698" href="./EARoot/EA1/EA1/EA1/EA34.htm" target="_self">
-<area shape="rect" coords="702,2730,972,2880" href="./EARoot/EA1/EA1/EA1/EA28.htm" target="_self">
-<area shape="rect" coords="3828,2145,4158,2325" href="./EARoot/EA1/EA4/EA60.htm" target="_self">
-<area shape="rect" coords="648,3417,978,3597" href="./EARoot/EA1/EA2/EA51.htm" target="_self">
-<area shape="rect" coords="1383,1662,1689,1797" href="./EARoot/EA1/EA1/EA1/EA25.htm" target="_self">
-<area shape="rect" coords="693,1731,996,1881" href="./EARoot/EA1/EA1/EA1/EA33.htm" target="_self">
-<area shape="rect" coords="660,2541,972,2691" href="./EARoot/EA1/EA1/EA1/EA29.htm" target="_self">
-<area shape="rect" coords="3876,1851,4206,2031" href="./EARoot/EA1/EA4/EA59.htm" target="_self">
-<area shape="rect" coords="648,3141,978,3321" href="./EARoot/EA1/EA2/EA50.htm" target="_self">
-<area shape="rect" coords="690,1341,1011,1491" href="./EARoot/EA1/EA1/EA1/EA32.htm" target="_self">
-<area shape="rect" coords="516,3012,1821,4005" href="./EARoot/EA1/EA2/EA47.htm" target="_self">
-<area shape="rect" coords="678,690,1008,870" href="./EARoot/EA1/EA8/EA81.htm" target="_self">
-<area shape="rect" coords="675,417,1005,597" href="./EARoot/EA1/EA8/EA80.htm" target="_self">
-<area shape="rect" coords="1155,417,1581,630" href="./EARoot/EA1/EA8/EA78.htm" target="_self">
-<area shape="rect" coords="633,30,1971,1026" href="./EARoot/EA1/EA8/EA77.htm" target="_self">
-<area shape="rect" coords="687,2337,957,2487" href="./EARoot/EA1/EA1/EA1/EA27.htm" target="_self">
-<area shape="rect" coords="1398,1443,1668,1593" href="./EARoot/EA1/EA1/EA1/EA24.htm" target="_self">
-<area shape="rect" coords="3156,1701,3486,1881" href="./EARoot/EA1/EA4/EA56.htm" target="_self">
-<area shape="rect" coords="3927,1521,4257,1701" href="./EARoot/EA1/EA4/EA58.htm" target="_self">
-<area shape="rect" coords="2910,1041,4377,2496" href="./EARoot/EA1/EA4/EA55.htm" target="_self">
-<area shape="rect" coords="2250,624,2580,804" href="./EARoot/EA1/EA1/EA1/EA23.htm" target="_self">
-<area shape="rect" coords="615,1230,1071,2145" href="./EARoot/EA1/EA1/EA1/EA20.htm" target="_self">
-<area shape="rect" coords="2502,852,2832,1032" href="./EARoot/EA1/EA1/EA1/EA21.htm" target="_self">
-<area shape="rect" coords="1356,2091,1689,2412" href="./EARoot/EA1/EA1/EA1/EA18.htm" target="_self">
-<area shape="rect" coords="9879,2142,10290,2436" href="./EARoot/EA1/EA1/EA2/EA37.htm" target="_self">
-<area shape="rect" coords="597,2220,1056,2919" href="./EARoot/EA1/EA1/EA1/EA19.htm" target="_self">
-<area shape="rect" coords="9870,1497,10290,1839" href="./EARoot/EA1/EA1/EA2/EA39.htm" target="_self">
-<area shape="rect" coords="1332,1299,1737,2070" href="./EARoot/EA1/EA1/EA1/EA22.htm" target="_self">
-<area shape="rect" coords="501,1179,1839,2961" href="./EARoot/EA1/EA1/EA1/EA17.htm" target="_self">
-<area shape="rect" coords="2238,1623,2568,1803" href="./EARoot/EA1/EA5/EA2/EA69.htm" target="_self">
-<area shape="rect" coords="2208,1416,2598,2412" href="./EARoot/EA1/EA5/EA2/EA67.htm" target="_self">
-<area shape="rect" coords="8433,1455,8922,2280" href="./EARoot/EA1/EA5/EA1/EA64.htm" target="_self">
-<area shape="rect" coords="9144,1335,10455,2868" href="./EARoot/EA1/EA1/EA2/EA35.htm" target="_self">
-</MAP>
- </div>
-	<div class="ObjectTitle">Diagrama de componentes : Component diagram</div>
-	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
-		<tr>
-			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">12/02/2025 15:06:35</td>
-		</tr>
-		<tr>
-			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
-			<td width="85%" class="ObjectDetailsValue">13/02/2025 23:27:12</td>
-		</tr>
-		<tr style="padding-top: 10px;">
-			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchProjectProperties()"><img src="./images//plus03.gif" align="absmiddle" id="proj" /></button>Project:</td>
-			<td width="85%" class="ObjectDetailsValue"></td>			
-		</tr>
-		<tr id="proj00" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td width="85%" class="ObjectDetailsValue">spinz</td>
-		</tr>
-		<tr id="proj01" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td width="85%" class="ObjectDetailsValue">1.0</td>
-		</tr>
-		<tr>
-			<td width="15%" class="ObjectDetailsTopic"><button onclick="switchAdvancedProperties()"><img src="./images//plus03.gif" align="absmiddle" id="adv" /></button>Advanced:</td>
-			<td width="85%" class="ObjectDetailsValue"></td>			
-		</tr>
-		<tr id="adv00" style="display: none;">
-			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
-			<td width="85%" class="ObjectDetailsValue">{73B26C9D-E4E4-4454-BA95-A562DFE28B68}</td>
-		</tr>
-	</table>
-	
-</div>
-
-
+						
 					</td>
 				</tr>
 			</tbody>
