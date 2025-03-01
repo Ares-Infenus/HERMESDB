@@ -203,7 +203,7 @@ if __name__ == "__main__":
     market_path        = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_market.csv"
     sector_output_path = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_Sector.csv"
     actives_input_path = symbol_info_path  # Se puede ajustar si es diferente
-    assets_output_path = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup.csv"
+    assets_output_path = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_Assets.csv"
 
     # Procesar la tabla de sectores
     df_sector = etl.process_table_sector(symbol_info_path, market_path, sector_output_path)

@@ -24,7 +24,7 @@ Write-Host "Ejecutando script de creación de tablas en la base de datos $dbName
 & "$psqlPath" -h $dbHost -p $dbPort -U $dbUser -d $dbName -f $scriptPath
 
 # Ejecutar el script SQL para cargar los datos con COPY
-$copyScriptPath = "C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\src\ETLQ\Load\modules\Import_data.sql"
+$copyScriptPath = "C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\src\ETLQ\Load\modules\load_data_hermesdb.sql"
 Write-Host "Ejecutando script de carga de datos en la base de datos $dbName..."
 & "$psqlPath" -h $dbHost -p $dbPort -U $dbUser -d $dbName -f $copyScriptPath
 
