@@ -1,172 +1,216 @@
 import pandas as pd
 import re
+from typing import Dict
 
 class ETLProcessor:
-    def __init__(self):
+    """
+    Clase ETLProcessor encargada de realizar procesos de extracción, transformación y carga (ETL)
+    para diferentes tablas (sectores, activos). Cada método se encarga de una única responsabilidad,
+    siguiendo el principio de responsabilidad única del SOLID.
+    """
+
+    def __init__(self) -> None:
         pass
 
-    def process_table_sector(self, ruta_symbol_info, ruta_market, ruta_salida):
+    @staticmethod
+    def _read_and_normalize_csv(path: str, usecols: list, normalize_cols: Dict[str, str] = None) -> pd.DataFrame:
         """
-        Procesa la tabla de sectores:
-          1. Importa y normaliza los CSV.
-          2. Elimina duplicados.
-          3. Realiza el merge entre los datos.
-          4. Realiza transformaciones (renombrar, eliminar columnas y agregar índice).
-          5. Exporta el resultado a CSV.
-          
-        Parámetros:
-            ruta_symbol_info (str): Ruta del CSV con columnas ['mercado', 'sector'].
-            ruta_market (str): Ruta del CSV con columnas ['nombre', 'mercado_id'].
-            ruta_salida (str): Ruta donde se guardará el CSV resultado.
-        """
-        columnas_df1 = ['mercado', 'sector']
-        columnas_df2 = ['nombre', 'mercado_id']
-        
-        # Importación y normalización
-        df1 = pd.read_csv(ruta_symbol_info, usecols=columnas_df1)
-        df2 = pd.read_csv(ruta_market, usecols=columnas_df2)
-        df1['mercado'] = df1['mercado'].str.strip().str.lower()
-        df2['nombre']  = df2['nombre'].str.strip().str.lower()
-        
-        # Eliminar duplicados
-        df1_unicos = df1.drop_duplicates(subset=['mercado', 'sector'])
-        df2_unicos = df2.drop_duplicates(subset=['nombre'])
-        
-        # Merge y transformación
-        resultado = pd.merge(df1_unicos, df2_unicos, left_on='mercado', right_on='nombre', how='left')
-        resultado.drop(columns=['nombre', 'mercado'], inplace=True)
-        resultado = resultado.rename(columns={'sector': 'nombre'})
-        resultado.insert(0, 'sector_id', range(1, len(resultado) + 1))
-        resultado = resultado[['sector_id', 'nombre', 'mercado_id']]
-        
-        # Exportar el DataFrame de sectores
-        resultado.to_csv(ruta_salida, index=False)
-        return resultado
+        Lee un CSV y normaliza (strip y lower) las columnas especificadas.
 
-    def clean_actives(self, ruta_csv):
+        Args:
+            path (str): Ruta del archivo CSV.
+            usecols (list): Lista de columnas a leer.
+            normalize_cols (Dict[str, str], opcional): Diccionario de columnas a normalizar.
+                La clave es el nombre de la columna en el DataFrame y el valor es el método de normalización.
+                Por defecto normaliza aplicando str.strip() y str.lower().
+
+        Returns:
+            pd.DataFrame: DataFrame con los datos leídos y normalizados.
         """
-        Importa un CSV, elimina columnas innecesarias y normaliza la columna 'Symbol'.
-        Nota: Ya no se exporta el DataFrame intermedio (Table_Actives.csv).
-        
-        Parámetros:
-            ruta_csv (str): Ruta del CSV de entrada.
-            
-        Retorna:
-            pd.DataFrame: DataFrame procesado.
-        """
-        df = pd.read_csv(ruta_csv)
-        columnas_a_eliminar = ["Broker", "Currency", "Category", "Sector/Industry", "ISIN", "Pais"]
-        df = df.drop(columns=[col for col in columnas_a_eliminar if col in df.columns], errors='ignore')
-        
-        if "Symbol" in df.columns:
-            # Eliminación de sufijos
-            df["Symbol"] = df["Symbol"].apply(lambda x: re.sub(r"_CFD.*$", "", x))
-            df["Symbol"] = df["Symbol"].str.replace(r"\.(?!IDX$|HK$)[A-Za-z0-9-]+$", "", regex=True)
-        
+        df = pd.read_csv(path, usecols=usecols)
+        if normalize_cols:
+            for col in normalize_cols:
+                if col in df.columns:
+                    df[col] = df[col].astype(str).str.strip().str.lower()
         return df
 
-    def replace_market_in_actives(self, df_activos, ruta_market):
+    def process_table_sector(self, symbol_info_path: str, market_path: str, output_path: str) -> pd.DataFrame:
         """
-        Reemplaza en el DataFrame de activos la columna 'mercado' por su correspondiente 'mercado_id'
-        usando como mapeo el CSV de mercados.
-        
-        Parámetros:
-            df_activos (pd.DataFrame): DataFrame de activos.
-            ruta_market (str): Ruta del CSV de mercados.
-            
-        Retorna:
-            pd.DataFrame: DataFrame actualizado.
-        """
-        df_market = pd.read_csv(ruta_market)
-        mapeo = df_market.set_index('nombre')['mercado_id'].to_dict()
-        df_activos['mercado'] = df_activos['mercado'].map(mapeo)
-        return df_activos
+        Procesa y une la información de sectores con el mapeo de mercados para generar una tabla de sectores.
 
-    def replace_sector_in_actives(self, df_activos, ruta_sector_mapping):
-        """
-        Reemplaza en el DataFrame de activos la columna 'sector' por su correspondiente 'sector_id'
-        usando como mapeo el CSV de mapeo de sectores.
-        
-        Parámetros:
-            df_activos (pd.DataFrame): DataFrame de activos (con columnas como 'Symbol', 'Description', 'mercado', 'sector').
-            ruta_sector_mapping (str): Ruta del CSV de mapeo de sectores (con columnas ['sector_id', 'nombre', 'mercado_id']).
-            
-        Retorna:
-            pd.DataFrame: DataFrame actualizado.
-        """
-        df_sector = pd.read_csv(ruta_sector_mapping)
+        Se realizan los siguientes pasos:
+          1. Importa y normaliza los CSV de symbol_info y market.
+          2. Elimina duplicados.
+          3. Une (merge) los datos utilizando 'mercado' y 'nombre' como llave.
+          4. Realiza transformaciones (renombrar columnas, eliminar columnas no necesarias y agregar índice).
+          5. Exporta el resultado a CSV.
 
-        # Normalizar para evitar problemas de mayúsculas o espacios
-        df_activos['sector'] = df_activos['sector'].str.strip().str.lower()
-        df_sector['nombre'] = df_sector['nombre'].str.strip().str.lower()
+        Args:
+            symbol_info_path (str): Ruta del CSV con columnas ['mercado', 'sector'].
+            market_path (str): Ruta del CSV con columnas ['nombre', 'mercado_id'].
+            output_path (str): Ruta donde se guardará el CSV resultado.
 
-        mapeo_sector = df_sector.set_index('nombre')['sector_id'].to_dict()
-        df_activos['sector'] = df_activos['sector'].map(mapeo_sector)
-        
-        return df_activos
+        Returns:
+            pd.DataFrame: DataFrame final procesado.
+        """
+        # Paso 1: Importar y normalizar
+        df_symbol = self._read_and_normalize_csv(
+            symbol_info_path, 
+            ['mercado', 'sector'], 
+            normalize_cols={'mercado': 'normalize'}
+        )
+        df_market = self._read_and_normalize_csv(
+            market_path, 
+            ['nombre', 'mercado_id'], 
+            normalize_cols={'nombre': 'normalize'}
+        )
+
+        # Paso 2: Eliminar duplicados
+        df_symbol = df_symbol.drop_duplicates(subset=['mercado', 'sector'])
+        df_market = df_market.drop_duplicates(subset=['nombre'])
+
+        # Paso 3: Unir datos por llave
+        df_merged = pd.merge(df_symbol, df_market, left_on='mercado', right_on='nombre', how='left')
+
+        # Paso 4: Transformaciones: eliminar columnas innecesarias, renombrar y agregar índice
+        df_merged.drop(columns=['nombre', 'mercado'], inplace=True)
+        df_merged.rename(columns={'sector': 'nombre'}, inplace=True)
+        df_merged.insert(0, 'sector_id', range(1, len(df_merged) + 1))
+        df_result = df_merged[['sector_id', 'nombre', 'mercado_id']]
+
+        # Paso 5: Exportar resultado
+        df_result.to_csv(output_path, index=False)
+        return df_result
+
+    def clean_actives(self, actives_path: str) -> pd.DataFrame:
+        """
+        Limpia el CSV de activos eliminando columnas innecesarias y normalizando la columna 'Symbol'.
+
+        Se eliminan sufijos específicos en la columna 'Symbol' para dejarla en un formato estandarizado.
+
+        Args:
+            actives_path (str): Ruta del CSV de entrada con datos de activos.
+
+        Returns:
+            pd.DataFrame: DataFrame con datos limpios.
+        """
+        df = pd.read_csv(actives_path)
+        columns_to_drop = ["Broker", "Currency", "Category", "Sector/Industry", "ISIN", "Pais"]
+        df.drop(columns=[col for col in columns_to_drop if col in df.columns], inplace=True, errors='ignore')
+
+        if "Symbol" in df.columns:
+            df["Symbol"] = df["Symbol"].apply(lambda x: re.sub(r"_CFD.*$", "", x))
+            df["Symbol"] = df["Symbol"].str.replace(r"\.(?!IDX$|HK$)[A-Za-z0-9-]+$", "", regex=True)
+        return df
+
+    def replace_market_in_actives(self, df_actives: pd.DataFrame, market_path: str) -> pd.DataFrame:
+        """
+        Reemplaza la columna 'mercado' en el DataFrame de activos con su correspondiente 'mercado_id'
+        utilizando el mapeo proporcionado en el CSV de mercados.
+
+        Args:
+            df_actives (pd.DataFrame): DataFrame de activos.
+            market_path (str): Ruta del CSV que contiene el mapeo de mercados.
+
+        Returns:
+            pd.DataFrame: DataFrame con la columna 'mercado' actualizada a 'mercado_id'.
+        """
+        df_market = pd.read_csv(market_path)
+        mapping = df_market.set_index('nombre')['mercado_id'].to_dict()
+        df_actives['mercado'] = df_actives['mercado'].map(mapping)
+        return df_actives
+
+    def replace_sector_in_actives(self, df_actives: pd.DataFrame, sector_mapping_path: str) -> pd.DataFrame:
+        """
+        Reemplaza la columna 'sector' en el DataFrame de activos por el 'sector_id'
+        utilizando el mapeo de sectores del CSV.
+
+        Args:
+            df_actives (pd.DataFrame): DataFrame de activos con la columna 'sector'.
+            sector_mapping_path (str): Ruta del CSV de mapeo de sectores (con columnas ['sector_id', 'nombre', 'mercado_id']).
+
+        Returns:
+            pd.DataFrame: DataFrame con la columna 'sector' reemplazada por 'sector_id'.
+        """
+        df_sector = pd.read_csv(sector_mapping_path)
+        df_actives['sector'] = df_actives['sector'].astype(str).str.strip().str.lower()
+        df_sector['nombre'] = df_sector['nombre'].astype(str).str.strip().str.lower()
+        mapping_sector = df_sector.set_index('nombre')['sector_id'].to_dict()
+        df_actives['sector'] = df_actives['sector'].map(mapping_sector)
+        return df_actives
+
+    def process_actives(self, actives_input_path: str, market_path: str, sector_mapping_path: str
+                        , assets_output_path: str) -> pd.DataFrame:
+        """
+        Ejecuta el proceso completo de transformación y exportación de la tabla de activos.
+
+        El proceso incluye:
+          1. Limpieza inicial del CSV de activos.
+          2. Reemplazo de 'mercado' por 'mercado_id' usando el CSV de mercados.
+          3. Reemplazo de 'sector' por 'sector_id' usando el mapeo de sectores.
+          4. Eliminación de duplicados en la columna 'Symbol'.
+          5. Modificaciones finales:
+             - Agregar índice incremental 'activo_id'.
+             - Renombrar columnas para mantener consistencia:
+                  'Symbol'   -> 'simbolo'
+                  'mercado'  -> 'mercado_id'
+                  'sector'   -> 'sector_id'
+                  'Description' -> 'nombre'
+             - Agregar una columna 'contrato_size' con valor 0.
+          6. Exportación del CSV final de activos.
+
+        Args:
+            actives_input_path (str): Ruta del CSV de entrada con datos de activos.
+            market_path (str): Ruta del CSV con mapeo de mercados.
+            sector_mapping_path (str): Ruta del CSV con mapeo de sectores.
+            assets_output_path (str): Ruta donde se exportará el CSV final de activos.
+
+        Returns:
+            pd.DataFrame: DataFrame final procesado.
+        """
+        # 1. Limpieza inicial
+        df_actives = self.clean_actives(actives_input_path)
+
+        # 2. Reemplazo de 'mercado' por 'mercado_id'
+        df_actives = self.replace_market_in_actives(df_actives, market_path)
+
+        # 3. Reemplazo de 'sector' por 'sector_id'
+        df_actives = self.replace_sector_in_actives(df_actives, sector_mapping_path)
+
+        # 5. Eliminar duplicados basados en 'Symbol'
+        df_actives.drop_duplicates(subset=['Symbol'], inplace=True)
+
+        # 6. Modificaciones finales:
+        df_actives.insert(0, 'activo_id', range(1, len(df_actives) + 1))
+        df_actives.rename(columns={
+            "Symbol": "simbolo",
+            "mercado": "mercado_id",
+            "sector": "sector_id",
+            "Description": "nombre"
+        }, inplace=True)
+        df_actives['contrato_size'] = 0
+
+        # 7. Exportar CSV final
+        df_actives.to_csv(assets_output_path, index=False)
+        return df_actives
 
 
 if __name__ == "__main__":
     etl = ETLProcessor()
-    
-    # Rutas de ejemplo (ajusta las rutas según tu entorno)
-    ruta_symbol_info    = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\processed\symbol_info_procesado.csv"
-    ruta_market         = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_market.csv"
-    ruta_sector_salida  = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_Sector.csv"
-    
-    # Procesar la tabla Sector (se genera y exporta Table_Sector.csv)
-    df_sector = etl.process_table_sector(ruta_symbol_info, ruta_market, ruta_sector_salida)
+
+    # Rutas de ejemplo (ajustar según el entorno)
+    symbol_info_path   = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\processed\symbol_info_procesado.csv"
+    market_path        = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_market.csv"
+    sector_output_path = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_Sector.csv"
+    actives_input_path = symbol_info_path  # Se puede ajustar si es diferente
+    assets_output_path = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup.csv"
+
+    # Procesar la tabla de sectores
+    df_sector = etl.process_table_sector(symbol_info_path, market_path, sector_output_path)
     print("Tabla Sector procesada:")
     print(df_sector.head())
-    
-    # Procesar la tabla Actives: limpiar (ya no se exporta Table_Actives.csv)
-    ruta_actives_entrada = ruta_symbol_info  # Ajusta la ruta de entrada según corresponda
-    df_actives = etl.clean_actives(ruta_actives_entrada)
-    print("\nTabla Actives limpia:")
-    print(df_actives.head())
-    
-    # Reemplazar 'mercado' en Actives por su 'mercado_id'
-    df_activos_actualizado = etl.replace_market_in_actives(df_actives, ruta_market)
-    print("\nTabla Actives actualizada (mercado):")
-    print(df_activos_actualizado.head())
-    
-    # Reemplazar 'sector' en Actives por su 'sector_id' usando el mapeo de sectores
-    ruta_sector_mapping = ruta_sector_salida  # Se utiliza el CSV ya generado de sectores
-    df_activos_sect = etl.replace_sector_in_actives(df_activos_actualizado, ruta_sector_mapping)
-    print("\nTabla Actives actualizada (sector):")
-    print(df_activos_sect.head())
-    
-    # **** Exportar DataFrame intermedio ****
-    # Se exporta después de la eliminación de sufijos y mapeo de mercado/sector, pero antes de eliminar duplicados.
-    ruta_actives_intermedia = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\logs\Table_Actives_Intermedio.csv"
-    df_activos_sect.to_csv(ruta_actives_intermedia, index=False)
-    print(f"\nDataFrame intermedio exportado a: {ruta_actives_intermedia}")
-    
-    # Eliminar duplicados en la columna 'Symbol' para evitar duplicados en 'simbolo' en el resultado final
-    df_activos_sect = df_activos_sect.drop_duplicates(subset=['Symbol'])
-    
-    # Realizar modificaciones finales en el DataFrame:
-    # 1. Agregar la columna 'activo_id' como índice incremental.
-    df_activos_sect.insert(0, 'activo_id', range(1, len(df_activos_sect) + 1))
-    
-    # 2. Renombrar las columnas:
-    #    - 'Symbol'   -> 'simbolo'
-    #    - 'mercado'  -> 'mercado_id'
-    #    - 'sector'   -> 'sector_id'
-    df_activos_sect = df_activos_sect.rename(columns={
-        "Symbol": "simbolo",
-        "mercado": "mercado_id",                
-        "sector": "sector_id"
-    })
-    
-    # Renombrar la columna 'Description' a 'nombre'
-    df_activos_sect = df_activos_sect.rename(columns={"Description": "nombre"})
-    
-    # Agregar la nueva columna 'contrato_size' con valor 0 para todas las filas
-    df_activos_sect['contrato_size'] = 0
-    
-    # Exportar solo el DataFrame final como Table_Assets.csv
-    ruta_assets = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_Assets.csv"
-    df_activos_sect.to_csv(ruta_assets, index=False)
-    print("\nTabla Assets exportada:")
-    print(df_activos_sect.head())
+
+    # Procesar la tabla de activos en una sola llamada
+    df_actives_final = etl.process_actives(actives_input_path, market_path, sector_output_path, assets_output_path)
+    print("\nTabla Assets final procesada:")
+    print(df_actives_final.head())
