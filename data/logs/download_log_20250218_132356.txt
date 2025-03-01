@@ -1,0 +1,4 @@
+2025-02-18 13:23:56,197 - INFO - Procesando broker: Pepperstone
+2025-02-18 13:23:59,683 - INFO - Broker Pepperstone: 1481 símbolos encontrados.
+2025-02-18 13:24:03,796 - ERROR - Error en activo EURUSD: 'time'
+2025-02-18 13:24:03,797 - ERROR - Excepción al procesar broker Pepperstone: Error en activo EURUSD: 'time'
