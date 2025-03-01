@@ -139,8 +139,20 @@ class ETLProcessor:
         df_actives['sector'] = df_actives['sector'].map(mapping_sector)
         return df_actives
 
-    def process_actives(self, actives_input_path: str, market_path: str, sector_mapping_path: str
-                        , assets_output_path: str) -> pd.DataFrame:
+    def fill_missing_nombre(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Reemplaza los valores NaN en la columna 'nombre' por "Desconocido".
+
+        Args:
+            df (pd.DataFrame): DataFrame que contiene la columna 'nombre'.
+
+        Returns:
+            pd.DataFrame: DataFrame con los NaN reemplazados por "Desconocido".
+        """
+        df['nombre'] = df['nombre'].fillna("Desconocido")
+        return df
+
+    def process_actives(self, actives_input_path: str, market_path: str, sector_mapping_path: str, assets_output_path: str) -> pd.DataFrame:
         """
         Ejecuta el proceso completo de transformación y exportación de la tabla de activos.
 
@@ -157,7 +169,8 @@ class ETLProcessor:
                   'sector'   -> 'sector_id'
                   'Description' -> 'nombre'
              - Agregar una columna 'contrato_size' con valor 0.
-          6. Exportación del CSV final de activos.
+          6. Reemplazar valores NaN en la columna 'nombre' por "Desconocido".
+          7. Exportación del CSV final de activos.
 
         Args:
             actives_input_path (str): Ruta del CSV de entrada con datos de activos.
@@ -177,10 +190,10 @@ class ETLProcessor:
         # 3. Reemplazo de 'sector' por 'sector_id'
         df_actives = self.replace_sector_in_actives(df_actives, sector_mapping_path)
 
-        # 5. Eliminar duplicados basados en 'Symbol'
+        # 4. Eliminar duplicados basados en 'Symbol'
         df_actives.drop_duplicates(subset=['Symbol'], inplace=True)
 
-        # 6. Modificaciones finales:
+        # 5. Modificaciones finales:
         df_actives.insert(0, 'activo_id', range(1, len(df_actives) + 1))
         df_actives.rename(columns={
             "Symbol": "simbolo",
@@ -189,6 +202,9 @@ class ETLProcessor:
             "Description": "nombre"
         }, inplace=True)
         df_actives['contrato_size'] = 0
+
+        # 6. Reemplazar valores NaN en la columna 'nombre'
+        df_actives = self.fill_missing_nombre(df_actives)
 
         # 7. Exportar CSV final
         df_actives.to_csv(assets_output_path, index=False)
