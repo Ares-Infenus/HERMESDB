@@ -13,3 +13,6 @@
 
 -- Importa los datos del archivo "Table_Assets.csv" a la tabla "Activos"
 \copy Activos FROM 'C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_Assets.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');
+
+-- Importa los datos del archivo "data_unificada.csv" a la tabla "Activos"
+\copy datos_historicos FROM 'C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\data_unificada.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',');

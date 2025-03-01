@@ -45,7 +45,6 @@ CREATE INDEX idx_broker_mercado ON Brokers(mercado_base);
 
 -----------------------------------------------------------
 -- Tabla Datos_Historicos (a convertir en hypertable)
---
 -- Se define la tabla sin particionamiento manual; TimescaleDB la gestionará.
 -----------------------------------------------------------
 CREATE TABLE Datos_Historicos (
@@ -54,7 +53,7 @@ CREATE TABLE Datos_Historicos (
   broker_id INTEGER NOT NULL,
   mercado_id INTEGER NOT NULL,
   timestamp TIMESTAMPTZ NOT NULL,
-  timeframe VARCHAR(3), -- Ej: 1m/5m/15m/30m/1h/4h/1d/1w/1M
+  timeframe VARCHAR(3) NOT NULL, -- Ej: 1m/5m/15m/30m/1h/4h/1d/1w/1M
 
   bid_open NUMERIC NOT NULL,
   bid_high NUMERIC NOT NULL,
@@ -70,7 +69,7 @@ CREATE TABLE Datos_Historicos (
   spread_promedio NUMERIC NOT NULL,
   
   CONSTRAINT pk_datos_historicos PRIMARY KEY (registro_id, timestamp),
-  CONSTRAINT idx_main_query UNIQUE (activo_id, broker_id, timestamp)
+  CONSTRAINT idx_main_query UNIQUE (activo_id, broker_id, timestamp, timeframe)
 );
 
 -- Índices adicionales en la tabla de series temporales
@@ -90,6 +89,7 @@ SELECT add_compression_policy('Datos_Historicos', INTERVAL '90 days');
 
 -----------------------------------------------------------
 -- Tabla Costos_Operacionales
+-----------------------------------------------------------
 CREATE TABLE Costos_Operacionales (
   costo_id BIGSERIAL PRIMARY KEY,
   activo_id INTEGER NOT NULL,
