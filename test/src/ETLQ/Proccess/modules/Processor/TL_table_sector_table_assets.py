@@ -157,20 +157,21 @@ class ETLProcessor:
         Ejecuta el proceso completo de transformación y exportación de la tabla de activos.
 
         El proceso incluye:
-          1. Limpieza inicial del CSV de activos.
-          2. Reemplazo de 'mercado' por 'mercado_id' usando el CSV de mercados.
-          3. Reemplazo de 'sector' por 'sector_id' usando el mapeo de sectores.
-          4. Eliminación de duplicados en la columna 'Symbol'.
-          5. Modificaciones finales:
-             - Agregar índice incremental 'activo_id'.
-             - Renombrar columnas para mantener consistencia:
-                  'Symbol'   -> 'simbolo'
-                  'mercado'  -> 'mercado_id'
-                  'sector'   -> 'sector_id'
-                  'Description' -> 'nombre'
-             - Agregar una columna 'contrato_size' con valor 0.
-          6. Reemplazar valores NaN en la columna 'nombre' por "Desconocido".
-          7. Exportación del CSV final de activos.
+        1. Limpieza inicial del CSV de activos.
+        2. Reemplazo de 'mercado' por 'mercado_id' usando el CSV de mercados.
+        3. Reemplazo de 'sector' por 'sector_id' usando el mapeo de sectores.
+        4. Eliminación de duplicados en la columna 'Symbol'.
+        5. Modificaciones finales:
+            - Agregar índice incremental 'activo_id'.
+            - Renombrar columnas para mantener consistencia:
+                'Symbol'   -> 'simbolo'
+                'mercado'  -> 'mercado_id'
+                'sector'   -> 'sector_id'
+                'Description' -> 'nombre'
+            - Agregar una columna 'contrato_size' con valor 0.
+        6. Reemplazar valores NaN en la columna 'nombre' por "Desconocido".
+        7. Eliminar comillas dobles de la columna 'nombre'.
+        8. Exportación del CSV final de activos.
 
         Args:
             actives_input_path (str): Ruta del CSV de entrada con datos de activos.
@@ -206,8 +207,11 @@ class ETLProcessor:
         # 6. Reemplazar valores NaN en la columna 'nombre'
         df_actives = self.fill_missing_nombre(df_actives)
 
-        # 7. Exportar CSV final
-        df_actives.to_csv(assets_output_path, index=False)
+        # 7. Eliminar comillas dobles de la columna 'nombre'
+        df_actives['nombre'] = df_actives['nombre'].str.replace(r'[“”"]', '', regex=True)
+
+        # 8. Exportar CSV final
+        df_actives.to_csv(assets_output_path, index=False, encoding='utf-8')
         return df_actives
 
 
