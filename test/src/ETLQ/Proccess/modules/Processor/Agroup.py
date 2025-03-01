@@ -159,8 +159,11 @@ if __name__ == "__main__":
         "sector": "sector_id"
     })
     
-    # Renombrar la columna 'Descripcion' a 'nombre'
-    df_activos_sect = df_activos_sect.rename(columns={"Descripcion": "nombre"})
+    # Renombrar la columna 'Description' a 'nombre'
+    df_activos_sect = df_activos_sect.rename(columns={"Description": "nombre"})
+    
+    # Agregar la nueva columna 'contrato_size' con valor 0 para todas las filas
+    df_activos_sect['contrato_size'] = 0
     
     # Exportar solo el DataFrame final como Table_Assets.csv
     ruta_assets = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_Assets.csv"
