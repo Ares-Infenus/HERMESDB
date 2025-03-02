@@ -1,7 +1,7 @@
 import pandas as pd
 from rich.progress import Progress
 
-filename = r'C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\data_unificada.csv'
+filename = r'C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\Table_Datos_historicos.csv'
 output_file = r'C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup\duplicados.csv'
 chunksize = 100000  # Puedes ajustar el tamaño del chunk según la memoria disponible
 
