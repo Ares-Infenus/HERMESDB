@@ -85,6 +85,77 @@ class CSVToPostgresAdapter:
         optimal_chunk_size = int(target_memory // memory_per_row)
         return optimal_chunk_size
     
+    def _process_chunk(self, df):
+        """
+        Procesa un chunk (subconjunto del CSV) realizando las transformaciones:
+        - Renombrar columnas para adaptarlas a la estructura deseada.
+        - Calcular el precio Ask usando la fórmula: Ask = Bid + (spread / spread_divisor)
+        - Convertir el timeframe y asignar los valores originales para broker y asset.
+        - Agregar la columna mercado_id.
+        - Convertir el timestamp a datetime.
+        - Eliminar columnas innecesarias.
+        - **Reemplazar los valores de 'activo_id' y 'broker_id' utilizando los dataframes Assets y Brokers.**
+        """
+        # Renombrar columnas
+        df.rename(columns={
+            'time': 'timestamp',
+            'open': 'bid_open',
+            'high': 'bid_high',
+            'low': 'bid_low',
+            'close': 'bid_close',
+            'tick_volume': 'volumen_contratos',
+            'spread': 'spread_promedio'
+        }, inplace=True)
+        
+        # Calcular el precio Ask basado en la fórmula: Ask = Bid + (spread / spread_divisor)
+        df['ask_open']  = df['bid_open']  + (df['spread_promedio'] / self.spread_divisor)
+        df['ask_high']  = df['bid_high']  + (df['spread_promedio'] / self.spread_divisor)
+        df['ask_low']   = df['bid_low']   + (df['spread_promedio'] / self.spread_divisor)
+        df['ask_close'] = df['bid_close'] + (df['spread_promedio'] / self.spread_divisor)
+        
+        # Convertir el timeframe usando el mapeo; si no se encuentra, se deja igual.
+        df['timeframe'] = df['timeframe'].apply(lambda x: self.timeframe_mapping.get(x, x))
+        
+        # Asignar los nombres originales para broker y asset en las columnas correspondientes
+        df['broker_id'] = df['broker']  # Se conserva el nombre original, se realizará conversión más adelante
+        df['activo_id'] = df['asset']   # Se conserva el nombre original (símbolo del activo)
+        
+        # **Eliminar sufijos en los símbolos de activos antes de asignar IDs**
+        if "activo_id" in df.columns:
+            df["activo_id"] = df["activo_id"].astype(str)  # Asegurar que es string
+            df["activo_id"] = df["activo_id"].apply(lambda x: re.sub(r"_CFD.*$", "", x))
+            df["activo_id"] = df["activo_id"].str.replace(r"\.(?!IDX$|HK$)[A-Za-z0-9-]+$", "", regex=True)
+        
+        # Asignar valor por defecto a mercado_id
+        df['mercado_id'] = self.default_mercado_id
+        
+        # Convertir el timestamp a objeto datetime
+        df['timestamp'] = pd.to_datetime(df['timestamp'])
+        
+        # Eliminar columnas que no se requieren
+        df.drop(columns=['real_volume', 'broker', 'asset'], inplace=True, errors='ignore')
+        
+        # Reordenar columnas según la estructura de la tabla
+        cols_order = ['activo_id', 'broker_id', 'mercado_id', 'timestamp', 'timeframe',
+                    'bid_open', 'bid_high', 'bid_low', 'bid_close',
+                    'ask_open', 'ask_high', 'ask_low', 'ask_close',
+                    'volumen_contratos', 'spread_promedio']
+        df = df[cols_order]
+        
+        # Reemplazar los valores de activo_id utilizando el dataframe Assets
+        if self.assets_df is not None:
+            # Se asume que en assets_df la columna 'simbolo' tiene los mismos valores que los de df['activo_id']
+            mapping_assets = dict(zip(self.assets_df['simbolo'], self.assets_df['activo_id']))
+            df['activo_id'] = df['activo_id'].map(mapping_assets)
+        
+        # Reemplazar los valores de broker_id utilizando el dataframe Brokers
+        if self.brokers_df is not None:
+            # Se asume que en brokers_df la columna 'nombre' tiene los mismos valores que los de df['broker_id']
+            mapping_brokers = dict(zip(self.brokers_df['nombre'], self.brokers_df['broker_id']))
+            df['broker_id'] = df['broker_id'].map(mapping_brokers)
+        
+        return df
+    
     def _process_chunk_pre_mapping(self, df):
         """
         Procesa un chunk hasta antes de realizar el mapeo de 'activo_id' y 'broker_id'.
