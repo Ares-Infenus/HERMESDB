@@ -85,16 +85,11 @@ class CSVToPostgresAdapter:
         optimal_chunk_size = int(target_memory // memory_per_row)
         return optimal_chunk_size
     
-    def _process_chunk(self, df):
+    def _process_chunk_pre_mapping(self, df):
         """
-        Procesa un chunk (subconjunto del CSV) realizando las transformaciones:
-        - Renombrar columnas para adaptarlas a la estructura deseada.
-        - Calcular el precio Ask usando la fórmula: Ask = Bid + (spread / spread_divisor)
-        - Convertir el timeframe y asignar los valores originales para broker y asset.
-        - Agregar la columna mercado_id.
-        - Convertir el timestamp a datetime.
-        - Eliminar columnas innecesarias.
-        - **Reemplazar los valores de 'activo_id' y 'broker_id' utilizando los dataframes Assets y Brokers.**
+        Procesa un chunk hasta antes de realizar el mapeo de 'activo_id' y 'broker_id'.
+        Se aplican las transformaciones (renombrar columnas, cálculos de Ask, conversión del timeframe, 
+        limpieza y formateo) y se deja el DataFrame con los valores originales de 'broker' y 'asset'.
         """
         # Renombrar columnas
         df.rename(columns={
@@ -116,13 +111,13 @@ class CSVToPostgresAdapter:
         # Convertir el timeframe usando el mapeo; si no se encuentra, se deja igual.
         df['timeframe'] = df['timeframe'].apply(lambda x: self.timeframe_mapping.get(x, x))
         
-        # Asignar los nombres originales para broker y asset en las columnas correspondientes
-        df['broker_id'] = df['broker']  # Se conserva el nombre original, se realizará conversión más adelante
-        df['activo_id'] = df['asset']   # Se conserva el nombre original (símbolo del activo)
+        # Asignar los nombres originales para broker y asset
+        df['broker_id'] = df['broker']  
+        df['activo_id'] = df['asset']   
         
-        # **Eliminar sufijos en los símbolos de activos antes de asignar IDs**
+        # Eliminar sufijos en los símbolos de activos
         if "activo_id" in df.columns:
-            df["activo_id"] = df["activo_id"].astype(str)  # Asegurar que es string
+            df["activo_id"] = df["activo_id"].astype(str)
             df["activo_id"] = df["activo_id"].apply(lambda x: re.sub(r"_CFD.*$", "", x))
             df["activo_id"] = df["activo_id"].str.replace(r"\.(?!IDX$|HK$)[A-Za-z0-9-]+$", "", regex=True)
         
@@ -142,20 +137,41 @@ class CSVToPostgresAdapter:
                     'volumen_contratos', 'spread_promedio']
         df = df[cols_order]
         
-        # Reemplazar los valores de activo_id utilizando el dataframe Assets
-        if self.assets_df is not None:
-            # Se asume que en assets_df la columna 'simbolo' tiene los mismos valores que los de df['activo_id']
-            mapping_assets = dict(zip(self.assets_df['simbolo'], self.assets_df['activo_id']))
-            df['activo_id'] = df['activo_id'].map(mapping_assets)
-        
-        # Reemplazar los valores de broker_id utilizando el dataframe Brokers
-        if self.brokers_df is not None:
-            # Se asume que en brokers_df la columna 'nombre' tiene los mismos valores que los de df['broker_id']
-            mapping_brokers = dict(zip(self.brokers_df['nombre'], self.brokers_df['broker_id']))
-            df['broker_id'] = df['broker_id'].map(mapping_brokers)
-        
         return df
-    
+    def export_pre_mapping_dataframe(self, output_folder, output_filename='pre_mapping_unificado.csv'):
+        """
+        Exporta el dataframe unificado (resultado de la transformación en chunks SIN aplicar el mapeo)
+        a un archivo CSV en la carpeta especificada.
+        """
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+        
+        output_path = os.path.join(output_folder, output_filename)
+        first_chunk = True
+        registro_counter = 1
+        print(f"Exportando dataframe (pre mapping) a: {output_path}")
+        
+        # Listar archivos permitidos
+        all_files = os.listdir(self.folder_path)
+        csv_files = [os.path.join(self.folder_path, f) for f in all_files if f in self.allowed_files]
+        
+        for file in csv_files:
+            print(f"Procesando archivo: {os.path.basename(file)}")
+            for chunk in tqdm(pd.read_csv(file, chunksize=self.chunksize), 
+                            desc=f"Chunks de {os.path.basename(file)}"):
+                processed_chunk = self._process_chunk_pre_mapping(chunk.copy())
+                n_rows = len(processed_chunk)
+                # Agregar la columna 'registro_id'
+                processed_chunk.insert(0, 'registro_id', range(registro_counter, registro_counter + n_rows))
+                registro_counter += n_rows
+                
+                if first_chunk:
+                    processed_chunk.to_csv(output_path, index=False, mode='w', header=True)
+                    first_chunk = False
+                else:
+                    processed_chunk.to_csv(output_path, index=False, mode='a', header=False)
+        print("Exportación (pre mapping) completada.")
+
     def transform(self):
         """
         Procesa de forma secuencial cada archivo CSV permitido en chunks para no sobrecargar la memoria.
@@ -239,4 +255,8 @@ if __name__ == "__main__":
     
     # Exportar el dataframe unificado a una carpeta específica
     output_folder = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup"
-    adapter.export_unified_dataframe(output_folder, output_filename='data_unificada.csv')
+    adapter.export_unified_dataframe(output_folder, output_filename='Table_Datos_historicos.csv')
+
+    # Exportar los datos antes del mapeo
+    output_folder_before = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\backup"
+    adapter.export_pre_mapping_dataframe(output_folder, output_filename='datos_pre_mapping.csv')
