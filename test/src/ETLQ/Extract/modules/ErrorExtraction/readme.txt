@@ -1,0 +1,1 @@
+En esta carpeta se almacenaran todos los mensajes de errores y sus posibles soluciones.
