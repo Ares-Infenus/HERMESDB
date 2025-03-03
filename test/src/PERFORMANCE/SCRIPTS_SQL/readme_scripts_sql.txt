@@ -1,0 +1,1 @@
+--Esta carpeta contiene el código SQL necesario para crear la base de datos y cargar los datos.

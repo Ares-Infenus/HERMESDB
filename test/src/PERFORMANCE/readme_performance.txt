@@ -1,0 +1,2 @@
+-- Esta carpeta contiene el código para crear la base de datos que monitorizará el programa Herbesdb.
+-- La base de datos, llamada "PERFORMANCE_HERMESDB", almacenará toda la información de monitoreo.
