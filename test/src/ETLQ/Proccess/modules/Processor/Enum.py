@@ -1,5 +1,6 @@
 import pandas as pd
-
+# TODO: Agregar manejo de errores
+# QUESTION: ¿Por qué no se usa la librería logging para manejar errores?
 # Mapeos y definiciones constantes
 MARKET_MAP = {
     "forex": "Forex", "reval": "Forex",
