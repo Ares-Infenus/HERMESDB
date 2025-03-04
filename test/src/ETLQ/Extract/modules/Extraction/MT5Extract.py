@@ -10,6 +10,7 @@ por rangos mensuales para cada símbolo disponible, guardándolos en archivos CS
 # ----------------------------
 
 # TODO: [FEATURE] Automatizar la eliminación de datos descargados del broker y la caché de MetaTrader (ubicada en AppData)
+# TODO: [FEATURE] Se debe implementar el monitorio de recursos para diagnosticar problemas de rendimiento.
 
 # ----------------------------
 # librerias y dependencias
