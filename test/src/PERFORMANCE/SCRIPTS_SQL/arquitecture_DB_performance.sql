@@ -62,3 +62,9 @@ CREATE TABLE events (
     event_type TEXT,                      -- Tipo de evento (ej. "error", "warning", "info")
     message TEXT                          -- Descripción detallada del evento (ej. "Memoria insuficiente")
 );
+
+-- Convertir la tabla system_metrics en hypertable usando 'timestamp' como columna de tiempo
+SELECT create_hypertable('system_metrics', 'timestamp');
+
+-- (Opcional) Convertir la tabla events en hypertable si se espera un alto volumen de eventos
+SELECT create_hypertable('events', 'timestamp');
