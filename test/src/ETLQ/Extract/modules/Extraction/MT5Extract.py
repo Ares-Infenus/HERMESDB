@@ -5,6 +5,15 @@ Este módulo configura el logger, gestiona la conexión a MetaTrader5, y descarg
 por rangos mensuales para cada símbolo disponible, guardándolos en archivos CSV.
 """
 
+# ----------------------------
+# Tareas pendientes
+# ----------------------------
+
+# TODO: [FEATURE] Automatizar la eliminación de datos descargados del broker y la caché de MetaTrader (ubicada en AppData)
+
+# ----------------------------
+# librerias y dependencias
+# ----------------------------
 import os
 import logging
 import multiprocessing as mp
