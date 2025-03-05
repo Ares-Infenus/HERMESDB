@@ -5,8 +5,12 @@
 # ----------------------------
 # Tareas pendientes
 # ----------------------------
-# ** Al parecer no se inicializa si primero no se abre la cuenta y anexa el servidor en LA INTERFAZ grafica de metatrader 5
-# TODO: [FEATURE] Automatizar la eliminación de datos descargados del broker y la caché de MetaTrader (ubicada en AppData)
+# ** Al parecer no se inicializa si primero no se abre la cuenta y anexa el servidor
+# ** en LA INTERFAZ grafica de metatrader 5
+# ? si quieres ejecutar este modulo tendras que cambiar en la seccion de conexiones
+# ? from .modules.historical_data_downloader import HistoricalDataDownloader por
+# ? from modules.historical_data_downloader import HistoricalDataDownloader
+# TODO: [FEATURE] Automatizar la eliminación de datos descargados del broker y la caché de MetaTr ader (ubicada en AppData)
 # TODO: [FEATURE] Se debe implementar el monitorio de recursos para diagnosticar problemas de rendimiento.
 # TODO: [FEATURE] Se debe optimizar las funciones y los modulos.
 # TODO: [FEATURE] Se debe terminar la documentacion una vez terminado la implementacion del monitoreo de recursos y la optimizacion de modulos y submodulos

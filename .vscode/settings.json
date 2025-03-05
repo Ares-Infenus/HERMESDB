@@ -9,5 +9,6 @@
             "username": "postgres",
             "database": "perfomance_hermesdb"
         }
-    ]
+    ],
+    "todo-tree.tree.scanMode": "current file"
 }
