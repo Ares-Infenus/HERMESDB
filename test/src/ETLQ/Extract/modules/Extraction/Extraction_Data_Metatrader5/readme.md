@@ -1,15 +1,50 @@
-# SystemMonitor
+# Extraction_Data_Metatrader5
 
 ![UML Architecture](./uml_architecture.png)
 
-## Tabla de Contenidos
-- [Descripción](#descripción)
-- [Objetivos](#objetivos)
-- [Entradas y Salidas](#entradas-y-salidas)
-- [Componentes del Código](#componentes-del-código)
-- [Ejemplo de Ejecución](#ejemplo-de-ejecución)
-- [Instalación y Dependencias](#instalación-y-dependencias)
-- [Consideraciones Técnicas](#consideraciones-técnicas)
+## Tabla de modulos
+
+- [main](#descripción)
+  - [Descripción](#descripción)
+  - [Objetivos](#objetivos)
+  - [Entradas y Salidas](#entradas-y-salidas)
+  - [Componentes del Código](#componentes-del-código)
+  - [Ejemplo de Ejecución](#ejemplo-de-ejecución)
+  - [Instalación y Dependencias](#instalación-y-dependencias)
+  - [Consideraciones Técnicas](#consideraciones-técnicas)
+- [historical_data_downloader](#objetivos)
+  - [Descripción](#descripción)
+  - [Objetivos](#objetivos)
+  - [Entradas y Salidas](#entradas-y-salidas)
+  - [Componentes del Código](#componentes-del-código)
+  - [Ejemplo de Ejecución](#ejemplo-de-ejecución)
+  - [Instalación y Dependencias](#instalación-y-dependencias)
+  - [Consideraciones Técnicas](#consideraciones-técnicas)
+- [logger_config](#entradas-y-salidas)
+  - [Descripción](#descripción)
+  - [Objetivos](#objetivos)
+  - [Entradas y Salidas](#entradas-y-salidas)
+  - [Componentes del Código](#componentes-del-código)
+  - [Ejemplo de Ejecución](#ejemplo-de-ejecución)
+  - [Instalación y Dependencias](#instalación-y-dependencias)
+  - [Consideraciones Técnicas](#consideraciones-técnicas)
+- [mt5_connection](#componentes-del-código)
+  - [Descripción](#descripción)
+  - [Objetivos](#objetivos)
+  - [Entradas y Salidas](#entradas-y-salidas)
+  - [Componentes del Código](#componentes-del-código)
+  - [Ejemplo de Ejecución](#ejemplo-de-ejecución)
+  - [Instalación y Dependencias](#instalación-y-dependencias)
+  - [Consideraciones Técnicas](#consideraciones-técnicas)
+- [utils](#ejemplo-de-ejecución)
+  - [Descripción](#descripción)
+  - [Objetivos](#objetivos)
+  - [Entradas y Salidas](#entradas-y-salidas)
+  - [Componentes del Código](#componentes-del-código)
+  - [Ejemplo de Ejecución](#ejemplo-de-ejecución)
+  - [Instalación y Dependencias](#instalación-y-dependencias)
+  - [Consideraciones Técnicas](#consideraciones-técnicas)
+
 
 ## Descripción
 El código implementa un monitor de sistema que captura y registra periódicamente métricas de rendimiento (uso de CPU, memoria, disco y red). Al finalizar la ejecución, las métricas se exportan a un archivo CSV para su análisis.
