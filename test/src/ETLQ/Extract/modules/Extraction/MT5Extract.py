@@ -8,7 +8,7 @@ por rangos mensuales para cada símbolo disponible, guardándolos en archivos CS
 # ----------------------------
 # Tareas pendientes
 # ----------------------------
-
+# ** Al parecer no se inicializa si primero no se abre la cuenta y anexa el servidor en LA INTERFAZ grafica de metatrader 5
 # TODO: [FEATURE] Automatizar la eliminación de datos descargados del broker y la caché de MetaTrader (ubicada en AppData)
 # TODO: [FEATURE] Se debe implementar el monitorio de recursos para diagnosticar problemas de rendimiento.
 
@@ -363,7 +363,8 @@ if __name__ == "__main__":
     # Configuración de ejemplo (reemplazar con datos reales)
     data = {
         "Tipo": ["user", "password", "Investor", "Server"],
-        "Dukascopy": [561753946, "=UcA9-:c", float("nan"), "Dukascopy-demo-mt5-1"],
+        # "Dukascopy": [1717024561, "/BUPf3]`", float("nan"), "Dukascopy-demo-mt5-1"],
+        "OANDA": [6369670, "GetBun72+", float("nan"), "OANDA-Demo-1"],
     }
     credentials_df = pd.DataFrame(data)
     LOG_FOLDER = r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\logs"
