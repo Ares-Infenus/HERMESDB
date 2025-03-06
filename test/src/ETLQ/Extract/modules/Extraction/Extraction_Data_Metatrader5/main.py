@@ -22,22 +22,24 @@
 # librerias y dependencias
 # ----------------------------
 
-import os
+# Standard library imports
 import cProfile
 import pstats
-import io
 import multiprocessing as mp
 from datetime import datetime
+
+# Third-party imports
 import pandas as pd
-from memory_profiler import memory_usage
 
 # ----------------------------
 # Conexiones
 # ----------------------------
+
 from modules.historical_data_downloader import HistoricalDataDownloader
 from performance.system_monitor import SystemMonitor
-from profiling_utils import mem_profile, memory_usage_dict
 from performance.function_profiles import ProfileExporter
+from profiling_utils import mem_profile, memory_usage_dict
+
 
 # ----------------------------
 # Codigo
@@ -108,6 +110,7 @@ if __name__ == "__main__":
     with open(
         r"C:\Users\spinz\OneDrive\Documentos\Portafolio oficial\HERMESDB\HERMESDB\test\data\logs\Extract_Data_metatrader5\function_profiles.txt",
         "w",
+        encoding="utf-8",
     ) as f:
         stats_obj = pstats.Stats(profiler, stream=f)
         stats_obj.sort_stats(pstats.SortKey.TIME)
