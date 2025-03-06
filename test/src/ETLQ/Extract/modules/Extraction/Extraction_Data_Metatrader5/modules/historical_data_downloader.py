@@ -2,16 +2,30 @@
 # Descripcion
 # ----------------------------
 
+"""Este código define la clase HistoricalDataDownloader, encargada de gestionar la conexión con
+múltiples brokers, extraer credenciales desde un DataFrame, obtener la lista de símbolos y
+descargar datos históricos de manera eficiente utilizando multiprocessing. Al inicializarse,
+configura los logs, crea la carpeta de almacenamiento y define un rango de fechas para la descarga.
+Luego, extrae las credenciales de cada broker, se conecta a través de MetaTrader5, obtiene la lista
+de activos disponibles y, mediante un pool de procesos, descarga los datos en paralelo para
+optimizar el rendimiento. Además, maneja errores y registra el número total de archivos
+descargados,asegurando una ejecución robusta y eficiente.
+"""
 # ----------------------------
 # librerias y dependencias
 # ----------------------------
 
+# Standard library imports
 import os
 import multiprocessing as mp
 from datetime import datetime
+
+# Third-party imports
 from tqdm import tqdm
 import pandas as pd
 import MetaTrader5 as mt5
+from profiling_utils import mem_profile
+
 
 # ----------------------------
 # Conexiones
@@ -32,6 +46,7 @@ class HistoricalDataDownloader:
     de datos históricos utilizando multiprocessing.
     """
 
+    @mem_profile
     def __init__(
         self,
         authentication_df: pd.DataFrame,
@@ -50,6 +65,7 @@ class HistoricalDataDownloader:
         self.start_date = start_timestamp or datetime(2000, 1, 1)
         self.end_date = end_timestamp or datetime.now()
 
+    @mem_profile
     def extract_credentials(self, broker: str) -> dict:
         """
         Extrae las credenciales del DataFrame para un broker dado.
@@ -65,6 +81,7 @@ class HistoricalDataDownloader:
             credentials["investor_password"] = investor
         return credentials
 
+    @mem_profile
     def process_broker(self, broker: str):
         """
         Procesa un broker: se conecta, obtiene la lista de símbolos y descarga
@@ -124,6 +141,7 @@ class HistoricalDataDownloader:
         pool.join()
         return results
 
+    @mem_profile
     def process_all_brokers(self):
         """
         Procesa todos los brokers disponibles en el DataFrame.

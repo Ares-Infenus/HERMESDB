@@ -1,17 +1,31 @@
 # ----------------------------
 # Descripcion
 # ----------------------------
+
 """
-Módulo para monitorizar los recursos del sistema y registrar las métricas en un CSV.
+El código define la clase SystemMonitor, diseñada para monitorear en tiempo real el
+uso de recursos del sistema, incluyendo CPU, memoria, disco y red, y almacenar las
+métricas en un archivo CSV. Utiliza psutil para capturar información sobre el consumo
+de CPU global y por núcleo, memoria utilizada en MB, actividad del disco y tráfico de
+red en intervalos configurables. La monitorización se ejecuta en un hilo separado
+mediante threading, asegurando que la captura de datos no afecte el rendimiento del
+proceso principal. Los datos se almacenan en una lista protegida por un Lock para
+evitar problemas de concurrencia, y al detener el monitoreo, se exportan a un archivo
+CSV en la ruta especificada, garantizando la persistencia de la información.
 """
+
 # ----------------------------
 # librerias y dependencias
 # ----------------------------
+
+# Standard library imports
 import os
 import threading
 import json
 import time
 from datetime import datetime
+
+# Third-party imports
 import psutil
 import pandas as pd
 

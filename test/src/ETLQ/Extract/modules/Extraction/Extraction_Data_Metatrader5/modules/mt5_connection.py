@@ -17,6 +17,12 @@ proporcionadas y cerrarla cuando sea necesario. """
 import MetaTrader5 as mt5
 
 # ----------------------------
+# Conexiones
+# ----------------------------
+
+from profiling_utils import mem_profile
+
+# ----------------------------
 # Codigo
 # ----------------------------
 
@@ -26,6 +32,7 @@ class MT5Connection:
     Encapsula la inicialización y desconexión de MetaTrader5.
     """
 
+    @mem_profile
     def __init__(self, credentials: dict):
         """
         Inicializa la conexión con las credenciales requeridas.
@@ -36,6 +43,7 @@ class MT5Connection:
         """
         self.credentials = credentials
 
+    @mem_profile
     def initialize(self):
         """
         Inicializa la conexión a MetaTrader5 con las credenciales proporcionadas.
@@ -56,6 +64,7 @@ class MT5Connection:
             raise RuntimeError(error_msg)
 
     @staticmethod
+    @mem_profile
     def shutdown():
         """
         Cierra la conexión a MetaTrader5.

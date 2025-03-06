@@ -3,16 +3,20 @@
 # ----------------------------
 """Este código gestiona la descarga de datos históricos de un símbolo financiero desde MetaTrader 5
 en diferentes temporalidades. Define la clase WorkerState para almacenar el estado global de los
-workers,la función worker_initializer para inicializar las variables y la conexión a MT5, y la 
+workers,la función worker_initializer para inicializar las variables y la conexión a MT5, y la
 función download_symbol_data, que descarga los datos por rangos mensuales, los procesa y los
 guarda en un archivo CSV, manejando posibles errores."""
 # ----------------------------
 # librerias y dependencias
 # ----------------------------
 
+# Standard library imports
 import os
+
+# Third-party imports
 import pandas as pd
 import MetaTrader5 as mt5
+from profiling_utils import mem_profile
 
 # ----------------------------
 # Conexiones
@@ -34,6 +38,7 @@ class WorkerState:
     date_range = (None, None)
 
 
+@mem_profile
 def worker_initializer(credentials: dict, data_directory: str, date_range: tuple):
     """
     Inicializa las variables necesarias en cada proceso worker.
@@ -46,6 +51,7 @@ def worker_initializer(credentials: dict, data_directory: str, date_range: tuple
     connection.initialize()
 
 
+@mem_profile
 def download_symbol_data(symbol: str) -> dict:
     """
     Descarga los datos históricos para el símbolo dado en diferentes temporalidades.

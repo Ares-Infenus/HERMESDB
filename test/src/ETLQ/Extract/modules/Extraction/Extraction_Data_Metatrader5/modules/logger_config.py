@@ -18,10 +18,19 @@ import os
 import logging
 from datetime import datetime
 
+# ----------------------------
+# Conexiones
+# ----------------------------
+
+from profiling_utils import mem_profile
+
 
 # ----------------------------
 # Codigo
 # ----------------------------
+
+
+@mem_profile
 def setup_logger(log_directory: str) -> logging.Logger:
     """
     Configura y retorna un logger que escribe en un archivo ubicado en log_directory.

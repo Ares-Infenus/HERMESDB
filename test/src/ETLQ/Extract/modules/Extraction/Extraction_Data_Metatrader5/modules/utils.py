@@ -13,10 +13,17 @@ Recorre los meses de forma iterativa, asegurando que el rango final no exceda la
 from datetime import datetime
 
 # ----------------------------
+# Conexiones
+# ----------------------------
+
+from profiling_utils import mem_profile
+
+# ----------------------------
 # Codigo
 # ----------------------------
 
 
+@mem_profile
 def generate_month_ranges(initial_date: datetime, final_date: datetime) -> list:
     """
     Genera una lista de tuplas (inicio, fin) para cada mes entre initial_date y final_date.
